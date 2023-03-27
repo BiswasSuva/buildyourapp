@@ -1,0 +1,535 @@
+/* Auth css */
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+
+.register-page h1 {
+    letter-spacing: 0.02em;
+    color: #161616;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 116%;
+    margin-bottom: 30px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: Muli, "sans-serif;";
+}
+
+input:-internal-autofill-selected {
+    background: transparent;
+}
+
+.register-page label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 116%;
+    color: #161616;
+}
+
+.register-page input {
+    background: #F4F4F4;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    padding: 20px 40px;
+}
+
+.register-btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 116%;
+    color: #FFFFFF;
+    padding: 16px 36px;
+    width: 145px;
+    height: 51px;
+    background: #686868;
+    border-radius: 10px;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.custColmn {
+    height: 100vh;
+    display: grid;
+    align-content: space-evenly;
+    align-items: center;
+    justify-items: stretch;
+}
+
+.bgsection {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 45%;
+    position: fixed;
+}
+
+.bgsection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-lightpeach {
+    background: linear-gradient(269.97deg, rgba(201, 176, 250, 0.353) 0.01%, rgba(157, 110, 250, 0.663) 30.73%, rgb(110, 38, 250) 99.47%) 0% 0% / cover, rgb(159, 110, 254);
+    height: 100vh;
+    background: linear-gradient(269.97deg, rgb(0 0 0 / 35%) 0.01%, rgb(0 0 0 / 66%) 30.73%, rgb(0 0 0) 99.47%) 0% 0% / cover, rgb(0 0 0);
+
+    background: linear-gradient(269.97deg, rgb(0 0 0 / 35%) 0.01%, rgb(0 0 0 / 66%) 30.73%, rgb(82 75 143) 99.47%) 0% 0% / cover, rgb(0 0 0);
+
+}
+
+.vh-100 {
+    height: 100vh !important;
+}
+
+.mt-12,
+.my-12 {
+    margin-top: 6rem !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.customdesc {
+    position: relative;
+    background: #f6f6f6;
+    background: transparent;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+.customdesc h1 {
+    letter-spacing: 0.02em;
+    color: #161616;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 116%;
+    margin-bottom: 40px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Mulish', sans-serif;
+    /* text-transform: capitalize; */
+}
+
+.customdesc .form-group {
+    position: relative;
+}
+
+.fa-user {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    font-size: 15px;
+    color: #6e657e;
+
+}
+
+.btn-form {
+    color: #fff;
+    background-color: #00d4a1;
+    border-color: #00d4a1;
+    padding: 14px 24px;
+}
+
+.btn-logreg {
+    padding: 8px 24px;
+}
+
+.btn-form:hover {
+    color: #fff;
+    background-color: #6e6593;
+    border-color: #00a17a;
+}
+
+.customdesc label {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    /* color: #000000; */
+    color: #6e657e;
+}
+
+.customdesc .form-control {
+    background: transparent;
+}
+
+
+.customdesc input {
+    width: 100%;
+    display: block;
+    border: none;
+    
+    padding: 6px 30px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+
+
+    border: none;
+    border-bottom: 2px solid #3f3d56;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 400;
+    width: 60%;
+    transition: .2s;    
+    font-size: 13px;
+    position: relative;
+    z-index: 11;
+}
+
+.customdesc a {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.pic1 {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 180px;
+    height: auto;
+    rotate: -45deg;
+}
+
+.pic2 {
+    position: absolute;
+    top: -30px;
+    right: -65px;
+    width: 180px;
+    height: auto;
+    rotate: 45deg;
+}
+
+.pic3 {
+    position: absolute;
+    bottom: -30px;
+    left: -55px;
+    width: 180px;
+    height: auto;
+    rotate: -135deg;
+}
+
+.pic4 {
+    position: absolute;
+    bottom: -50px;
+    right: -40px;
+    width: 180px;
+    height: auto;
+    rotate: 135deg;
+}
+
+#cupcake {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -mos-flex-direction: row;
+    -o-flex-direction: row;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    height: 100vh;
+    width: 100%;
+    /* background-color:#FFD454;     */
+    background-color: #14181b;
+}
+
+.letter {
+    font-size: 100px;
+    color: #222;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box {
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.cupcakeCircle,
+.cupcakeInner,
+.cupcakeCore {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+
+.cupcake,
+.letter,
+.cupcakeCircle,
+.cupcakeInner,
+.cupcakeCore {
+    flex: none;
+    -webkit-flex: none;
+    -moz-flex: none;
+    -ms-flex: none;
+    -o-flex: none;
+}
+
+.letter,
+.cupcakeCircle {
+    align-self: center;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+}
+
+.cupcakeCircle {
+    align-items: center;
+    -ms-align-items: center;
+    justify-content: center;
+    -ms-justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: #222;
+}
+
+.cupcakeInner {
+    align-self: center;
+    -ms-align-self: center;
+    justify-content: center;
+    -ms-justify-content: center;
+    height: 50%;
+    width: 50%;
+    background-color: #FFD454;
+    background-color: #218838;
+    -webkit-animation-name: cupcakeAnimate;
+    -webkit-animation-duration: 500ms;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+
+}
+
+.cupcakeCore {
+    align-self: center;
+    -ms-align-self: center;
+    height: 25%;
+    width: 25%;
+    background-color: #222;
+    -webkit-animation-name: coreAnimate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes cupcakeAnimate {
+    to {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@keyframes cupcakeAnimate {
+    to {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@-webkit-keyframes coreAnimate {
+    to {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@keyframes coreAnimate {
+    to {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .pl-xl-15,
+    .px-xl-15 {
+        padding-left: 12.5rem !important;
+    }
+
+    .pr-xl-15,
+    .px-xl-15 {
+        padding-right: 12.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bgsection {
+        width: 100%;
+    }
+
+    .custColmn {
+        display: block;
+    }
+}
+
+.profession {}
+
+
+
+/* .field {
+    margin: 30px auto;
+    position: relative;
+}
+
+.field label {
+    color: #333;
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 20px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    font-size: 24px;
+}
+
+.field input {
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+    width: 80%;
+    outline: 0;
+    font-size: 24px;
+    padding: 15px 15px 5px;
+
+}
+
+.field input:focus~label, .field input:valid~label {
+    margin-top: -52px;
+    font-size: 10px;
+    color: #999;
+    margin-left: 10px;
+}
+            
+.field input:focus,
+.field input:valid {}
+
+.field input:focus {
+    border-color: #3BA9D8;
+} */
+
+.screenmob{
+    background: linear-gradient(90deg, #5D54A4, #7C78B8);
+    position: relative;
+    height: auto;
+    width: 360px;
+    width: 100%;
+    box-shadow: 0px 0px 24px #5c5696;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.screen__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+}
+.screen__background__shape {
+    transform: rotate(45deg);
+    position: absolute;
+}
+.screen__background__shape4 {
+    height: 400px;
+    /* height: auto; */
+    width: 210px;
+    background: #7E7BB9;
+    top: 340px;
+    right: 50px;
+    border-radius: 60px;
+    z-index: 99;
+}
+.screen__background__shape {
+    transform: rotate(45deg);
+    position: absolute;
+}
+.screen__background__shape3 {
+    height: 540px;
+    width: 190px;
+    background: linear-gradient(270deg, #5D54A4, #524b8f);
+    top: -24px;
+    right: 0;
+    border-radius: 32px;
+}
+.screen__background__shape {
+    transform: rotate(45deg);
+    position: absolute;
+}
+.screen__background__shape2 {
+    height: 220px;
+    width: 220px;
+    background: #524b8f;
+    top: -172px;
+    right: 0;
+    border-radius: 32px;
+}
+.screen__background__shape {
+    transform: rotate(45deg);
+    position: absolute;
+}
+.screen__background__shape1 {
+    height: 520px;
+    width: 520px;
+    background: #FFF;
+    top: -50px;
+    right: 120px;
+    border-radius: 0 72px 0 0;
+}
+
+
+
+
+.inputgrp{
+    position: relative;
+}
+.inputplace{
+
+}
+.placeholder
+{
+  
+    font-size: 14px;
+    padding: 0px 5px;
+    color: #666;
+    transition: 0.3s;
+    /* pointer-events: none; */
+    position: absolute;
+    top: 4px;
+    left: 20px;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+/* .inputplace:focus + .placeholder
+{
+    top: -10px;
+    color: #04AA6D;
+    background-color: #fff;
+} */
+.focused .placeholder{
+    transform: translateY(-125%);
+    font-size: 14px;
+    left: 0;
+  }
+.inputplace.filled {
+    box-shadow: 0 2px 0 0 lightgreen;
+    border-bottom: 2px solid lightgreen;
+  }

@@ -1,0 +1,238 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #F6F8FD;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.ecommerceheader {
+    padding: 40px 0 20px;
+    font-family: 'Urbanist', sans-serif;
+    font-style: normal;
+    color: #212121;
+    /* background-color: #fff; */
+
+}
+
+.profileimg img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+p.gm {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #111111;
+    margin-bottom: 0;
+}
+
+p.profileName {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #9CA4AB;
+    margin-bottom: 0;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.socialIcons img {
+    width: 25px;
+    height: 25px;
+}
+
+h1.toptitle {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #111111;
+}
+
+p.seeall {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    color: #E9276D;
+    margin-bottom: 8px;
+}
+.allbtns{
+    margin-bottom: 10px;
+}
+.btns {
+    background: rgba(254, 254, 254, 0.2);
+    border: 1px solid #E3E9ED;
+    border-radius: 60px;
+    padding: 4px 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #9CA4AB;
+}
+
+.slick-slide {
+    margin-right: 30px !important;
+}
+
+.MostPopular {
+    margin-top: 30px;
+}
+
+.dotss {
+    width: 6px;
+    height: 6px;
+    background: #E53935;
+    border-radius: 50%;
+    display: block;
+    margin-right: 4px;
+}
+
+h1.movietitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #111111;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+p.totalseen {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+    color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.box{
+    padding: 5px;
+}
+.box img {
+    border-radius: 16px;
+}
+
+.carditem img {
+    background: linear-gradient(180deg, rgba(31, 29, 43, 0) 18.01%, #1F1D2B 136.79%);
+    border-radius: 16px 16px 0px 0px;
+    height: 146px;
+}
+
+.hallname {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #111111;
+}
+
+.rightbox button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4px 8px;
+    gap: 10px;
+    /* width: 76px;
+    height: 27px; */
+    background: #E9276D;
+    border-radius: 13px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+
+.moviefooter .leftbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.moviefooter .leftbox img {
+    width: 28px;
+    height: 28px;
+    background: transparent;
+}
+
+.verify {
+    width: 13px !important;
+    height: 13px !important;
+}
+
+p.hallname {
+    margin-bottom: 0;
+}
+
+.moviefooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hashtagbtns {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.hashtagbtns button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 160%;
+    color: #9A97AD;
+    padding: 4px 10px;
+    gap: 10px;
+    background: #F9F9F9;
+    border-radius: 30px;
+}
+
+p.heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #111111;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

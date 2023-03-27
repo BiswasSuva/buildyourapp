@@ -1,0 +1,83 @@
+.wrapper{
+    width: auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 7px 7px 12px rgb(0 0 0 / 5%);
+    height: 100%;
+    border-radius: 30px;
+    display: grid;
+    align-content: center;
+  }
+
+  .wrapper form{
+    height: 167px;
+    display: flex;
+    cursor: pointer;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #6990F2;
+  }
+  .wrapper form input{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+  }
+  form :where(i, p){
+    color: #6990F2;
+  }
+  form i{
+    font-size: 50px;
+  }
+  form p{
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  .form_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(19, 139, 251, 0.05);
+    border: 1px dashed #138BFB;
+    border-radius: 12px;
+    padding: 24px 35px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #6990F2;
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+#uploadFile {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+}
+.fa-cloud-upload-alt{
+    font-size: 50px;
+}
+.LogoBox {
+    margin-top: 60%;
+    padding: 2%;
+    text-align: center;
+
+}
+.LogoBox img{
+    max-width: 80px;
+    height: auto;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    right: 0;
+}

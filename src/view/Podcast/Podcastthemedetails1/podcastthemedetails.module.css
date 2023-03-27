@@ -1,0 +1,76 @@
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #F6F8FD;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    /* -ms-overflow-style: none; 
+    scrollbar-width: none;  */
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title h3 {
+    font-family: 'Urbanist', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #212121;
+    margin-bottom: 0;
+}
+
+.backbtn button i {
+    font-size: 18px !important;
+}
+
+.topheader {
+    margin: 30px 0;
+}
+
+.detailsbanner {
+    margin: 15px 0;
+}
+
+.bannerImage img {
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 40px;
+}
+
+.bannerImage h1 {
+    font-family: 'Urbanist', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #212121;
+    text-align: center;
+    /* margin-bottom: 18px; */
+    margin-top: 18px;
+}
+
+.bannerImage h6 {
+    font-family: 'Urbanist', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #424242;
+    text-align: center;
+}
+
+.audioplayer{
+    margin: 20px 0;
+    padding: 10px 0;
+}

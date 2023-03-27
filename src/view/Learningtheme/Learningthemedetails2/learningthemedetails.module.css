@@ -1,0 +1,167 @@
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background: #F6F8FD;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    /* -ms-overflow-style: none; 
+    scrollbar-width: none;  */
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.topheader {
+    margin: 15px 0;
+    padding: 20px 0;
+}
+
+.topsection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titlename h1 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #111111;
+    margin-bottom: 0;
+}
+
+.arrowlefticon button {
+    background: rgb(17, 17, 17, 0.08);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.banner {
+    margin: 15px 0;
+}
+
+.bannerarea {
+    padding: 80px 0;
+    height: 225px;
+    background-position: center center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    border-radius: 13.76px;
+    position: relative;
+}
+
+.playbtn {
+    text-align: center;
+}
+
+.playbtn img {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.playtab {
+    position: absolute;
+    bottom: 10px;
+    z-index: 99;
+    max-width: 90%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.paradetails h3 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #FDA701;
+}
+
+.paradetails h1 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #111111;
+    margin: 15px 0;
+}
+
+.btns button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+
+    border-radius: 16px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #FEFEFE;
+
+}
+
+.btns {
+    display: flex;
+}
+
+h1.title {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #111111;
+    margin-top: 30px;
+}
+
+p.paratxt {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.005em;
+    color: #66707A;
+}
+
+.material {
+    margin: 15px 0;
+}
+
+.main h1 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #111111;
+}
+.toolitems{
+    display: flex;
+    align-items: center;
+}
+.toolitems img{
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}

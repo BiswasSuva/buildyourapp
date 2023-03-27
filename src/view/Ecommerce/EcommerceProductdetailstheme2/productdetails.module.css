@@ -1,0 +1,332 @@
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background: #F6F8FD;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    height: 0 !important;
+    width: 0 !important;
+
+}
+
+.description {
+    padding: 20px 0px;
+}
+
+.producttitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #3B3B3B;
+    margin: 5px 0;
+}
+
+.productprice {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3B3B3B;
+}
+
+.descriptionproduct {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3B3B3B;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.description ul {
+    list-style: disc;
+    padding: 10px 20px;
+}
+
+.description ul li {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3B3B3B;
+}
+
+.sizedesc h5 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3B3B3B;
+}
+
+.selectsize {
+    margin: 20px 0;
+}
+
+.selectsize ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selectsize ul li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #888888;
+    border-radius: 12px;
+}
+
+.selectcolor ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selectcolor ul li {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.selectcolor h3 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3B3B3B;
+}
+
+.Relatedproducts {
+    margin: 20px 0;
+}
+
+.productinfo {
+    margin-right: 15px;
+    width: 98%;
+}
+
+.productwrapper h3 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3B3B3B;
+}
+
+.productcarou {
+    background: rgba(59, 59, 59, 20%);
+    border-radius: 20px;
+    height: 280px;
+    position: relative;
+}
+
+.busket {
+    width: 40px;
+    height: 40px;
+    background: rgba(59, 59, 59, 0.2);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px 0px;
+}
+
+.bag {
+
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.productcarou img {
+    max-width: 100%;
+    height: 100%;
+}
+
+h1.ptitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #3B3B3B;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+p.price {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3B3B3B;
+    text-align: center;
+}
+
+.addbag {
+    margin: 15px 0;
+    /* height: 65px; */
+
+}
+
+.busketbtmn {
+    display: flex;
+
+    background: #FFFFFF;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartbag {
+    width: 82%
+}
+
+.cartbag button {
+    background: linear-gradient(90deg, #5B5C5D 0%, #232526 100%);
+    border-radius: 15px;
+    padding: 12px 0px;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.wishlist {
+    width: 15%;
+}
+
+.wishlist button {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid #3B3B3B;
+}
+
+.dropdown {
+    padding: 30px 0;
+}
+
+.dropdown select {
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #BABABA;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #BABABA;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #3B3B3B;
+    padding-left: 20px;
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+
+    background: url('https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: right;
+    background-origin: content-box;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    outline: 0;
+}
+
+.dropdown select:focus {
+    box-shadow: none;
+    outline: 0;
+    border-top: 1px solid #BABABA;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #BABABA;
+}
+
+.dropdown .form-field {
+    position: relative;
+    z-index: 99;
+}
+
+.dropdown .form-field::after {
+    position: absolute;
+    content: "\f005";
+    font-family: FontAwesome;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #000;
+    font-size: 20px;
+}
+
+.banner{
+    padding: 20px 0;
+    position: relative;
+}
+.linepaging{
+    position: relative;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.allsections{
+    background: #fff;
+    box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 30px 30px 0 0;
+    margin-top: -30px;
+}
+.topheader{
+    margin: 15px 0;
+}
+.topheadersection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1.titleheader{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #3B3B3B;
+    margin-bottom: 0;
+}

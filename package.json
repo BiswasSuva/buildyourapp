@@ -1,0 +1,62 @@
+{
+  "name": "build_your_app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^1.7.0",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@sweetalert2/themes": "^5.0.15",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
+    "axios": "^1.2.2",
+    "bootstrap": "^5.2.3",
+    "color.js": "^1.2.0",
+    "datatables.net-dt": "^1.13.2",
+    "framer-motion": "^9.0.2",
+    "jquery": "^3.6.3",
+    "multiselect-react-dropdown": "^2.0.25",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-color": "^2.19.3",
+    "react-data-table-component": "^7.5.3",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^11.2.4",
+    "react-jquery-plugin": "^1.1.7",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-uuid": "^2.0.0",
+    "reactjs-localstorage": "^1.0.1",
+    "sass": "^1.57.1",
+    "sweetalert2": "^11.7.1",
+    "swiper": "^9.0.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

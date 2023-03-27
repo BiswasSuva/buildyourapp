@@ -1,0 +1,207 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #fff;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.recentslider {
+    position: relative;
+    top: -50px;
+}
+
+.ecommerceheader {
+    padding: 40px 0 90px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    color: #212121;
+    background: #4199FD;
+    border-radius: 0 0 0 40px;
+}
+
+p.gm {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.005em;
+    color: #1E1F23;
+    margin-bottom: 0;
+
+}
+
+p.profileName {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+    color: #1E1F23;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialIcons img {
+    width: 18px;
+}
+
+.recentlyplayed {
+    margin-top: 0px;
+    background-color: #fff;
+    border-radius: 50px 0 0 0;
+}
+
+.title2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+    color: #1E1F23;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0;
+    position: absolute;
+    top: -80px;
+}
+
+.recentslider {
+    /* display: flex; */
+}
+
+.recentbox {
+    padding: 5px;
+}
+
+.recentbox img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 8px;
+}
+
+h1.boxtitle {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+    color: #1E1F23;
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.year {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+    color: #515256;
+}
+
+.favoriteartist {
+    text-align: center;
+    padding: 5px;
+}
+
+.favoriteartist img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center center;
+
+}
+
+.favoriteartist p {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+}
+
+.title3 {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+    color: #1E1F23;
+}
+
+/*------------Audio----------*/
+.playaudio {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(65, 153, 253, 0.15) 0%, rgba(65, 153, 253, 0.1) 100%);
+    backdrop-filter: blur(15px);
+    left: 0;
+    right: 0;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 6%;
+    border-radius: 0 0 30px 30px;
+    z-index: 999;
+}
+
+.audioitem h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+    color: #1E1F23;
+    font-family: 'Lora', serif;
+    margin-bottom: 0;
+}
+
+.audioitem p {
+    font-style: normal;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 130%;
+    letter-spacing: 0.005em;
+    color: #1E1F23;
+    margin-bottom: 0;
+}
+.playbtn{
+    background: #4199FD;
+    padding: 15px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playbtn i{
+    color: #fff;
+    font-size: 12px;
+}

@@ -1,0 +1,434 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #FEFEFE;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.ecommerceheader {
+    padding: 40px 0 10px;
+    font-family: 'Urbanist', sans-serif;
+    font-style: normal;
+    color: #212121;
+}
+
+.profileimg img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+p.gmtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #111111;
+    margin-bottom: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+p.gmdesc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #78828A;
+    margin-bottom: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.socialIcons img {
+    width: 18px;
+    height: 18px;
+}
+
+.topcourse {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+    color: #111111;
+    margin-bottom: 0;
+}
+
+.seeall {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: #FDA701;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.seeall:hover{
+    text-decoration: none;
+    color: #FDA701;
+}
+p.cardtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #FDA701;
+    margin-bottom: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+p.cardparagaraph {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #111111;
+    margin-bottom: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.carTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carddetails img {
+    width: 71px;
+    height: 71px;
+    border-radius: 6px;
+}
+
+.progresstitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #66707A;
+}
+
+.progressperct {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.005em;
+    color: #111111;
+    text-decoration: none;
+}
+
+.progressperct:hover {
+    text-decoration: none;
+    color: #111111;
+}
+
+.cardfullbox {
+    background: #FEFEFE;
+    box-shadow: 20px 30px 60px rgba(206, 206, 206, 0.25);
+    border-radius: 10px;
+    padding: 7% 2% 7%;
+    margin-top: 5%;
+}
+
+.imgstyle {
+    display: flex;
+    align-items: center;
+}
+
+.imgstyle img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.img2 {
+    margin-left: -10px;
+}
+
+.totalImage {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #111111;
+    margin-left: -10px;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #FDFDFD;
+}
+
+.commentsdays {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.message,
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message img {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+}
+
+.time img {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+}
+
+.commentsdays span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #111111;
+}
+
+.featurebanneritem img {
+    border-radius: 12px;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+
+.featurebanneritem {
+    position: relative;
+}
+
+.topfeatureddes {
+    position: absolute;
+    top: 0;
+    display: flex;
+    z-index: 99;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+    left: 0;
+    right: 0;
+}
+
+.starticon {
+    color: #FDA701;
+}
+
+.rating p {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.save {
+    width: 32px;
+    height: 32px;
+    background: #FEFEFE;
+    box-shadow: 0px 20px 56px rgba(0, 0, 0, 0.1);
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save i {
+    color: #528F65;
+}
+
+.btndoll {
+    background: #FEFEFE;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 12px;
+    justify-content: center;
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+    z-index: 99;
+}
+
+.btndoll p {
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.005em;
+    color: #528F65;
+}
+
+.activecourse {
+    background: #FEFEFE;
+    border: 1px solid #E3E7EC;
+    border-radius: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.activecourse i {
+    font-size: 17px;
+    color: #9CA4AB;
+    margin-left: 10px;
+}
+
+.activecourse input {
+    height: 52px;
+    border-radius: 24px;
+    /* padding: 0px 0px 0px 0px; */
+    font-size: 12px;
+    width: 100%;
+    border: none;
+}
+
+.activecourse img {
+    width: 24px;
+    height: 20px;
+    margin-right: 8px;
+    margin-left: 10px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.activecourse input:focus {
+    outline: 0;
+    box-shadow: none;
+    border: transparent;
+}
+
+.searchbox {
+    margin: 15px 0;
+}
+
+.btnitem button {
+    background: #FEFEFE;
+    border: 1px solid #E3E7EC;
+    border-radius: 60px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #9CA4AB;
+    margin-right: 5px;
+    padding: 8px 16px;
+    margin-left: 5px;
+}
+
+.btnitem button:focus {
+    background: #528F65;
+    box-shadow: 0px 40.1333px 68.8px rgba(242, 153, 74, 0.12);
+    border-radius: 60px;
+    color: #FEFEFE;
+}
+
+.categorybtn {
+    margin: 20px 0;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.subjectline {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #FDA701;
+    margin-bottom: 0;
+}
+
+.paratitle {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #111111;
+    max-width: 80%;
+}
+
+.authordetails img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 10px;
+}
+
+.authordetails p.name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #111111;
+    margin-bottom: 0;
+}
+.bannerdetails{
+    margin: 15px 0;
+}
+.authordetails p.designation {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.005em;
+    color: #66707A;
+    margin-bottom: 0;
+}
+.featuredBanner{
+    margin: 15px 0;
+}

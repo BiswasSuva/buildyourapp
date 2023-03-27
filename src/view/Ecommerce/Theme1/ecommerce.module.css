@@ -1,0 +1,325 @@
+/* .scrollProblm::-webkit-scrollbar{
+    display: none;
+  } */
+  .scrollProblm{
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .scrollProblm::-webkit-scrollbar{
+    /* -ms-overflow-style: none; 
+    scrollbar-width: none;  */
+    height: 0 !important;
+    width: 0 !important;
+   
+  }
+
+
+.ecommerceheader {
+    padding: 10px 0;
+}
+
+.ecommerceheader {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #455AF7;
+}
+
+.cnmain {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.has23search {
+    width: 100%;
+    position: relative;
+}
+
+.has23search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has23search .formcontrolfeedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #000;
+    right: 5px;
+    top: 15%;
+    background: #fff;
+}
+
+.has23search input[type=text] {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 15px;
+    height: 54px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.005em;
+    color: #A3A3A3;
+}
+
+.bannerarea {
+    background: url(../../../assets/images/ThemeImages/Card.png) no-repeat;
+    width: 100%;
+    height: 210px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: grid;
+    align-content: space-evenly;
+}
+.bannerarea .discounttitle{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 153%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    max-width: 70%;
+}
+.productitem .secondPersonImg{
+    max-width: 177px;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.title {
+    max-width: 200px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 153%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #041354;
+    margin: 0;
+}
+.ecommerceheader .title_TExt{
+    font-weight: 400;
+}
+.ecommerceheader .count_Image{
+    width: 8px;
+    height: 8px;
+    background: #F6303E;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    border-radius: 50%;
+}
+.ecommerceheader .cartImage{
+    width: 28px;
+    height: 28px;
+    position: relative;
+}
+.paradetails{
+    margin-top: 30px;
+}
+.paradetails p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    max-width: 170px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    max-width: 60%;
+}
+.productmain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+.productmain .productitem {
+    width: 48%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.productmain .productitem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;        
+}
+.productaddBTn{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+.productaddBTn .productaddBTnInner{
+    background-color: #041354;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.productaddBTn .productaddBTnInner .image{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.productdescription{
+    border-radius: 0 0 15px 15px; 
+    background: #fff;
+    padding: 10px;
+}
+.productmain .productitem h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+
+.productbottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.categoryarea ul{
+    list-style-type: none;
+}
+.categoryarea ul li{
+    margin-right: 12px;
+}
+.li_menu{
+    /* width:55px; */
+    width:100%;
+    height: 55px;
+    /* height: 80px; */
+    background-color: #EBF0f5;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 0;
+}
+.gridImage{
+    /* max-width: 50% !important; */
+    max-width: 100% !important;
+    object-fit: contain;
+}
+
+.allitems{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.005em;
+    color: #0A0A0A;
+    text-align: center;
+}
+.price p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #858585;
+    margin-bottom: 0;
+}
+.review{
+    font-size: 12px;
+}
+.review i{
+    color: #FACD11;
+}
+.bannerwrapper{
+    margin: 20px 0;
+}
+.bannerht{
+    height: 210px !important;
+}
+/* .banner{
+    position: relative;
+}
+.banner .slick-next{
+    position: absolute !important;
+    right: 5% !important;
+    width: 20px !important;
+    height: 20px !important;
+    display: block !important;
+    top: 90% !important;
+} */
+
+
+.notch {
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 20px;
+}
+
+.notch .notchwrap .notchleft .time {
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.notch .notchwrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.notch .notchwrap .notchright .notchrighticon{
+    color: #000;
+    font-size: 14px;
+    padding: 0 10px;
+
+}

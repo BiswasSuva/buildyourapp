@@ -1,0 +1,347 @@
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background: #F6F8FD;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    /* -ms-overflow-style: none; 
+    scrollbar-width: none;  */
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.banner {
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    padding: 120px 0;
+}
+
+.playbtn {
+    text-align: center;
+}
+
+.playbtn img {
+    width: 56px;
+    height: 56px;
+}
+
+h1.titile {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #212121;
+    margin-bottom: 0;
+}
+
+.saveebtn img {
+    width: 30px;
+    height: 19px;
+    object-fit: contain;
+}
+
+.introuiux {
+    padding: 25px 0;
+}
+
+.btnuiux {
+    background: rgba(51, 94, 247, 0.08);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #335EF7;
+}
+
+p.rating {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #424242;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p.rating img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+p.price {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #335EF7;
+}
+
+p.price span {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-decoration-line: line-through;
+    color: #9E9E9E;
+    margin-left: 15px;
+}
+
+.txtbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txtbox p {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #424242;
+}
+
+.mentorPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mentorPart a {
+    color: #335EF7;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #9E9E9E;
+    padding: 12px 0;
+}
+
+.mentorPart a:focus {
+    color: #335EF7;
+    border-bottom: 3px solid #335EF7;
+}
+
+.tabfunction {
+    /* margin: 20px 0; */
+}
+
+h1.mentor {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #212121;
+}
+
+.aboutdesc h2 {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #212121;
+}
+
+.aboutdesc p {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #424242;
+    text-align: justify;
+}
+
+.tools {
+    margin: 20px 0;
+}
+
+.toolsitem h1 {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #212121;
+}
+
+.btncourse {
+    width: 100%;
+    background: #335EF7;
+    box-shadow: 4px 8px 24px rgba(51, 94, 247, 0.25);
+    border-radius: 100px;
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    padding: 18px 0;
+}
+
+.toolsitem img {
+    margin-bottom: 30px;
+}
+
+.namedesignation h1 {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #212121;
+}
+
+.namedesignation p {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #616161;
+}
+
+.namedetails {
+    margin: 20px 0;
+}
+
+.nameitem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.namedetails {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nameitem img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.namedesignation h1 {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #212121;
+}
+
+.namedesignation p {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #616161;
+    margin-bottom: 0;
+}
+.aboutparagraph{
+    margin: 25px 0;
+}
+.aboutparagraph h2 {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.aboutparagraph p {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #424242;
+}
+
+
+
+.notch {
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.notch .notchwrap .notchleft .time {
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.notch .notchwrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.notch .notchwrap .notchright .notchrighticon{
+    color: #000;
+    font-size: 14px;
+    padding: 0 10px;
+
+}
