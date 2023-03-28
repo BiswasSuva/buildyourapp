@@ -7,6 +7,8 @@ import SearchableDropDown from "../../Component/CustomComponent/SearchableDropDo
 import { motion, AnimatePresence } from "framer-motion";
 import Multisteps from "../../Component/Multistepper/Multisteps"
 import Datatable from "../../Component/Datatable/Datatable";
+
+import { useElementList } from "../../Providers/ElemetProvider";
 const arr = [
   {
     id: "c408c71f-f1a5-7bcf-7bab-a7b4f74b5ff6",
@@ -96,8 +98,10 @@ const arr = [
   },
 ];
 
-function RightSidebar({ globalindex, feilds, elementList, setElementList }) {
+function RightSidebar({ globalindex, feilds ,setRender}) {
   console.log("selected", feilds);
+  // console.log("globalIndex")
+  const {elementList,setElementList} = useElementList()
 
 
   const [feildList, setFeildList] = useState([]);
@@ -176,10 +180,11 @@ function RightSidebar({ globalindex, feilds, elementList, setElementList }) {
                     value={item.value}
                     onChange={(val) => {
                       let updated = [...elementList];
-                      //console.log(updated[globalindex]);
+                      // console.log(val.target.value);
                       updated[globalindex].elementTypeName.field[index].value =
                         val.target.value;
                       setElementList(updated);
+                      setRender((prev)=>!prev)
                     }}
                   />
                 ) : item.elementFieldType.elementFieldType?.toLowerCase() ==

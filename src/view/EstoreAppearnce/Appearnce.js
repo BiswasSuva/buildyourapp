@@ -35,14 +35,17 @@ import HttpClient from "../../utils/HttpClient";
 import Swal from "sweetalert2";
 import { useEstoreRightSidearContext } from "../../Providers/EcomRightSidebar";
 import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
+import { useElementList } from "../../Providers/ElemetProvider";
 
 function Appearnce() {
   const { id, moduleID } = useParams();
-  const [elementList, setElementList] = useState([]);
+  // const [elementList, setElementList] = useState([]);
   const [deletedElement, setDeletedElement] = useState([]);
   const [fetch, setFetch] = useState(false);
   const { component, setRenderComponent } = useEstoreRightSidearContext();
   const [loading, setLoading] = useState(false);
+  const {elementList,setElementList} = useElementList()
+  // console.log("my elemenmt");
 
   useEffect(() => {
     fetchTheme();
@@ -186,8 +189,8 @@ function Appearnce() {
                                     setRenderComponent(
                                       <RightSidebar
                                         globalindex={index}
-                                        elementList={elementList}
-                                        setElementList={setElementList}
+                                        // elementList={elementList}
+                                        // setElementList={setElementList}
                                         feilds={item}
                                       />
                                     );

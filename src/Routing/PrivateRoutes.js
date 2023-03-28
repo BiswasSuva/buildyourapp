@@ -19,64 +19,67 @@ import { OttSiderbarContext } from "../Providers/OttRightSidebar";
 import { PodcastSidebarContext } from "../Providers/PodcastRightSidebar";
 import { EventSiderbarContext } from "../Providers/EventRightSidebar";
 import { NewsSiderbarContext } from "../Providers/NewsRightSidebar";
+import { ElementProvider } from "../Providers/ElemetProvider";
 
 function PrivateRoutes() {
   const { userData } = useSelector((state) => state.User);
   return (
-    <Routes>
-      <Route index element={<Navigate to={userData.nextURL} />} />
-      <Route element={<DashboardLayout />}>
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="logo" element={<Logo />} />
+    <ElementProvider>
+      <Routes>
+        <Route index element={<Navigate to={userData.nextURL} />} />
+        <Route element={<DashboardLayout />}>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="logo" element={<Logo />} />
 
-        <Route
-          path="E-Store/appearnce/:id/:moduleID"
-          element={
-            <EcomSiderbarContext>
-              <Appearnce />
-            </EcomSiderbarContext>
-          }
-        />
+          <Route
+            path="E-Store/appearnce/:id/:moduleID"
+            element={
+              <EcomSiderbarContext>
+                <Appearnce />
+              </EcomSiderbarContext>
+            }
+          />
 
-        <Route
-          path="OTT/appearnce/:id/:moduleID"
-          element={
-            <OttSiderbarContext>
-              <OTTAppearnce />
-            </OttSiderbarContext>
-          }
-        />
-        <Route
-          path="Podcast/appearnce/:id/:moduleID"
-          element={
-            <PodcastSidebarContext>
-              <PodcastAppearence />
-            </PodcastSidebarContext>
-          }
-        />
-        <Route
-          path="Events/appearnce/:id/:moduleID"
-          element={
-            <EventSiderbarContext>
-              <EventAppearnce />
-            </EventSiderbarContext>
-          }
-        />
-        <Route
-          path="News/appearnce/:id/:moduleID"
-          element={
-            <NewsSiderbarContext>
-              <NewsAppearnce />
-            </NewsSiderbarContext>
-          }
-        />
+          <Route
+            path="OTT/appearnce/:id/:moduleID"
+            element={
+              <OttSiderbarContext>
+                <OTTAppearnce />
+              </OttSiderbarContext>
+            }
+          />
+          <Route
+            path="Podcast/appearnce/:id/:moduleID"
+            element={
+              <PodcastSidebarContext>
+                <PodcastAppearence />
+              </PodcastSidebarContext>
+            }
+          />
+          <Route
+            path="Events/appearnce/:id/:moduleID"
+            element={
+              <EventSiderbarContext>
+                <EventAppearnce />
+              </EventSiderbarContext>
+            }
+          />
+          <Route
+            path="News/appearnce/:id/:moduleID"
+            element={
+              <NewsSiderbarContext>
+                <NewsAppearnce />
+              </NewsSiderbarContext>
+            }
+          />
 
-        <Route path="color-scheme" element={<ColorScheme />} />
-      </Route>
-      <Route path="/welcome" element={<Welcome />} />
-      <Route path="/profession" element={<Profession />} />
-      <Route path="/modules" element={<Modules />} />
-    </Routes>
+          <Route path="color-scheme" element={<ColorScheme />} />
+        </Route>
+        <Route path="/welcome" element={<Welcome />} />
+        <Route path="/profession" element={<Profession />} />
+        <Route path="/modules" element={<Modules />} />
+      </Routes>
+    </ElementProvider>
   );
 }
 

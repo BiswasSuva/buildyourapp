@@ -8,6 +8,7 @@ export const useEstoreRightSidearContext = () => {
 
 export const EcomSiderbarContext = ({ children }) => {
   const [component, setComponent] = useState("");
+  const [render,serRender] = useState(false)
 
   const setRenderComponent = (component) => {
     setComponent(component);

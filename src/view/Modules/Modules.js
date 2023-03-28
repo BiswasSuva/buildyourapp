@@ -28,7 +28,7 @@ const columnsForModules = {
     items: [],
   },
   [uuid()]: {
-    name: "Not Selected Modules",
+    name: "Other Modules",
     items: [],
   },
 };
