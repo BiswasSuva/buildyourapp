@@ -41,6 +41,14 @@ export async function updateThemeElement(id, data) {
   );
   return result;
 }
+export async function updateElementFeildList(data) {
+  let result = await HttpClient.requestData(
+    `theme-wise-element-fields`,
+    "PUT",
+    data
+  );
+  return result;
+}
 
 export async function uploadImage(data) {
   let result = await HttpClient.fileUplode("uploadlogoimage", "POST", data);

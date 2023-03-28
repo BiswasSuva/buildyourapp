@@ -50,7 +50,7 @@ const arr = [
 ];
 
 function Section4({fetch, feild = [] }) {
-  const data = useEcomCategory({refetch:fetch}); 
+  const data = useEcomCategory(); 
   let noOItems = feild.find((item) => item.key === "Number of Items")?.value;
   let coloumn = feild.find((item) => item.key === "Number of Rows")?.value;
   let borderRadius = feild.find((item) => item.key === "Border Radius")?.value;

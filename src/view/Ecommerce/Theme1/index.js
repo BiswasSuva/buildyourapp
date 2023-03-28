@@ -30,7 +30,7 @@ function index({ fetch,elementList = [] }) {
               {item.elementTypeName.title === "Default Theme Banner" && (
                 <Section3  fetch={fetch}></Section3>
               )}
-              {item.elementTypeName.title === " Default Theme Categories " && (
+              {item.elementTypeName.title === "Default Theme Categories" && (
                 <Section4 fetch={fetch} feild={item.elementTypeName.field}></Section4>
               )}
               {item.elementTypeName.title === "Default Theme Product List" && (

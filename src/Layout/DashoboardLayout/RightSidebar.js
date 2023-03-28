@@ -9,6 +9,9 @@ import Multisteps from "../../Component/Multistepper/Multisteps"
 import Datatable from "../../Component/Datatable/Datatable";
 
 import { useElementList } from "../../Providers/ElemetProvider";
+import HttpClient from "../../utils/HttpClient";
+import { useParams } from "react-router-dom";
+import { updateElementFeildList } from "../../api/appApi";
 const arr = [
   {
     id: "c408c71f-f1a5-7bcf-7bab-a7b4f74b5ff6",
@@ -98,11 +101,12 @@ const arr = [
   },
 ];
 
-function RightSidebar({ globalindex, feilds ,setRender}) {
+function RightSidebar({ globalindex, feilds }) {
   console.log("selected", feilds);
-  // console.log("globalIndex")
   const {elementList,setElementList} = useElementList()
-
+  
+const {id}= useParams()
+  // console.log("elementList",useParams())
 
   const [feildList, setFeildList] = useState([]);
   useEffect(() => {
@@ -132,7 +136,29 @@ function RightSidebar({ globalindex, feilds ,setRender}) {
 
 
 
+  const  updateFeildsValue =async ()=>{
+    // alert("jjj")
+    // console.log(feilds)
+    let updatedFeild = feilds.elementTypeName.field.map((item)=>{
+      return {
+        key: item.key,
+        value:item.value
 
+
+      }
+    })
+    let data ={
+      themeID:id,
+      elementID:feilds?.elementID,
+      fieldsList:updatedFeild
+      // elementID:
+    }
+    console.log(data);
+    let result  = await updateElementFeildList(data)
+    console.log(result);
+  
+  
+  }
 
   // const listItems = document.getElementsByClassName('list_option');
   // for (let i = 0; i < listItems.length; ++i) {
@@ -184,7 +210,6 @@ function RightSidebar({ globalindex, feilds ,setRender}) {
                       updated[globalindex].elementTypeName.field[index].value =
                         val.target.value;
                       setElementList(updated);
-                      setRender((prev)=>!prev)
                     }}
                   />
                 ) : item.elementFieldType.elementFieldType?.toLowerCase() ==
@@ -864,7 +889,8 @@ function RightSidebar({ globalindex, feilds ,setRender}) {
           className="form-submit-button submit-button jf-form-buttons jsTest-submitField conditionallyDisabled"
           data-component="button"
           data-content=""
-          disabled=""
+          // disabled=""
+          onClick={updateFeildsValue}
         >
           Submit
         </button>
