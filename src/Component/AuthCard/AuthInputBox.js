@@ -25,7 +25,7 @@ function AuthInputBox({ label = "label", type = "text", placeholder = "placehold
       <div className="form-group inputgrp" style={style}>
         {/* <div className='field'> */}
        
-        <i class="fa-solid fa-user"></i>
+        <i className="fa-solid fa-user"></i>
         <input
           type={type}
           value={value}

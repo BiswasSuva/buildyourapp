@@ -6,7 +6,7 @@ function Topheader() {
             <div className="container-fluid">
                 <div className={style.topsection}>
                     <div className={style.arrowlefticon}>
-                        <button><i class="fa-solid fa-arrow-left-long"></i></button>
+                        <button><i className="fa-solid fa-arrow-left-long"></i></button>
                     </div>
                     <div className={style.titlename}>
                         <h1>Play Course</h1>

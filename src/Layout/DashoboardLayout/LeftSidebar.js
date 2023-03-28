@@ -45,7 +45,7 @@ function LeftSidebar() {
                 className="sidebar__nav-link"
               >
                 {/* <img src={item.moduleImage} /> {item.moduleName} */}
-                <i class="fa-solid fa-box"></i> {item.moduleName}
+                <i className="fa-solid fa-box"></i> {item.moduleName}
               </Link>
             </li>
           );

@@ -29,7 +29,7 @@ function OttTypes({ setFetch, onEdit }) {
           action: (
             <div className="d-flex align-items-center justify-content-between">
               <button
-                class="editbtns"
+                className="editbtns"
                 onClick={() => {
                   setRenderComponent(
                     <AddOttTypes
@@ -40,10 +40,10 @@ function OttTypes({ setFetch, onEdit }) {
                   );
                 }}
               >
-                <i class="fa-solid fa-pen-to-square"></i>
+                <i className="fa-solid fa-pen-to-square"></i>
               </button>
-              <button class="deletebtns" onClick={() => deleteHandle(item._id)}>
-                <i class="fa-solid fa-delete-left"></i>
+              <button className="deletebtns" onClick={() => deleteHandle(item._id)}>
+                <i className="fa-solid fa-delete-left"></i>
               </button>
             </div>
           ),

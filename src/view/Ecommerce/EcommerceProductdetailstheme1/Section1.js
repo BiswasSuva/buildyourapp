@@ -7,7 +7,7 @@ function Section1() {
             <div className='container-fluid'>
                 <div className="d-flex align-items-center justify-content-between">
                     <div className={style.backarrow}>
-                        <i class="fa-solid fa-arrow-left-long"></i>
+                        <i className="fa-solid fa-arrow-left-long"></i>
                     </div>
                     <div className={style.pgtitle}>
                         <h2>Detail Product</h2>

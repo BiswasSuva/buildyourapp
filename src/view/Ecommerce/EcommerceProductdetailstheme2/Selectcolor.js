@@ -35,7 +35,7 @@ function Selectcolor() {
                   <option>test</option>
                   <option>test</option>
                   <div className='star-icon'>
-                  <i class="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                   </div>
                 </select>
               </div>

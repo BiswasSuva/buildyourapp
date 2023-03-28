@@ -25,7 +25,7 @@ function Datatable({ columns = [], rows = [] }) {
   };
 
   return (
-    <div class=" mytable" style={{width: "100%" }}>
+    <div className=" mytable" style={{width: "100%" }}>
       <table
         id="sidedatatable"
         className="table  table-bordered table-responsive"
@@ -54,11 +54,11 @@ function Datatable({ columns = [], rows = [] }) {
                 <td>fdijkfdjfd fdjhkfdhfd fdhjfdhfd fdhjfdhfd fdjhkfdhjfd </td>
                 <td>
                   <div className="d-flex align-items-center justify-content-between">
-                    <button class="editbtns">
-                      <i class="fa-solid fa-pen-to-square"></i>
+                    <button className="editbtns">
+                      <i className="fa-solid fa-pen-to-square"></i>
                     </button>
-                    <button class="deletebtns">
-                      <i class="fa-solid fa-delete-left"></i>
+                    <button className="deletebtns">
+                      <i className="fa-solid fa-delete-left"></i>
                     </button>
                   </div>
                 </td> */}

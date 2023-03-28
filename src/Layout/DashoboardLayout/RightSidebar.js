@@ -106,7 +106,7 @@ function RightSidebar({ globalindex, feilds, elementList, setElementList }) {
   }, [feilds,globalindex]);
 
   function validationChecking(validateArray) {
-    console.log(validateArray);
+    //console.log(validateArray);
     let arr = [];
     for (const element of validateArray) {
       let find = feildList.find(
@@ -118,7 +118,7 @@ function RightSidebar({ globalindex, feilds, elementList, setElementList }) {
       }
     }
     if (validateArray.length == arr.length) {
-      // console.log();
+      // //console.log();
       return true;
     } else {
       // alert("kjk")
@@ -130,12 +130,12 @@ function RightSidebar({ globalindex, feilds, elementList, setElementList }) {
 
 
 
-  const listItems = document.getElementsByClassName('list_option');
-  for (let i = 0; i < listItems.length; ++i) {
-    listItems[i].addEventListener('click', function () {
-      document.getElementsByClassName('list_btn')[0].innerHTML = this.title;
-    });
-  }
+  // const listItems = document.getElementsByClassName('list_option');
+  // for (let i = 0; i < listItems.length; ++i) {
+  //   listItems[i].addEventListener('click', function () {
+  //     document.getElementsByClassName('list_btn')[0].innerHTML = this.title;
+  //   });
+  // }
   return (
     <>
       <motion.div
@@ -176,7 +176,7 @@ function RightSidebar({ globalindex, feilds, elementList, setElementList }) {
                     value={item.value}
                     onChange={(val) => {
                       let updated = [...elementList];
-                      console.log(updated[globalindex]);
+                      //console.log(updated[globalindex]);
                       updated[globalindex].elementTypeName.field[index].value =
                         val.target.value;
                       setElementList(updated);
@@ -242,9 +242,9 @@ function RightSidebar({ globalindex, feilds, elementList, setElementList }) {
                     value={item.value == "none" ? "" : item.value?.name}
                     onClick={(val) => {
                       let updated = [...elementList];
-                      console.log(
-                        updated[globalindex].elementTypeName.field[index].value
-                      );
+                      //console.log(
+                        // updated[globalindex].elementTypeName.field[index].value
+                      // );
                       updated[globalindex].elementTypeName.field[index].value =
                         val;
                       setElementList(updated);
@@ -256,9 +256,9 @@ function RightSidebar({ globalindex, feilds, elementList, setElementList }) {
                     value={item.value}
                     onClick={(val) => {
                       let updated = [...elementList];
-                      console.log(
-                        updated[globalindex].elementTypeName.field[index].value
-                      );
+                      //console.log(
+                        // updated[globalindex].elementTypeName.field[index].value
+                      // );
                       updated[globalindex].elementTypeName.field[index].value =
                         val;
                       setElementList(updated);
@@ -273,7 +273,7 @@ function RightSidebar({ globalindex, feilds, elementList, setElementList }) {
                     value={item.value}
                     onChange={(val) => {
                       let updated = [...elementList];
-                      console.log(updated[globalindex]);
+                      //console.log(updated[globalindex]);
                       updated[globalindex].elementTypeName.field[index].value =
                         val.target.value;
                       setElementList(updated);
