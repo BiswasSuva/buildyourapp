@@ -37,7 +37,7 @@ function Index() {
     }
     let result = await createScreen(data)
     if(result&&result.status){
-      navigate("/color-scheme")
+      // navigate("/color-scheme")
     }
   }
 
@@ -70,7 +70,7 @@ setLogo(screen.logo_img?screen.logo_img:"")
       </div>
 
       <div className="col-lg-7 col-xl-7 col-md-7 col-12" style={{display: "grid", alignContent: "center"}}>
-      <ColorScheme/>
+   {logo&&   <ColorScheme logo={logo}/>}
       </div>
       
     </DashboardUi>

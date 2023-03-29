@@ -7,15 +7,15 @@ import { createScreen } from "../../api/appApi";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
-function Index() {
+function Index({logo}) {
   
   const screen = useScreen();
   const navigate = useNavigate();
-  const [logo, setLogo] = useState("");
+  // const [logo, setLogo] = useState("");
   const [primaryColor, setPrimaryColor] = useState("");
   const [secondaryColor, setSecondaryColor] = useState("");
   useEffect(() => {
-    setLogo(screen.logo_img ? screen.logo_img : "");
+    // setLogo(screen.logo_img ? screen.logo_img : "");
     setPrimaryColor(screen.primary_col ? screen.primary_col : "");
     setSecondaryColor(screen.secondary_col ? screen.secondary_col : "");
   }, [screen]);
@@ -41,8 +41,8 @@ function Index() {
     if (result && result.status) {
       // navigate("/color-scheme")
       Swal.fire({
-        title: "Thank You!",
-        icon: "Success"
+        title: "Move to next  step and design your App",
+        icon: "success"
       });
     }
   };

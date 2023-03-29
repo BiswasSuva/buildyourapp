@@ -8,11 +8,7 @@ const sidebarContent = [
     url: "/logo",
     name: "Logo",
   },
-  {
-    icon: "fa-solid fa-palette",
-    url: "/color-scheme",
-    name: "Colors",
-  },
+
   
 ];
 
