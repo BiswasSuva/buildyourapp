@@ -40,6 +40,7 @@ function ManageCategory({ setFetch, onEdit }) {
               </button>
               <button className="deletebtns" onClick={() => deleteHandle(item._id)}>
                 <i className="fa-solid fa-delete-left"></i>
+                {/* <i class="fa-regular fa-trash-can"></i> */}
               </button>
             </div>
           ),
