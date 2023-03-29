@@ -1487,6 +1487,7 @@ a.sidebar__nav-link i {
   font-size: 18px;
   line-height: 25px;
   text-align: center;
+  /* text-align: left; */
   color: #fff;
 }
 
@@ -1540,9 +1541,10 @@ a.sidebar__nav-link i {
 .colour-picker {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
+
 }
 
 .colour-picker button {
