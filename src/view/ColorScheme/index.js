@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 function Index() {
+  
   const screen = useScreen();
   const navigate = useNavigate();
   const [logo, setLogo] = useState("");
@@ -40,8 +41,8 @@ function Index() {
     if (result && result.status) {
       // navigate("/color-scheme")
       Swal.fire({
-        title:"Thank You!",
-        icon:"Success"
+        title: "Thank You!",
+        icon: "Success"
       });
     }
   };
@@ -98,8 +99,9 @@ function Index() {
         </div>
         <div className="row mt-5">
           <div className="col-lg-12 col-md-12 col-xl-12">
+             {/* <SketchPicker /> */}
             <div className="colour-picker">
-              {/* <SketchPicker /> */}
+             
               <label>Primary Colour</label>
               <input
                 value={primaryColor}
@@ -107,6 +109,7 @@ function Index() {
                 type="color"
                 className="form-control mb-3"
               />
+
               <label>Secondary Colour</label>
               <input
                 value={secondaryColor}
@@ -118,6 +121,7 @@ function Index() {
                 Confirm Color
               </button>
             </div>
+
           </div>
         </div>
       </div>
