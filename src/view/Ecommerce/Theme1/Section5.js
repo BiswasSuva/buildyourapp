@@ -59,7 +59,7 @@ fetchProduct()
   },[rerender])
 
   const fetchProduct = async()=>{
-    alert("lala")
+    // alert("lala")
     let result  = await getEcomProduct()
     if(result && result.status && result.data?.length>0){
       setProducts(result.data)
@@ -85,13 +85,13 @@ fetchProduct()
                       <img src={item.image[0]} alt="Product" className='img-fluid' />
                     </div>
                     <div className={style.productaddBTn}>
-                      {cartIcon == "yes" && <div className={style.productaddBTnInner}>
+                      {cartIcon == "yes" && <div className={style.productaddBTnInner} style={{background:cartcolor}}>
                         <img src={plus} className={`img-fluid ${style.image}`} />
                       </div>}
                     </div>
                   </div>
                   <div className={style.productdescription}>
-                    <h4>{item.productName}</h4>
+                    <h4 style={{fontSize:TitleFontSize,color:TitleFontColor}}>{item.productName}</h4>
                     <div className={style.productbottom}>
                       <div className={style.price}>
                         <p>${item.sellPrice}</p>

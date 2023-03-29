@@ -9,6 +9,8 @@ import LogoAction from "./LogoAction";
 import VerticalSpin from "../../Component/Loaders/VerticalSpin";
 import { useNavigate } from "react-router";
 import useScreen from "../../customHooks/useScreen";
+import ColorScheme from "../ColorScheme/index"
+
 function Index() {
   const navigate = useNavigate()
   const screen = useScreen()
@@ -45,8 +47,8 @@ setLogo(screen.logo_img?screen.logo_img:"")
   )
 
   return (
-    <DashboardUi>
-      <div className="col-lg-12 col-xl-12 col-md-12 col-12">
+    <DashboardUi style={{marginRight: "0"}} >
+      <div className=" col-lg-5 col-xl-5 col-md-5 col-12">
         <Mainmobile>
           {loading ? (
           <div>  <VerticalSpin /></div>
@@ -66,6 +68,11 @@ setLogo(screen.logo_img?screen.logo_img:"")
           )}
         </Mainmobile>
       </div>
+
+      <div className="col-lg-7 col-xl-7 col-md-7 col-12" style={{display: "grid", alignContent: "center"}}>
+      <ColorScheme/>
+      </div>
+      
     </DashboardUi>
   );
 }

@@ -26,10 +26,10 @@ function Section3({fetch,feild = []}) {
                 <Slider {...settings}>
                     {banner.length > 0 ? (
                         banner.map((item) => {
-                            return <img src={item.image} key={item._id} className={style.bannerht} style={{height:`${BannerHeight}px`,width:`${BannerWidth}px`}} />;
+                            return <img src={item.image} key={item._id} className={style.bannerht} style={{height:`${BannerHeight}px`,width:`${BannerWidth}px`,borderRadius:"50%"}} />;
                         })
                     ) : (
-                        <div className={style.bannerarea} style={{height:`${BannerHeight}px`,width:`${BannerWidth}px`}}>
+                        <div className={style.bannerarea} >
                             <div className={style.discounttitle}>
                 Uniqlo Basic Edition Special Discount Up To 60%
               </div>

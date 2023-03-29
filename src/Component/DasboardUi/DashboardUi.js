@@ -1,8 +1,8 @@
 import React from "react";
 
-function DashboardUi({ children }) {
+function DashboardUi({ children,style={} ,className="" }) {
   return (
-    <main id="sectionEnrollment">
+    <main className={className} style={style}  id="sectionEnrollment">
       <div className="container-fluid">
         <div className="row">{children}</div>
       </div>

@@ -47,8 +47,8 @@ function Index() {
     }
   };
   return (
-    <section id="colorScheme">
-      <div className="container">
+    
+        <>
         <div className="row">
           <div className="col-lg-12 col-xl-12 col-md-12 col-12">
             <div className="heading-title">
@@ -124,8 +124,8 @@ function Index() {
 
           </div>
         </div>
-      </div>
-    </section>
+        </>
+
   );
 }
 
