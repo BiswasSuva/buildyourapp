@@ -35,7 +35,7 @@ function Component1({
         data={categories}
         valueKey="_id"
         showingKey="name"
-        className="title-dynamic"
+        className=""
         value={categoryID}
         onChange={(val) => updateFields({ categoryID: val })}
       />

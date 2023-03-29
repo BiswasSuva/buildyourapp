@@ -12,7 +12,7 @@ import { useEstoreRightSidearContext } from "../../Providers/EcomRightSidebar";
 function ManageSubcategory({setFetch }) {
   const [data, setData] = useState([]);
   const [editEnable, setEditEnable] = useState(false);
-  const category = useEcomCategory({ refetch: false });
+  const category = useEcomCategory();
   const { component, setRenderComponent } = useEstoreRightSidearContext();
 
   useEffect(() => {

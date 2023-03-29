@@ -9,6 +9,8 @@ function Section1({ feild }) {
   const titleFontSize = feild.find((item)=>item.key == "Title Font Size")?.value
   const titleFontWeight = feild.find((item)=>item.key == "Title Font Weight")?.value
   const titleFontcolor = feild.find((item)=>item.key == "Title Font Color")?.value
+  const titleFontFamily = feild.find((item)=>item.key == "Title Font Family")?.value
+console.log("family",titleFontFamily);
   const cartIconShow = feild.find((item)=>item.key == "Cart Icon Show")?.value
   const cartIconSize = feild.find((item)=>item.key == "Cart Icon Size")?.value
   const cartIconColor = feild.find((item)=>item.key == "Cart Icon Color")?.value  
@@ -25,7 +27,7 @@ function Section1({ feild }) {
     <div className={style.ecommerceheader}>
       <div className="container-fluid">
         <div className="d-flex align-items-center justify-content-between">
-          <h4 className={style.title} style={{fontSize:titleFontSize,fontWeight:titleFontWeight,color:titleFontcolor}}>
+          <h4 className={style.title} style={{fontSize:titleFontSize,fontWeight:titleFontWeight,color:titleFontcolor,fontFamily:titleFontFamily}}>
             {title}
             <span className={style.title_TExt}></span>
           </h4>

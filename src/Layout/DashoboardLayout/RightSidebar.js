@@ -176,7 +176,7 @@ const {id}= useParams()
 
         id="right-sidebar hide-scrollbar"
         className="right-sidebar"
-        style={{ paddingBottom: "50px" }}
+        style={{ paddingBottom: "100px" }}
       >
         {feilds?.elementTypeName.field?.map((item, index) => {
           let validate = true;

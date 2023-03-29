@@ -28,7 +28,7 @@ function index({ fetch,elementList = [] }) {
                 <Section2 feild={item.elementTypeName.field} ></Section2>
               )}
               {item.elementTypeName.title === "Default Theme Banner" && (
-                <Section3  fetch={fetch}></Section3>
+                <Section3  feild={item.elementTypeName.field} fetch={fetch}></Section3>
               )}
               {item.elementTypeName.title === "Default Theme Categories" && (
                 <Section4 fetch={fetch} feild={item.elementTypeName.field}></Section4>
