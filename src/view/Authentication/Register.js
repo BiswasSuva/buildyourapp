@@ -6,7 +6,7 @@ import AuthUi from "../../Component/AuthCard/AuthUi";
 import { useNavigate } from "react-router-dom";
 import { getRegister } from "../../api/authapi";
 import { useDispatch } from "react-redux";
-
+import { toast } from "react-hot-toast";
 import { fetchuser } from "../../redux/reducers/User";
 
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -93,8 +93,13 @@ function Register() {
         }, 2000)
 
       } else {
-        alert(result.message);
-      }
+        toast.error(result.message, {
+          style: {
+            borderRadius: '10px',
+            background: '#333',
+            color: '#fff',
+          },
+        });      }
     } else {
       emailChecking();
       passwordChecking();

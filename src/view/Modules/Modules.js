@@ -17,6 +17,7 @@ import { useDispatch } from "react-redux";
 import { fetchuser, removeUserdata } from "../../redux/reducers/User";
 import { updateUserDetail } from "../../api/authapi";
 import Swal from "sweetalert2";
+import { toast } from "react-hot-toast";
 
 const columnsForModules = {
   [uuid()]: {
@@ -369,7 +370,7 @@ function Modules() {
       console.log(element);
       if (element.name !== "Other Modules") arr.push(...element.items);
     }
-    console.log("x", coloumns);
+    // console.log("x", coloumns);
     // const user = reactLocalStorage.getObject("userData")
     let dataSend = arr.map((item, index) => {
       return {
@@ -380,7 +381,7 @@ function Modules() {
         themeID: selectedTheme.find((i) => i.moduleId == item._id)?.theme?._id,
       };
     });
-    console.log("sss", dataSend);
+    // console.log("sss", dataSend);
     // return false;
     let result = await changeModulePriority(dataSend);
     // // console.log(result);
@@ -392,22 +393,37 @@ function Modules() {
       // // // console.log(id);
       let res = await updateUserDetail(data);
       if (res && res.status) {
-        Swal.fire({
-          title: "Thank You!",
-          // text: 'Do you want to continue',
-          icon: "success",
-          confirmButtonText: "Customize Your App  -->",
-        }).then((result) => {
-          if (result.isConfirmed) {
-            navigate("/logo");
-          }
-        });
+       const tut= reactLocalStorage.get("tutorial")
+
+
+
+        toast.success( !tut?"Module changes done as you want":"Now you are able to customize your app", {
+          icon: '👏',
+          style: {
+            borderRadius: '10px',
+            background: '#333',
+            color: '#fff',
+          },
+        })
+
+        navigate("/logo");
+
+        // Swal.fire({
+        //   title: "Thank You!",
+        //   // text: 'Do you want to continue',
+        //   icon: "success",
+        //   confirmButtonText: "Customize Your App  -->",
+        // }).then((result) => {
+        //   if (result.isConfirmed) {
+        //     navigate("/logo");
+        //   }
+        // });
       } else {
-        alert("something error");
+        toast.error("something error");
       }
       // alert("Selected successfully");
     } else {
-      alert("server error");
+      toast.error("server error");
     }
   };
 

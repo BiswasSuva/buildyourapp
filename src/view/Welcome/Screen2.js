@@ -56,7 +56,7 @@ function Screen2({name}) {
       nextURL:"/profession"
     }
     let result = await updateUserDetail(data)
-    console.log("pro",result);
+    // console.log("pro",result);
     if(result && result.status){
       // dispatch(fetchuser())
       navigate("/profession")
@@ -134,9 +134,18 @@ function Screen2({name}) {
                     }
 
                   }}
+                  // onKeyDown={(e)=>{
+                  //   // console.log("down",e)
+                  //   if(e.keyCode==13){
+                  //     e.preventDefault();
+
+                  //   }
+
+                  // }}
                   onKeyPress={(e)=>{
                     if(e.key==="Enter"){
                       moveTo()
+                      e.preventDefault()
                     }
                     }}
                 />
