@@ -112,6 +112,9 @@ a.btn.app-modules-recomanded-confirm-btn:hover{
     overflow-y: auto;
     z-index: 10;
 }
+.app-modules-recommanded-wrap.custom-drag .fa-arrow-left{
+    color: #fff;
+}
 .fa-store, .fa-home{
     /* color: #fff; */
     color: #000;

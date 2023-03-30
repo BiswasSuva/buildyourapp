@@ -38,7 +38,11 @@ textarea {
   /* border-color: transparent; */
   border: 2px solid #3f3d56;
 }
-
+.inputgrp .form-control:focus{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
 .flex-v__center {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1960,14 +1964,15 @@ input.call-picker {
 }
 
 .modal_content .image_bg {
-  background-color: rgba(24, 29, 33, 0.6);
+  /* background-color: rgba(24, 29, 33, 0.6); */
   border-radius: 5px;
   height: 100%;
 }
 
 .modal_content .modal_image {
   width: 100%;
-  height: 300px;
+  /* height: 300px; */
+  height: auto;
 }
 
 .modal_content .modal_image img {
