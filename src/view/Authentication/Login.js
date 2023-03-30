@@ -8,7 +8,9 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Eva from "../EvaAi/Eva";
 import { fetchuser } from "../../redux/reducers/User";
+import { toast } from "react-hot-toast";
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
 
 function Login() {
   const dispatch = useDispatch();
@@ -91,7 +93,13 @@ function Login() {
           navigate("/");
         }, 10000);
       } else {
-        alert(result.message);
+        toast.error(result.message, {
+          style: {
+            borderRadius: '10px',
+            background: '#333',
+            color: '#fff',
+          },
+        });
       }
     } else {
       emailChecking();
