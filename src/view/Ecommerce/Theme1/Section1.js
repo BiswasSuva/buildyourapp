@@ -10,7 +10,6 @@ function Section1({ feild }) {
   const titleFontWeight = feild.find((item)=>item.key == "Title Font Weight")?.value
   const titleFontcolor = feild.find((item)=>item.key == "Title Font Color")?.value
   const titleFontFamily = feild.find((item)=>item.key == "Title Font Family")?.value
-console.log("family",titleFontFamily);
   const cartIconShow = feild.find((item)=>item.key == "Cart Icon Show")?.value
   const cartIconSize = feild.find((item)=>item.key == "Cart Icon Size")?.value
   const cartIconColor = feild.find((item)=>item.key == "Cart Icon Color")?.value  

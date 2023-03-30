@@ -70,6 +70,8 @@ function Register() {
   }, [email, password, emailError, passwordError]);
 
   const Submit = async (e) => {
+    document.body.style.opacity="0.3"
+
     e.preventDefault();
     if (validation) {
       let data = {
@@ -81,18 +83,22 @@ function Register() {
 
       // return false;
       let result = await getRegister(data);
-      console.log(result);
+      // console.log(result);
       if (result && result.status) {
+
         reactLocalStorage.set("token", result.data.token);
         reactLocalStorage.set("tutorial",true)
 
         setTimeout(() => {
+          document.body.style.opacity="1"
           dispatch(fetchuser())
           navigate("/welcome")
 
         }, 2000)
 
       } else {
+        document.body.style.opacity="1"
+
         toast.error(result.message, {
           style: {
             borderRadius: '10px',
@@ -101,6 +107,8 @@ function Register() {
           },
         });      }
     } else {
+      document.body.style.opacity="1"
+
       emailChecking();
       passwordChecking();
     }

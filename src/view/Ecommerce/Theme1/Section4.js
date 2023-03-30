@@ -103,7 +103,7 @@ function Section4({ feild = [] }) {
           {categories.map((item, index) => {
             if (index + 1 <= noOItems) {
               return (
-                <div className="col-3 mb-2" key={item._id}>
+                <div className="col-3 mb-2" key={index}>
                   <div
                     className={style.li_menu}
                     style={{ borderRadius: `${borderRadius}%` }}

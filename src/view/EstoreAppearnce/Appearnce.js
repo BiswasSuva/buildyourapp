@@ -36,6 +36,7 @@ import Swal from "sweetalert2";
 import { useEstoreRightSidearContext } from "../../Providers/EcomRightSidebar";
 import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
 import { useElementList } from "../../Providers/ElemetProvider";
+import { toast } from "react-hot-toast";
 
 function Appearnce() {
   const { id, moduleID } = useParams();
@@ -173,10 +174,11 @@ function Appearnce() {
     );
     // console.log("doen",result);
     if (result && result.status) {
-      Swal.fire({
-        title: "Elements Updted Successfully ! ",
-        icon: "success",
-      });
+      toast.success("Changes done")
+      // Swal.fire({
+      //   title: "Elements Updted Successfully ! ",
+      //   icon: "success",
+      // });
     }
   };
 
@@ -364,7 +366,7 @@ function Appearnce() {
             {loading && <MobileScreenLoader />}
             {!loading && (
               <>
-                {id == "63f714eb2329e60244665cb9" && (
+                {id == "64256913d7c605809d1d1dff" && (
                   <EcommerceTheme1 fetch={fetch} elementList={elementList} />
                 )}
                 {id == "63f738162329e60244665f79" && (

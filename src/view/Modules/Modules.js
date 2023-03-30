@@ -406,7 +406,7 @@ function Modules() {
           },
         })
 
-        navigate("/logo");
+        navigate("/dashboard");
 
         // Swal.fire({
         //   title: "Thank You!",

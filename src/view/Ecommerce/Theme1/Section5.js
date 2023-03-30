@@ -78,8 +78,8 @@ fetchProduct()
         <div className='container-fluid'>
           <Link to="">
             <div className={style.productmain} style={{ flexDirection: coloumn && coloumn == 1 ? "column" : "row" }}>
-              {products.map((item) => {
-                return <div className={style.productitem} key={item._id}>
+              {products.map((item,i) => {
+                return <div className={style.productitem} key={i}>
                   <div className='position-relative'>
                     <div className={style.secondPersonImg}>
                       <img src={item.image[0]} alt="Product" className='img-fluid' />

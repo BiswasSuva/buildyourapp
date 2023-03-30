@@ -16,11 +16,14 @@ import { Toaster } from 'react-hot-toast';
 
 function App() {
   const dispatch = useDispatch();
-  const { loginStatus, loading } = useSelector((state) => state.User);
+  const { loginStatus, loading,userData } = useSelector((state) => state.User);
 
   useEffect(() => {
     dispatch(fetchuser());
+
   }, []);
+
+console.log("user",userData);
 
   if (loading) {
     return (

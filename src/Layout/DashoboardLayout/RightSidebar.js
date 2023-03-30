@@ -12,6 +12,7 @@ import { useElementList } from "../../Providers/ElemetProvider";
 import HttpClient from "../../utils/HttpClient";
 import { useParams } from "react-router-dom";
 import { updateElementFeildList } from "../../api/appApi";
+import { toast } from "react-hot-toast";
 const arr = [
   {
     id: "c408c71f-f1a5-7bcf-7bab-a7b4f74b5ff6",
@@ -155,6 +156,16 @@ const {id}= useParams()
     }
     console.log(data);
     let result  = await updateElementFeildList(data)
+    if(result && result.status){
+      toast.success( "Feilds Updated", {
+        // icon: '👏',
+        style: {
+          borderRadius: '10px',
+          background: '#333',
+          color: '#fff',
+        },
+      })
+    }
     console.log(result);
   
   
