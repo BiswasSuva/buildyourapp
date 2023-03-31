@@ -85,6 +85,9 @@ function Section4({ feild = [] }) {
     if(result && result.status && result.data?.length>0){
       setCategories(result.data)
     }
+    else{
+      setCategories(arr)
+    }
   };
 
   // const [totalElement,setTotalAmount] = useState( coloumn*rows)

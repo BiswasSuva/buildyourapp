@@ -42,7 +42,9 @@ function AuthUi({ children }) {
 
                     {pathname == "/login" ? (
                       <div className="d-flex justify-content-between font-14 font-weight-semi-bold mt-5 bottom-form" style={{ position: "relative", zIndex: "99" }}>
-                        <a href="#!">Forgot Password ?</a>
+                        <a href="#!"></a> 
+                        
+                        {/* forgetPassword */}
                         <p style={{ color: "#fff" }}>
                           New User? <Link to="/register" style={{ cursor: "pointer", color: "#fff" }}>Signup Now</Link>
                         </p>

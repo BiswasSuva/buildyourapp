@@ -369,7 +369,7 @@ function Appearnce() {
                 {id == "64256913d7c605809d1d1dff" && (
                   <EcommerceTheme1 fetch={fetch} elementList={elementList} />
                 )}
-                {id == "63f738162329e60244665f79" && (
+                {id == "6426526a2e8c8f8facfdbea6" && (
                   <EcommerceTheme2 fetch={fetch} elementList={elementList} />
                 )}
               </>

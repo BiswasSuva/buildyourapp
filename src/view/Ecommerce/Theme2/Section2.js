@@ -2,8 +2,20 @@ import React from 'react'
 import style from "./ecommerce.module.css"
 import ImageProduct from "../../../assets/images/ThemeImages/ImageProduct.png"
 import Background from "../../../assets/images/ThemeImages/Background.png"
+
+import estoretheme2banner from "../../../images/estoretheme2banner.3deeee84aaf54cd36eb6 (1).png"
+import useEcomBanner from '../../../customHooks/useEcomBanner'
 import Slider from "react-slick";
-function Section2() {
+function Section2({fetch, feild = [] }) {
+  let height = feild.find((item) => item.key === "Banner Height")?.value;
+  let width = feild.find((item) => item.key === "Banner Width")?.value;
+  let borderRadius = feild.find((item) => item.key === "Border Radius")?.value;
+  let backgroundColor = feild.find((item) => item.key === "Background Color")?.value;
+  // const { rerender, setRender } = useElementList();
+
+  const banner = useEcomBanner({ refetch: fetch });
+
+
 
   var settings = {
     dots: false,
@@ -15,11 +27,31 @@ function Section2() {
     slidesToScroll: 2,
     initialSlide: 0,
   };
+
+
+  const DummyImage =[
+    {
+      image:estoretheme2banner,
+      style:{height:"208px",width:"360px"}
+    }
+  ]
   return (
     <div className='container-fluid' style={{ height: "100%" }}>
-      <div className={style.banner}>
-        <Slider {...settings}>
-          <div className={style.newthemebanner} style={{ backgroundImage: `url(${Background})` }}>
+      <div className={style.banner} style={{height:height,width:width,borderRadius:borderRadius,backgroundColor}}>
+        <Slider {...settings} className="bannersliderall">
+         {banner.length==0? <img src={estoretheme2banner}/>:
+
+         (
+          banner.map((item,i)=>{
+            return <img src={item.image} key={i}/>
+          })
+         )
+         }
+          {/* {DummyImage.map((item)=>{
+            return <img src={item.image} />
+
+          })} */}
+          {/* <div className={style.newthemebanner} style={{ backgroundImage: `url(${Background})` }}>
             <div className='row' style={{ height: "100%" }}>
               <div className='col-6' style={{ height: "100%" }}>
                 <div className={style.bannertext} >
@@ -52,7 +84,7 @@ function Section2() {
 
               </div>
             </div>
-          </div>
+          </div> */}
         </Slider>
       </div>
 

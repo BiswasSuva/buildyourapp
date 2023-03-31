@@ -1,6 +1,22 @@
 /* Auth css */
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+.bannersliderall{
+    height: 100% !important;
+}
 
+.bannersliderall .slick-list{
+    height: 100% !important;
+}
+.bannersliderall .slick-track{
+    height: 100% !important;
+}
+.bannersliderall .slick-slide{
+    height: 100% !important;
+}
+.bannersliderall .slick-slide div{
+    height: 100% !important;
+
+}
 .register-page h1 {
     letter-spacing: 0.02em;
     color: #161616;

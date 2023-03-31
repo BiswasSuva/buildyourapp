@@ -29,7 +29,7 @@ function index({ fetch, elementList = [] }) {
         {elementList.map((item, index) => {
           return (
             <div key={item._id}>
-              {item.elementTypeName.title === "E-Store Black Header" && (
+              {item.elementTypeName.title === "E-Store Black Theme Header" && (
                 <Section1 feild={item.elementTypeName.field} />
               )}
             </div>
@@ -39,13 +39,21 @@ function index({ fetch, elementList = [] }) {
           {elementList.map((item, index) => {
             return (
               <div key={item._id}>
-                {item.elementTypeName.title === "Default Theme Banner" && (
-                  <Section2 feild={item.elementTypeName.field}></Section2>
+                {/* {item.elementTypeName.title ===
+                  "E-Store Black Theme Header" && (
+                  <Section1 feild={item.elementTypeName.field} />
+                )} */}
+                {item.elementTypeName.title ===
+                  "E-Store Black Theme Banner" && (
+                  <Section2
+                    feild={item.elementTypeName.field}
+                    fetch={fetch}
+                  ></Section2>
                 )}
-                {item.elementTypeName.title === "Default Theme Categories" && (
-                  <Section3></Section3>
-                )}
-                {item.elementTypeName.title === "Default Theme Product List" && (
+                {item.elementTypeName.title ===
+                  "E-Store Black Theme categories" && <Section3></Section3>}
+                {item.elementTypeName.title ===
+                  "E-Store Black Theme Products" && (
                   <Section4
                     fetch={fetch}
                     feild={item.elementTypeName.field}
