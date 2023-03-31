@@ -15,7 +15,22 @@
 }
 .bannersliderall .slick-slide div{
     height: 100% !important;
-
+}
+.tutorialslider .slick-prev{
+    /* background: url(images/arr-left.png) no-repeat center;
+    position: absolute;
+    top: 50%;
+    z-index: 999; */
+    top: 100%;
+    left: 5px;
+}
+.tutorialslider .slick-next{
+    /* background: url(images/arr-left.png) no-repeat center;
+    position: absolute;
+    top: 50%;
+    z-index: 999; */
+    top: 100%;
+    left: 35px;
 }
 .register-page h1 {
     letter-spacing: 0.02em;

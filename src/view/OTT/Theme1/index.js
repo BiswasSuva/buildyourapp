@@ -18,10 +18,10 @@ function index({ fetch, elementList = [] }) {
         {elementList.map((item, index) => {
           return (
             <div key={item._id}>
-              {item.elementTypeName.title === "OTT Light Theme Header" && (
+              {item.elementTypeName.title === "Ott Light Theme Header" && (
                 <OttHeader feild={item.elementTypeName.field} />
               )}
-              {item.elementTypeName.title === "Light Theme Category Banner" && (
+              {item.elementTypeName.title === "Ott Light Theme Category Banner" && (
                 <>
                   <Todaytopmovie
                     feild={item.elementTypeName.field}
@@ -29,7 +29,7 @@ function index({ fetch, elementList = [] }) {
                   <Moviecard></Moviecard>
                 </>
               )}
-              {item.elementTypeName.title === "OTT Videos List" && (
+              {item.elementTypeName.title === "Ott Light Theme List " && (
                 <MostPopular
                   fetch={fetch}
                   feild={item.elementTypeName.field}

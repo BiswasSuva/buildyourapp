@@ -28,31 +28,64 @@ import AddOttEpisode from "./AddOttEpisode";
 import ManageOttEpisode from "./ManageOttEpisode";
 import AddOttBanner from "./AddOttBanner";
 import ManageOttBanner from "./ManageOttBanner";
+import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
+import { useElementList } from "../../Providers/ElemetProvider";
+
 
 function Appearnce() {
   const { id, moduleID } = useParams();
-  const [elementList, setElementList] = useState([]);
+  // const [elementList, setElementList] = useState([]);
   const [deletedElement, setDeletedElement] = useState([]);
   const [fetch, setFetch] = useState(false);
   const { component, setRenderComponent } = useOttRightSidearContext();
+  const [loading, setLoading] = useState(false);
+  const {elementList,setElementList} = useElementList()
 
   useEffect(() => {
     fetchTheme();
   }, [id]);
   const fetchTheme = async () => {
+    setLoading(true);
     let result = await getThemeDetail(id);
     // return false
     console.log("themeDetail", result);
     if (result && result.status) {
+      let list = result.data.elementListe.map((item) => {
+        // checking new elementsField is avialable or not
+        if (item.elementsField) {
+          // if avialable change value with new value
+          return {
+            ...item,
+            elementTypeName: {
+              ...item.elementTypeName,
+              field: item.elementTypeName.field.map((feildItem) => {
+                return {
+                  ...feildItem,
+                  value: item.elementsField?.fieldsList.find(
+                    (it) => it.key == feildItem.key
+                  )?.value,
+                };
+              }),
+            },
+          };
+        }
+        return {
+          ...item,
+        };
+      });
+
+      console.log("updatedlist", list);
+
+      // here we checking if user updeted value in feild list if user update value list elementsField becomes new key value pair
+
       setElementList(
-        result.data.elementListe
+        list
           ?.filter((item) => !item.isDeleted)
           .sort((a, b) => a.position - b.position)
       );
-      setDeletedElement(
-        result.data.elementListe.filter((item) => item.isDeleted)
-      );
+      setDeletedElement(list.filter((item) => item.isDeleted));
     }
+    setLoading(false);
   };
   useEffect(() => {
     $(".each-accordionbox:first-child")
@@ -206,23 +239,6 @@ function Appearnce() {
                   })}
                 </div>
               </div>
-              <AccordianBox title="Ott Types">
-                <li
-                  onClick={() =>
-                    setRenderComponent(<AddOttTypes setFetch={setFetch} />)
-                  }
-                >
-                  Add Ott-Types
-                </li>
-                <li
-                  onClick={() =>
-                    setRenderComponent(<OttTypes setFetch={setFetch} />)
-                  }
-                >
-                  Manage Ott-Types
-                </li>
-              </AccordianBox>
-
               <AccordianBox title="Ott-Genre">
                 <li
                   onClick={() =>
@@ -241,6 +257,24 @@ function Appearnce() {
                   Manage Ott-Genre
                 </li>
               </AccordianBox>
+              <AccordianBox title="Ott Types">
+                <li
+                  onClick={() =>
+                    setRenderComponent(<AddOttTypes setFetch={setFetch} />)
+                  }
+                >
+                  Add Ott-Types
+                </li>
+                <li
+                  onClick={() =>
+                    setRenderComponent(<OttTypes setFetch={setFetch} />)
+                  }
+                >
+                  Manage Ott-Types
+                </li>
+              </AccordianBox>
+
+           
               <AccordianBox title="Ott Video">
                 <li
                   onClick={() =>
@@ -270,12 +304,14 @@ function Appearnce() {
                   Add Episodes
                 </li>
                 <li
-                 onClick={() =>
-                  setRenderComponent(
-                    <ManageOttEpisode setFetch={setFetch} close={() => {}} />
-                  )
-                }
-                >Manage Episodes</li>
+                  onClick={() =>
+                    setRenderComponent(
+                      <ManageOttEpisode setFetch={setFetch} close={() => {}} />
+                    )
+                  }
+                >
+                  Manage Episodes
+                </li>
               </AccordianBox>
               <AccordianBox title="Ott Banner">
                 <li
@@ -288,12 +324,14 @@ function Appearnce() {
                   Add Banner
                 </li>
                 <li
-                 onClick={() =>
-                  setRenderComponent(
-                    <ManageOttBanner setFetch={setFetch} close={() => {}} />
-                  )
-                }
-                >Manage Banners</li>
+                  onClick={() =>
+                    setRenderComponent(
+                      <ManageOttBanner setFetch={setFetch} close={() => {}} />
+                    )
+                  }
+                >
+                  Manage Banners
+                </li>
               </AccordianBox>
             </div>
             <button
@@ -307,6 +345,8 @@ function Appearnce() {
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
           {/* <Mobilescreen /> */}
           <Mainmobile>
+            {loading && <MobileScreenLoader />}
+          
             {/* <Ecommerceproductdetails /> */}
 
             {/* <EcommerceTheme1 elementList={elementList} /> */}
@@ -318,9 +358,14 @@ function Appearnce() {
 
             {/* <Podcasttheme1/> */}
 
-            {/* <Podcasttheme2 /> */}
             {/* <Otttheme1 /> */}
-            <Otttheme2 />
+
+            {!loading &&
+              (id == "64269a662e8c8f8facfdc5c6" ? (
+                <Otttheme1 elementList={elementList} />
+              ) : (
+                <Otttheme2 />
+              ))}
           </Mainmobile>
         </div>
       </DashboardUi>

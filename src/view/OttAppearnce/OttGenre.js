@@ -5,10 +5,13 @@ import Datatable from "../../Component/Datatable/Datatable";
 import { useOttRightSidearContext } from "../../Providers/OttRightSidebar";
 import AddOttGenre from "./AddOttGenre";
 import Heading from "../../Component/RenderComponent/Heading";
+import { useElementList } from "../../Providers/ElemetProvider";
 
 function OttGenre({ setFetch, onEdit }) {
   const [data, setData] = useState([]);
   const { component, setRenderComponent } = useOttRightSidearContext();
+  const {rerender,setRender} = useElementList()
+
 
   useEffect(() => {
     fetchOttTypes();
@@ -74,7 +77,7 @@ function OttGenre({ setFetch, onEdit }) {
     let result = await deleteOttGenre(id);
     if (result && result.status) {
       fetchOttTypes();
-      setFetch((prev) => !prev);
+      setRender((prev) => !prev);
     }
   };
 

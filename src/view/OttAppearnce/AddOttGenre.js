@@ -8,8 +8,12 @@ import SubmitButton from "../../Component/RenderComponent/SubmitButton";
 import { useOttRightSidearContext } from "../../Providers/OttRightSidebar";
 import SelectDropDown from "../../Component/RenderComponent/SelectDropDown";
 import OttGenre from "./OttGenre";
+import { toast } from "react-hot-toast";
+import { useElementList } from "../../Providers/ElemetProvider";
 
 function AddOttGenre({ setFetch, editEnable = false, editElement = null }) {
+  const {rerender,setRender} = useElementList()
+
   const [name, setName] = useState("");
   const [description, setdescription] = useState("");
   const { setRenderComponent } = useOttRightSidearContext();
@@ -31,13 +35,13 @@ function AddOttGenre({ setFetch, editEnable = false, editElement = null }) {
         result = await editOttGenre(editElement?._id, dataSend);
       }
       if (result && result.status) {
-        setFetch((prev) => !prev);
+        setRender((prev) => !prev);
         setRenderComponent(<OttGenre setFetch={setFetch} />);
       } else {
-        alert("server error");
+        toast.error("server error");
       }
     } else {
-      alert("All feilds are required");
+      toast.error("All feilds are required");
     }
   };
   useEffect(() => {
