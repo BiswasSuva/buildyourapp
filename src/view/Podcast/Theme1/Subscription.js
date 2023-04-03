@@ -7,7 +7,15 @@ import subs3 from "../../../images/subs3.png"
 import subs4 from "../../../images/subs4.png"
 import subs5 from "../../../images/subs5.png"
 import Slider from "react-slick";
-function Subscription() {
+function Subscription({feild=[]}) {
+
+    const Heading = feild.find((item) => item.key === "Heading")?.value;
+    const HeadingColor = feild.find((item) => item.key === "Heading Text Color")?.value;
+    const HeadingSize = feild.find((item) => item.key === "Heading Text Size")?.value;
+    const buttonColor = feild.find((item) => item.key === "See All Button Color")?.value;
+
+
+
 
     var settings = {
         dots: false,
@@ -27,10 +35,10 @@ function Subscription() {
             <div className='container'>
                 <div className='row mb-3'>
                     <div className='col-8'>
-                        <h1 className={style.title}>Subscriptions</h1>
+                        <h1 className={style.title} style={{color:HeadingColor,fontSize:HeadingSize}}>{Heading}</h1>
                     </div>
                     <div className='col-4 text-right'>
-                        <Link to="/" className={style.seeall}>See All</Link>
+                        <Link to="/" className={style.seeall} style={{color:buttonColor}}>See All</Link>
                     </div>
                 </div>
             </div>

@@ -5,13 +5,17 @@ import image from "../../../images/Image.png"
 import image2 from "../../../images/Image2.png"
 import categoryplaylist from "../../../images/icon/categoryplaylist.png"
 import download from "../../../images/icon/download.png"
-function Newupdate() {
+function Newupdate({feild=[]}) {
+    const Heading = feild.find((item) => item.key === "Heading")?.value;
+    const HeadingColor = feild.find((item) => item.key === "Heading Color")?.value;
+    const HeadingSize = feild.find((item) => item.key === "Heading Text Size")?.value;
+    const buttonColor = feild.find((item) => item.key === "Button Color")?.value;
     return (
         <section className={style.newsupdate}>
             <div className='container'>
                 <div className='row mb-3'>
                     <div className='col-8'>
-                        <h1 className={style.title}>New Updates</h1>
+                        <h1 className={style.title} style={{color:HeadingColor}}>{Heading}</h1>
                     </div>
                     <div className='col-4 text-right'>
                         <Link to="/" className={style.seeall}>See All</Link>
@@ -35,7 +39,7 @@ function Newupdate() {
 
                             <div className={style.playlisticons}>
                                 <div className={style.playbutton}>
-                                    <button className={style.playBtn}><i className="fa-solid fa-play"></i>Play</button>
+                                    <button className={style.playBtn} style={{background:buttonColor}}><i className="fa-solid fa-play"></i>Play</button>
                                 </div>
                                 <div className={style.playlisticon}>
                                     <Link to="#">
@@ -72,7 +76,7 @@ function Newupdate() {
 
                             <div className={style.playlisticons}>
                                 <div className={style.playbutton}>
-                                    <button className={style.playBtn}><i className="fa-solid fa-play"></i>Play</button>
+                                    <button className={style.playBtn}style={{background:buttonColor}} ><i className="fa-solid fa-play"></i>Play</button>
                                 </div>
                                 <div className={style.playlisticon}>
                                     <Link to="#">

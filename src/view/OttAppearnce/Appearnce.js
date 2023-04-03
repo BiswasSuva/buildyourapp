@@ -364,7 +364,7 @@ function Appearnce() {
               (id == "64269a662e8c8f8facfdc5c6" ? (
                 <Otttheme1 elementList={elementList} />
               ) : (
-                <Otttheme2 />
+                <Otttheme2  elementList={elementList}/>
               ))}
           </Mainmobile>
         </div>

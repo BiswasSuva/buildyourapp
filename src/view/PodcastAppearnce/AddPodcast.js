@@ -13,6 +13,7 @@ import Form2 from "./AddPodcastComponent/Form2";
 import Form3 from "./AddPodcastComponent/Form3";
 import Form4 from "./AddPodcastComponent/Form4";
 import Form5 from "./AddPodcastComponent/Form5";
+import { toast } from "react-hot-toast";
 // import ManageProduct from "./ManageProduct";
 
 const INITIAL_DATA = {
@@ -40,8 +41,8 @@ function AddPodCast({
   const [data, setData] = useState(INITIAL_DATA);
   const { setRenderComponent } = usePodcastRightSidebarContext();
 
-  console.log("editElement", editElement);
-  console.log("data", data);
+  // console.log("editElement", editElement);
+  // console.log("data", data);
   function updateFields(fields) {
     setData((prev) => {
       return { ...prev, ...fields };
@@ -100,12 +101,12 @@ console.log('dataSend', dataSend)
       }
 
       if (result && result.status) {
-        alert("Video Added Successfully");
+        toast.success(result?.message);
         setData(INITIAL_DATA);
         // setRenderComponent(<ManageProduct setFetch={setFetch}/>)
       }
     } else {
-      alert("All feilds are required");
+      toast.error("All feilds are required");
     }
   };
   useEffect(() => {

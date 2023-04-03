@@ -14,6 +14,7 @@ import SubmitButton from "../../Component/RenderComponent/SubmitButton";
 import { usePodcastRightSidebarContext } from "../../Providers/PodcastRightSidebar";
 import SelectDropDown from "../../Component/RenderComponent/SelectDropDown";
 import ManagePodcastType from "./ManagePodcastType";
+import { toast } from "react-hot-toast";
 // import OttTypes from "./OttTypes";
 
 function PodcastTypes({ setFetch, editEnable = false, editElement = null }) {
@@ -39,14 +40,14 @@ function PodcastTypes({ setFetch, editEnable = false, editElement = null }) {
       }
       console.log(result);
       if (result && result.status) {
-        alert(result?.message);
+        toast.success(result?.message);
         setFetch((prev) => !prev);
         setRenderComponent(<ManagePodcastType setFetch={setFetch} />);
       } else {
-        alert("server error");
+        toast.error("server error");
       }
     } else {
-      alert("All feilds are required");
+      toast.error("All feilds are required");
     }
   };
   useEffect(() => {
@@ -67,7 +68,7 @@ function PodcastTypes({ setFetch, editEnable = false, editElement = null }) {
       style={{ paddingBottom: "50px" }}
     >
       <div role="main" className="form-all">
-        <Heading heading="Add Podcast-Types" />
+        <Heading heading={editEnable?"Update Podcast-Types": "Add Podcast-Types"} />
         <ul
           className="form-section page-section"
           style={{ height: "600px", overflowY: "auto" }}
