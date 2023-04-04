@@ -10,7 +10,7 @@ function Index() {
   const tutorial = reactLocalStorage.get("tutorial");
   const [modalShow, setModalShow] = useState(true);
 
-  const modalCloseHandle = ()=>{
+  const modalCloseHandle = () => {
     reactLocalStorage.remove("tutorial")
     setModalShow(false)
   }
@@ -20,22 +20,30 @@ function Index() {
         <div className="col-lg-4 col-xl-4 col-md-4 col-12">
           {/* <Elements /> */}
           <div className='mainMobile'>
-          <div className="iphone">
-            <div className="screen" />
+            <div className="iphone">
+              <div className="screen" />
 
-            <div className="notch" />
+              <div className="notch" />
+            </div>
           </div>
-        </div>
         </div>
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
 
-         
-        <div>
-          
-        </div>
 
 
-        {/* <div class="container-fluid pt-5 mt-5 pb-5">
+          <section className="text_mast">
+            <div className="text-box">
+              <h2 class="heading-primary">
+                <span className="heading-primary-main">Welcome</span>
+                <span className="heading-primary-sub">to the all new AI featured platform to</span>
+                <span className="heading-primary-main">Build your own App</span>
+              </h2>
+            </div>
+          </section>
+
+
+
+          {/* <div class="container-fluid pt-5 mt-5 pb-5">
 	
     <div class="row">
       <div class="col-xl-3 mb-50">

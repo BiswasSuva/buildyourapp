@@ -2487,6 +2487,78 @@ h1.form-header {
 }
 
 
+/*----------------text_mast------------*/
+.text_mast {
+  width: 100%;
+  height: auto;
+}
+.text_mast .text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+  width: 100%;
+  max-width: 80%;  
+}
+
+.text_mast .heading-primary {
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.text_mast .heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  animation-name: moveInleft;
+  animation-duration: 3s;
+  margin: 50px 0;
+}
+
+.text_mast .heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.9px;
+  animation-name: moveInRight;
+  animation-duration: 3s;
+}
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-20px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+
 /*--------------Dtatable-------------*/
 .dataTables_wrapper .dataTables_paginate{
   margin-top: 15px;
