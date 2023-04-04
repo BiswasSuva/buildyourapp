@@ -160,3 +160,21 @@ a.btn.app-modules-recomanded-confirm-btn:hover{
     text-align: center;
     width: 100%;
 }
+.fullScreen .slick-slide img {
+    height: 500px;
+}
+h1.titlewrapper{
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+}
+h1.titlewrapper:after{
+    content: "";
+    display: block;
+    max-width: 200px;
+    background: #fff;
+    height: 5px;
+    margin: 10px auto;
+    border-radius: 50%;
+}

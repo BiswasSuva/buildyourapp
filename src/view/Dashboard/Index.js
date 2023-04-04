@@ -19,8 +19,20 @@ function Index() {
       <DashboardUi>
         <div className="col-lg-4 col-xl-4 col-md-4 col-12">
           {/* <Elements /> */}
+          <div className='mainMobile'>
+          <div className="iphone">
+            <div className="screen" />
+
+            <div className="notch" />
+          </div>
+        </div>
         </div>
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
+
+         
+        <div>
+          
+        </div>
 
 
         {/* <div class="container-fluid pt-5 mt-5 pb-5">

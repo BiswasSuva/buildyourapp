@@ -66,11 +66,28 @@
 .fa-cloud-upload-alt{
     font-size: 50px;
 }
+.customlogowrapper{
+  padding: 2%;
+  text-align: center;
+}
+.customlogowrapper p{
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 30px;
+}
 .LogoBox {
-    margin-top: 60%;
-    padding: 2%;
-    text-align: center;
-
+  margin-top: 25%;
+  padding: 2%;
+  text-align: center;
+}
+.LogoBox p {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: #fff !important;
+  margin-bottom: 30px;
 }
 .LogoBox img{
   max-width: 100%;
@@ -80,4 +97,14 @@
   position: relative;
   left: 0;
   right: 0;
+
+  max-width: 100%;
+  height: auto;
+  height: auto;
+  border-radius: 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  height: 200px;
+  object-fit: contain;
 }
