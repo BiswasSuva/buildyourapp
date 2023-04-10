@@ -435,7 +435,7 @@ a.sidebar__nav-link i {
 .notch {
   z-index: 50;
   top: 0;
-  left: -10px;
+  left: 0px;
   right: 0;
   margin: 0 auto;
   position: absolute;
@@ -676,7 +676,8 @@ a.sidebar__nav-link i {
 .right-sidebar {
   position: fixed;
   width: 25rem;
-  height: 80%;
+  /* height: 80%; */
+  height: 100%;
   right: 15px;
   top: 75px;
   /* background-color: #2b2b2b;
@@ -947,7 +948,7 @@ a.sidebar__nav-link i {
   box-shadow: 0 3px 9px rgb(0 0 0 / 40%);
   /* height: 100vh; */
   /* height: auto; */
-  height: 80vh;
+  height: 100%;
   width: 25rem;
   z-index: 20;
   overflow-y: auto;
@@ -1483,7 +1484,12 @@ a.sidebar__nav-link i {
   margin-top: 70px;
   margin-right: 20rem;
 }
-
+.heading-title h1{
+  font-size: 45px;
+  color: #fff;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
 .heading-title p {
   text-align: center;
   font-style: normal;
@@ -1491,7 +1497,7 @@ a.sidebar__nav-link i {
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  /* text-align: left; */
+  text-align: left;
   color: #fff;
 }
 
@@ -1576,7 +1582,7 @@ a.sidebar__nav-link i {
 
 .colour-picker input {
   max-width: 200px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .colour-picker label {
@@ -1585,6 +1591,10 @@ a.sidebar__nav-link i {
 
 .colour-picker {
   display: flex;
+  justify-content: start;
+}
+.colour-picker .colourbox{
+  width: 200px;
 }
 .color-wrapper {
   position: relative;
@@ -2473,6 +2483,78 @@ h1.form-header {
     left: 6%;
     max-width: 395px;
   }
+
+}
+
+
+/*----------------text_mast------------*/
+.text_mast {
+  width: 100%;
+  height: auto;
+}
+.text_mast .text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+  width: 100%;
+  max-width: 80%;  
+}
+
+.text_mast .heading-primary {
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.text_mast .heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  animation-name: moveInleft;
+  animation-duration: 3s;
+  margin: 50px 0;
+}
+
+.text_mast .heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.9px;
+  animation-name: moveInRight;
+  animation-duration: 3s;
+}
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-20px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 
 }
 

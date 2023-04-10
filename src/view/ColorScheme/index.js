@@ -7,8 +7,8 @@ import { createScreen } from "../../api/appApi";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
-function Index({logo}) {
-  
+function Index({ logo }) {
+
   const screen = useScreen();
   const navigate = useNavigate();
   // const [logo, setLogo] = useState("");
@@ -52,11 +52,12 @@ function Index({logo}) {
       <div className="row">
         <div className="col-lg-12 col-xl-12 col-md-12 col-12">
           <div className="heading-title">
-            <p>This colors will be used as primary in your app.</p>
+            <h1>Please Choose a colour for your App</h1>
+            <p>These colors will be used as primary in your app.</p>
           </div>
         </div>
       </div>
-      <div className="row mt-4 justify-content-center" >
+      <div className="row mt-4" >
         {/* <div className="col-lg-4 col-xl-4 col-md-4 col-12">
             <div className="colorbutton">
               <div className="center">
@@ -101,22 +102,28 @@ function Index({logo}) {
         <div className="col-lg-12 col-md-12 col-xl-12">
           {/* <SketchPicker /> */}
           <div className="colour-picker">
+            <div className="colourbox" style={{marginRight: "3%"}}>
 
-            <label>Primary Colour</label>
-            <input
-              value={primaryColor}
-              onChange={(val) => setPrimaryColor(val.target.value)}
-              type="color"
-              className="form-control"
-            />
+              <input
+                value={primaryColor}
+                onChange={(val) => setPrimaryColor(val.target.value)}
+                type="color"
+                className="form-control"
+              />
+              <label>Primary Colour</label>
+            </div>
+            <div className="colourbox">
 
-            <label>Secondary Colour</label>
-            <input
-              value={secondaryColor}
-              onChange={(val) => setSecondaryColor(val.target.value)}
-              type="color"
-              className="form-control"
-            />
+              <input
+                value={secondaryColor}
+                onChange={(val) => setSecondaryColor(val.target.value)}
+                type="color"
+                className="form-control"
+              />
+              <label>Secondary Colour</label>
+            </div>
+
+
 
           </div>
 

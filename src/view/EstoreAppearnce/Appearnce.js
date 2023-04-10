@@ -37,7 +37,8 @@ import { useEstoreRightSidearContext } from "../../Providers/EcomRightSidebar";
 import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
 import { useElementList } from "../../Providers/ElemetProvider";
 import { toast } from "react-hot-toast";
-
+import News from "../News/Theme1/Index"
+import Newsdetails from "../News/Themedetails/Index"
 function Appearnce() {
   const { id, moduleID } = useParams();
   // const [elementList, setElementList] = useState([]);
@@ -45,7 +46,7 @@ function Appearnce() {
   const [fetch, setFetch] = useState(false);
   const { component, setRenderComponent } = useEstoreRightSidearContext();
   const [loading, setLoading] = useState(false);
-  const {elementList,setElementList} = useElementList()
+  const { elementList, setElementList } = useElementList()
   // console.log("my elemenmt");
 
   useEffect(() => {
@@ -57,25 +58,25 @@ function Appearnce() {
     // return false
     console.log("themeDetail", result);
     if (result && result.status) {
-      let list = result.data.elementListe.map((item)=>{
-// checking new elementsField is avialable or not
-        if(item.elementsField){
+      let list = result.data.elementListe.map((item) => {
+        // checking new elementsField is avialable or not
+        if (item.elementsField) {
           // if avialable change value with new value
-          return{
+          return {
             ...item,
-            elementTypeName:{
-              
+            elementTypeName: {
+
               ...item.elementTypeName,
-              field:item.elementTypeName.field.map((feildItem)=>{
+              field: item.elementTypeName.field.map((feildItem) => {
                 return {
                   ...feildItem,
-                  value:item.elementsField?.fieldsList.find((it)=>it.key==feildItem.key)?.value
+                  value: item.elementsField?.fieldsList.find((it) => it.key == feildItem.key)?.value
 
                 }
               })
 
 
-            
+
             }
 
           }
@@ -83,10 +84,10 @@ function Appearnce() {
         return {
           ...item
         }
-       
+
       })
 
-      console.log("updatedlist",list);
+      console.log("updatedlist", list);
 
       // here we checking if user updeted value in feild list if user update value list elementsField becomes new key value pair
 
@@ -287,7 +288,7 @@ function Appearnce() {
                 <ul className="each-text custom-list">
                   <li
                     onClick={() =>
-                      setRenderComponent(<AddSubCategory close={() => {}} />)
+                      setRenderComponent(<AddSubCategory close={() => { }} />)
                     }
                   >
                     Add Sub-Category
@@ -312,7 +313,7 @@ function Appearnce() {
                   <li
                     onClick={() =>
                       setRenderComponent(
-                        <AddProduct setFetch={setFetch} close={() => {}} />
+                        <AddProduct setFetch={setFetch} close={() => { }} />
                       )
                     }
                   >
@@ -336,7 +337,7 @@ function Appearnce() {
                   <li
                     onClick={() =>
                       setRenderComponent(
-                        <EstoreAddBanner setFetch={setFetch} close={() => {}} />
+                        <EstoreAddBanner setFetch={setFetch} close={() => { }} />
                       )
                     }
                   >
@@ -380,6 +381,10 @@ function Appearnce() {
 
             {/* <EcommerceTheme1 elementList={elementList} /> */}
 
+            {/* News Theme 1 */}
+            {/* <News /> */}
+            {/* <Newsdetails /> */}
+
             {/*----Start New Themes----*/}
             {/* <Learning1 />  */}
             {/* <Learningthemedetails1 /> */}
@@ -397,6 +402,8 @@ function Appearnce() {
             {/* <Podcasttheme2 /> */}
             {/* <Otttheme1 /> */}
             {/* <Otttheme2 /> */}
+
+
           </Mainmobile>
         </div>
       </DashboardUi>
