@@ -4,7 +4,11 @@ import style from "./ecommerce.module.css";
 import cart from "../../../assets/images/ThemeImages/25-trolly.png";
 import notification from "../../../assets/images/ThemeImages/76-notification.png";
 import Icon from "../../../AllIcons/Icon";
+import { useEstoreRightSidearContext } from "../../../Providers/EcomRightSidebar";
+
 function Section1({ feild }) {
+  const { activeElement, setActiveElement } = useEstoreRightSidearContext();
+
   const title = feild.find((item) => item.key == "Title")?.value;
   const titleFontSize = feild.find((item)=>item.key == "Title Font Size")?.value
   const titleFontWeight = feild.find((item)=>item.key == "Title Font Weight")?.value
@@ -23,7 +27,7 @@ function Section1({ feild }) {
   const wishlistIconColor = feild.find((item) => item.key == "Wishlist Icon Color")?.value; 
   const wishlistIcon = feild.find((item) => item.key == "Wishlist Icon")?.value;
   return (
-    <div className={style.ecommerceheader}>
+    <div className={style.ecommerceheader} style={{border:activeElement===0&& "2px solid black"}} >
       <div className="container-fluid">
         <div className="d-flex align-items-center justify-content-between">
           <h4 className={style.title} style={{fontSize:titleFontSize,fontWeight:titleFontWeight,color:titleFontcolor,fontFamily:titleFontFamily}}>

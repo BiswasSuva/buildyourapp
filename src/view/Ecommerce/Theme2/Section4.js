@@ -10,6 +10,8 @@ import seconfperson from "../../../assets/images/ThemeImages/seconfperson.png";
 import thirdperson from "../../../assets/images/ThemeImages/thirdperson.png";
 import { useElementList } from "../../../Providers/ElemetProvider";
 import { getEcomProduct } from "../../../api/appApi";
+import { useEstoreRightSidearContext } from "../../../Providers/EcomRightSidebar";
+
 const DUMMY_PRODUCT = [
   {
     productName: "Oversize Tshirt Baby Blue",
@@ -35,6 +37,8 @@ const DUMMY_PRODUCT = [
 
 function Section4({ feild = [] }) {
   const { rerender, setRender } = useElementList();
+  const { activeElement, setActiveElement } = useEstoreRightSidearContext();
+
 
   const [products, setProducts] = useState(DUMMY_PRODUCT);
   let borderRadius = feild.find((item) => item.key == "Border Radius")?.value;
@@ -69,7 +73,7 @@ function Section4({ feild = [] }) {
   };
 
   return (
-    <div className={style.productlist} style={{background:BackgroundColor}}>
+    <div className={style.productlist} style={{background:BackgroundColor,border:activeElement===3&& "2px solid black"}}>
       <div className="container-fluid">
         <div className={style.productbanner}>
           <h1 style={{color:HeadingColor}}>{Headingtitle}</h1>

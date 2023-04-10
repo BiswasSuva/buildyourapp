@@ -1,7 +1,10 @@
 import React from "react";
 import Icon from "../../../AllIcons/Icon";
 import style from "./ecommerce.module.css";
+import { useEstoreRightSidearContext } from "../../../Providers/EcomRightSidebar";
 function Section2({ feild = [] }) {
+  const { activeElement, setActiveElement } = useEstoreRightSidearContext();
+
   let placeholder = feild.find((item) => item.key === "Search Placeholder");
   let placeholderFontSize = feild.find((item) => item.key === "Search Text Font Size")?.value;
   let placeholderFontColor = feild.find((item) => item.key === "Search Text Font Color")?.value;
@@ -15,7 +18,7 @@ function Section2({ feild = [] }) {
   console.log("searchicons", Enableicon);
 
   return (
-    <div className={style.searcharea}>
+    <div className={style.searcharea} style={{border:activeElement===1 && "2px solid black"}}>
       <div className="container-fluid" style={{ padding: "10px" }}>
         <div className={`form-group ${style.has23search}`}>
           {Enableicon !== "none" && Enableicon !== undefined ? (

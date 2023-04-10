@@ -37,16 +37,17 @@ import { useEstoreRightSidearContext } from "../../Providers/EcomRightSidebar";
 import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
 import { useElementList } from "../../Providers/ElemetProvider";
 import { toast } from "react-hot-toast";
-import News from "../News/Theme1/Index"
-import Newsdetails from "../News/Themedetails/Index"
+import News from "../News/Theme1/Index";
+import Newsdetails from "../News/Themedetails/Index";
 function Appearnce() {
   const { id, moduleID } = useParams();
   // const [elementList, setElementList] = useState([]);
   const [deletedElement, setDeletedElement] = useState([]);
   const [fetch, setFetch] = useState(false);
-  const { component, setRenderComponent } = useEstoreRightSidearContext();
+  const { component, setRenderComponent, activeElement, setActiveElement } =
+    useEstoreRightSidearContext();
   const [loading, setLoading] = useState(false);
-  const { elementList, setElementList } = useElementList()
+  const { elementList, setElementList } = useElementList();
   // console.log("my elemenmt");
 
   useEffect(() => {
@@ -65,41 +66,33 @@ function Appearnce() {
           return {
             ...item,
             elementTypeName: {
-
               ...item.elementTypeName,
               field: item.elementTypeName.field.map((feildItem) => {
                 return {
                   ...feildItem,
-                  value: item.elementsField?.fieldsList.find((it) => it.key == feildItem.key)?.value
-
-                }
-              })
-
-
-
-            }
-
-          }
+                  value: item.elementsField?.fieldsList.find(
+                    (it) => it.key == feildItem.key
+                  )?.value,
+                };
+              }),
+            },
+          };
         }
         return {
-          ...item
-        }
-
-      })
+          ...item,
+        };
+      });
 
       console.log("updatedlist", list);
 
       // here we checking if user updeted value in feild list if user update value list elementsField becomes new key value pair
-
 
       setElementList(
         list
           ?.filter((item) => !item.isDeleted)
           .sort((a, b) => a.position - b.position)
       );
-      setDeletedElement(
-        list.filter((item) => item.isDeleted)
-      );
+      setDeletedElement(list.filter((item) => item.isDeleted));
     }
     setLoading(false);
   };
@@ -175,7 +168,7 @@ function Appearnce() {
     );
     // console.log("doen",result);
     if (result && result.status) {
-      toast.success("Changes done")
+      toast.success("Changes done");
       // Swal.fire({
       //   title: "Elements Updted Successfully ! ",
       //   icon: "success",
@@ -221,6 +214,7 @@ function Appearnce() {
                                     deleteThisElement(item._id, item)
                                   }
                                   onClick={() => {
+                                    setActiveElement(index);
                                     // setFeildList(item);
                                     // setfeildElementindex(index);
                                     setRenderComponent(
@@ -288,7 +282,7 @@ function Appearnce() {
                 <ul className="each-text custom-list">
                   <li
                     onClick={() =>
-                      setRenderComponent(<AddSubCategory close={() => { }} />)
+                      setRenderComponent(<AddSubCategory close={() => {}} />)
                     }
                   >
                     Add Sub-Category
@@ -313,7 +307,7 @@ function Appearnce() {
                   <li
                     onClick={() =>
                       setRenderComponent(
-                        <AddProduct setFetch={setFetch} close={() => { }} />
+                        <AddProduct setFetch={setFetch} close={() => {}} />
                       )
                     }
                   >
@@ -337,7 +331,7 @@ function Appearnce() {
                   <li
                     onClick={() =>
                       setRenderComponent(
-                        <EstoreAddBanner setFetch={setFetch} close={() => { }} />
+                        <EstoreAddBanner setFetch={setFetch} close={() => {}} />
                       )
                     }
                   >
@@ -402,8 +396,6 @@ function Appearnce() {
             {/* <Podcasttheme2 /> */}
             {/* <Otttheme1 /> */}
             {/* <Otttheme2 /> */}
-
-
           </Mainmobile>
         </div>
       </DashboardUi>

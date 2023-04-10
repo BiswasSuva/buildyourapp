@@ -3,7 +3,12 @@ import style from "./ecommerce.module.css";
 import cart from "../../../assets/images/ThemeImages/searchnormalnew.png";
 import notification from "../../../assets/images/ThemeImages/notification-bing.png";
 import Icon from "../../../AllIcons/Icon";
+import { useEstoreRightSidearContext } from "../../../Providers/EcomRightSidebar";
+
 function Section1({ feild = [] }) {
+  const { activeElement, setActiveElement } = useEstoreRightSidearContext();
+
+
   let title = feild.find((item) => item.key === "Title")?.value;
   let titleFontSize = feild.find((item) => item.key === "Title Font Size")?.value;
   let titleFontColor = feild.find((item) => item.key === "Title Font Color")?.value;
@@ -14,7 +19,7 @@ function Section1({ feild = [] }) {
   let notificationColor = feild.find((item) => item.key === "Notification Icon Color")?.value;
   let notificationIcon = feild.find((item)=>item.key==="Notification Icon")?.value
   return (
-    <div className={style.ecommercenewtheme} >
+    <div className={style.ecommercenewtheme} style={{border:activeElement===0&& "2px solid black"}} >
       <div className="container-fluid">
         <div className={style.topheadernewtheme}>
           <div
