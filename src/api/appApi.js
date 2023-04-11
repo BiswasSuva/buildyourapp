@@ -422,6 +422,41 @@ export async function DelPodcast(id) {
 
   return response;
 }
+
+
+//................................ Podcast Album............................
+export async function addPodcastAlbum(data) {
+  let response = await HttpClient.requestData(
+    `podcast/add-podcast-album`,
+    "POST",
+    data
+  );
+
+  return response;
+}
+export async function EditPodcastAlbum(id, data) {
+  let response = await HttpClient.requestData(
+    `podcast/update-podcast-album/${id}`,
+    "POST",
+    data
+  );
+
+  return response;
+}
+
+export async function GetPodcastAlbum() {
+  let response = await HttpClient.requestData(`podcast/get-podcast-album`, "GET");
+
+  return response;
+}
+export async function DelPodcastAlbum(id) {
+  let response = await HttpClient.requestData(
+    `podcast/delete-podcast-album/${id}`,
+    "PUT"
+  );
+
+  return response;
+}
 //________________________________________Banner----------------------------------
 
 export async function AddBannerApi(data) {

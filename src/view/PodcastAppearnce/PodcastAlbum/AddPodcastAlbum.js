@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import { AddPodcast, editOttVideo, EditPodcast } from "../../api/appApi";
+import { addPodcastAlbum, EditPodcastAlbum,  } from "../../../api/appApi";
 
 import { motion } from "framer-motion";
 import { useMultistepForm } from "../../../customHooks/useMultiStepForm";
@@ -75,10 +75,10 @@ function AddPodcastAlbum({
       let result;
 
       if (editEnable) {
-        // result = await EditPodcast(editElement?._id, dataSend);
+        result = await EditPodcastAlbum(editElement?._id, dataSend);
       } else {
         console.log("first");
-        // result = await AddPodcast(dataSend);
+        result = await addPodcastAlbum(dataSend);
         console.log("result", result);
       }
 

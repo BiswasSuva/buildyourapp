@@ -81,7 +81,10 @@ function Form3({ date, audio, description, updateFields, duration }) {
             : "Upload Audio"
         }`}
       />
-      <audio src={audio}></audio>
+      {/* <audio src={audio}></audio> */}
+   {  audio !="" &&  <audio controls key={audio} >
+        <source src={audio} type="audio/mp3" />
+      </audio>}
     </>
   );
 }

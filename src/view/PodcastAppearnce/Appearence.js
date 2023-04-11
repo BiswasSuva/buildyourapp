@@ -36,6 +36,7 @@ import { useElementList } from "../../Providers/ElemetProvider";
 import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
 import Podcasttheme1 from "../Podcast/Theme1/index"
 import Podcasttheme2 from "../Podcast/Theme2/index"
+import ManagePodcastAlbum from "./ManagePodcastAlbum";
 
 
 function Appearnce() {
@@ -352,7 +353,7 @@ function Appearnce() {
                   <li
                     onClick={() =>
                       setRenderComponent(
-                        <ManageBanner setFetch={setFetch} close={() => {}} />
+                        <ManagePodcastAlbum setFetch={setFetch} close={() => {}} />
                       )
                     }
                   >
