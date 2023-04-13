@@ -15,6 +15,7 @@ import Form4 from "./AddPodcastComponent/Form4";
 import Form5 from "./AddPodcastComponent/Form5";
 import { toast } from "react-hot-toast";
 import ManagePodcast from "./ManagePodcast"
+import ManagePodcastAlbum from "./ManagePodcastAlbum";
 // import ManageProduct from "./ManageProduct";
 
 const INITIAL_DATA = {
@@ -104,7 +105,7 @@ console.log('dataSend', dataSend)
       if (result && result.status) {
         toast.success(result?.message);
         setData(INITIAL_DATA);
-        setRenderComponent(<ManagePodcast setFetch={setFetch}/>)
+        setRenderComponent(<ManagePodcastAlbum setFetch={setFetch}/>)
       }
     } else {
       toast.error("All feilds are required");

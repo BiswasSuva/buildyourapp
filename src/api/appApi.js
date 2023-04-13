@@ -437,7 +437,7 @@ export async function addPodcastAlbum(data) {
 export async function EditPodcastAlbum(id, data) {
   let response = await HttpClient.requestData(
     `podcast/update-podcast-album/${id}`,
-    "POST",
+    "PUT",
     data
   );
 

@@ -11,6 +11,7 @@ import useGetApi from "../../../customHooks/useGetApi";
 import Form1 from "./PodcastAlbumForm/Form1";
 import Form2 from "./PodcastAlbumForm/Form2";
 import Form3 from "./PodcastAlbumForm/Form3";
+import { toast } from "react-hot-toast";
 
 
 // import ManageProduct from "./ManageProduct";
@@ -83,7 +84,7 @@ function AddPodcastAlbum({
       }
 
       if (result && result.status) {
-        alert("Video Added Successfully");
+        toast.success("Video Added Successfully");
         setData(INITIAL_DATA);
         // setRenderComponent(<ManageProduct setFetch={setFetch}/>)
       }
