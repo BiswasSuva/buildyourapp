@@ -367,7 +367,7 @@ function Appearnce() {
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
           {/* <Mobilescreen /> */}
           <Mainmobile style={{left: "-25%"}}>
-            {loading && <MobileScreenLoader />}
+            {/* {loading && <MobileScreenLoader />}
             {!loading && (
               <>
                 {id == "64256913d7c605809d1d1dff" && (
@@ -377,7 +377,7 @@ function Appearnce() {
                   <EcommerceTheme2 fetch={fetch} elementList={elementList} />
                 )}
               </>
-            )}
+            )} */}
 
             {/* <Events/> */}
 
@@ -390,7 +390,7 @@ function Appearnce() {
             {/* <EcommerceTheme1 elementList={elementList} /> */}
 
             {/* News Theme 1 */}
-            {/* <News /> */}
+            <News />
             
             {/* <Newsdetails /> */}
 
