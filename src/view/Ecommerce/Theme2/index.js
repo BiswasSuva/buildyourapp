@@ -26,7 +26,7 @@ function index({ fetch, elementList = [] }) {
           <Section6></Section6>
         </div> */}
 
-        {elementList.map((item, index) => {
+        {/* {elementList.map((item, index) => {
           return (
             <div key={item._id}>
               {item.elementTypeName.title === "E-Store Black Theme Header" && (
@@ -34,15 +34,15 @@ function index({ fetch, elementList = [] }) {
               )}
             </div>
           );
-        })}
+        })} */}
         <div className={style.bgcss}>
           {elementList.map((item, index) => {
             return (
-              <div key={item._id}>
-                {/* {item.elementTypeName.title ===
+              < >
+                {item.elementTypeName.title ===
                   "E-Store Black Theme Header" && (
                   <Section1 feild={item.elementTypeName.field} />
-                )} */}
+                )}
                 {item.elementTypeName.title ===
                   "E-Store Black Theme Banner" && (
                   <Section2
@@ -62,7 +62,7 @@ function index({ fetch, elementList = [] }) {
                 {/* {item.elementTypeName.title === "Product List" && (
                 <Section5 fetch={fetch} feild={item.elementTypeName.field} ></Section5>
               )} */}
-              </div>
+              </>
             );
           })}
         </div>

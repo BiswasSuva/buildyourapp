@@ -100,7 +100,7 @@ const ManageBanner = () => {
       className="right-sidebar"
       style={{ paddingBottom: "50px" }}
     >
-      <Heading heading="Podcasts" />
+      <Heading heading="Podcasts Banners" />
       <Datatable columns={columns} rows={allVid} />
     </motion.div>
   );

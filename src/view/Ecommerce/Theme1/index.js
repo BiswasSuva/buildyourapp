@@ -6,8 +6,7 @@ import Section5 from "./Section5";
 import Section3 from "./Section3";
 import style from "./ecommerce.module.css";
 import Notch from "./Notch";
-
-function index({ fetch,elementList = [] }) {
+function index({ fetch, elementList = [] }) {
   return (
     <div
       className={style.scrollProblm}
@@ -20,30 +19,37 @@ function index({ fetch,elementList = [] }) {
         {/* <Section1 /> */}
         {elementList.map((item, index) => {
           return (
-              < div key={item._id}>
-              {item.elementTypeName.title === "E-Store Default Theme Header" && (
+            <div key={item._id}>
+              {item.elementTypeName.title ===
+                "E-Store Default Theme Header" && (
                 <Section1 feild={item.elementTypeName.field} />
               )}
-              {item.elementTypeName.title === "E-Store Default Theme Search " && (
-                <Section2 feild={item.elementTypeName.field} ></Section2>
+              {item.elementTypeName.title ===
+                "E-Store Default Theme Search " && (
+                <Section2 feild={item.elementTypeName.field}></Section2>
               )}
-              {item.elementTypeName.title === "E-Store Default Theme Banner" && (
-                <Section3  feild={item.elementTypeName.field} fetch={fetch}></Section3>
+              {item.elementTypeName.title ===
+                "E-Store Default Theme Banner" && (
+                <Section3
+                  feild={item.elementTypeName.field}
+                  fetch={fetch}
+                ></Section3>
               )}
               {item.elementTypeName.title === "E-Store Category List" && (
-                <Section4 fetch={fetch} feild={item.elementTypeName.field}></Section4>
+                <Section4
+                  fetch={fetch}
+                  feild={item.elementTypeName.field}
+                ></Section4>
               )}
               {item.elementTypeName.title === "E-Store Product List " && (
-                <Section5 fetch={fetch} feild={item.elementTypeName.field} ></Section5>
+                <Section5
+                  fetch={fetch}
+                  feild={item.elementTypeName.field}
+                ></Section5>
               )}
             </div>
-       
-          
           );
         })}
-    
-               
-            
       </div>
     </div>
   );

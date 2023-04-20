@@ -14,6 +14,8 @@ import Form3 from "./AddPodcastComponent/Form3";
 import Form4 from "./AddPodcastComponent/Form4";
 import Form5 from "./AddPodcastComponent/Form5";
 import { toast } from "react-hot-toast";
+import ManagePodcast from "./ManagePodcast"
+import ManagePodcastAlbum from "./ManagePodcastAlbum";
 // import ManageProduct from "./ManageProduct";
 
 const INITIAL_DATA = {
@@ -72,7 +74,7 @@ function AddPodCast({
       description: data.description,
       director: data.director,
       presnter: data.presnter,
-      trailer: data.trailer,
+      // trailer: data.trailer,
       genreId: data.genreId,
       date: data.date,
       audio: data.audio,
@@ -103,7 +105,7 @@ console.log('dataSend', dataSend)
       if (result && result.status) {
         toast.success(result?.message);
         setData(INITIAL_DATA);
-        // setRenderComponent(<ManageProduct setFetch={setFetch}/>)
+        setRenderComponent(<ManagePodcastAlbum setFetch={setFetch}/>)
       }
     } else {
       toast.error("All feilds are required");
@@ -131,7 +133,7 @@ console.log('dataSend', dataSend)
       trailer: editElement.trailer,
       genreId: editElement.genreId,
       date: editElement.date,
-      audio: data.audio,
+      audio: editElement.audio,
       duration: editElement.duration,
       thumbline: editElement.thumbline,
       priority: editElement.priority,
@@ -191,7 +193,15 @@ console.log('dataSend', dataSend)
             <div className={currentStepIndex + 1 === 4 ? "active" : "inactive"}>
               <p>4</p>
             </div>
-          </div>{" "}
+          </div>
+          <div className="arrow-div">
+            <div className={currentStepIndex + 1 === 5 ? "active" : "inactive"}>
+              <p>5</p>
+            </div>
+          </div>
+          
+          
+          {" "}
         </div>
 
         <div className="component-div">

@@ -9,6 +9,8 @@ import plus from '../../../assets/images/ThemeImages/plus.png';
 import useEcomProduct from '../../../customHooks/useEcomProduct'
 import { useElementList } from '../../../Providers/ElemetProvider'
 import { getEcomProduct } from '../../../api/appApi'
+import { useEstoreRightSidearContext } from "../../../Providers/EcomRightSidebar";
+
 
 
 const DUMMY_PRODUCT = [
@@ -45,6 +47,8 @@ const DUMMY_PRODUCT = [
 
 function Section5({ fetch, feild = [] }) {
   const {rerender,setRender} = useElementList()
+  const { activeElement, setActiveElement } = useEstoreRightSidearContext();
+
 
   const [products,setProducts] = useState(DUMMY_PRODUCT)
   let coloumn = feild.find((item) => item.key == "Number of coloumns")?.value
@@ -74,7 +78,7 @@ fetchProduct()
   console.log("products", products);
 
     return (
-      <div className={style.productlist}>
+      <div className={style.productlist} style={{border:activeElement===4&& "2px solid black"}}>
         <div className='container-fluid'>
           <Link to="">
             <div className={style.productmain} style={{ flexDirection: coloumn && coloumn == 1 ? "column" : "row" }}>

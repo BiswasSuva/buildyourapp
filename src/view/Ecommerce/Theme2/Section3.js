@@ -12,6 +12,8 @@ import decor from "../../../assets/images/ThemeImages/AllItems/decor.png";
 import bag from "../../../assets/images/ThemeImages/AllItems/hand-bag.png";
 import { useElementList } from "../../../Providers/ElemetProvider";
 import { getEcomCat } from "../../../api/appApi";
+import { useEstoreRightSidearContext } from "../../../Providers/EcomRightSidebar";
+
 
 const arr = [
   {
@@ -67,6 +69,8 @@ const arr = [
 function Section3({ feild = [] }) {
   const [categories, setCategories] = useState(arr);
   const { rerender, setRender } = useElementList();
+  const { activeElement, setActiveElement } = useEstoreRightSidearContext();
+
 
   let noOItems = feild.find((item) => item.key === "Number Of Items")?.value;
   let borderRadius = feild.find((item) => item.key === "Border Radius")?.value;
@@ -121,7 +125,7 @@ function Section3({ feild = [] }) {
     }
   };
   return (
-    <div className={style.categorysliding}>
+    <div className={style.categorysliding} style={{border:activeElement===2&& "2px solid black"}}>
       <div className="container-fluid">
         <div className={style.fullslider}>
           <Slider {...settings}>

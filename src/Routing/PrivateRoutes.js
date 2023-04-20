@@ -20,6 +20,7 @@ import { PodcastSidebarContext } from "../Providers/PodcastRightSidebar";
 import { EventSiderbarContext } from "../Providers/EventRightSidebar";
 import { NewsSiderbarContext } from "../Providers/NewsRightSidebar";
 import { ElementProvider } from "../Providers/ElemetProvider";
+import AuthPagedesgin from "../view/AuthpageDesgin/index"
 
 function PrivateRoutes() {
   const { userData } = useSelector((state) => state.User);
@@ -30,6 +31,8 @@ function PrivateRoutes() {
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="logo" element={<Logo />} />
+          <Route path="authpage" element={<AuthPagedesgin />} />
+
 
           <Route
             path="E-Store/appearnce/:id/:moduleID"

@@ -6,7 +6,11 @@ import Background from "../../../assets/images/ThemeImages/Background.png"
 import estoretheme2banner from "../../../images/estoretheme2banner.3deeee84aaf54cd36eb6 (1).png"
 import useEcomBanner from '../../../customHooks/useEcomBanner'
 import Slider from "react-slick";
+import { useEstoreRightSidearContext } from "../../../Providers/EcomRightSidebar";
+
 function Section2({fetch, feild = [] }) {
+  const { activeElement, setActiveElement } = useEstoreRightSidearContext();
+
   let height = feild.find((item) => item.key === "Banner Height")?.value;
   let width = feild.find((item) => item.key === "Banner Width")?.value;
   let borderRadius = feild.find((item) => item.key === "Border Radius")?.value;
@@ -32,12 +36,12 @@ function Section2({fetch, feild = [] }) {
   const DummyImage =[
     {
       image:estoretheme2banner,
-      style:{height:"208px",width:"360px"}
+      style:{height:"208px",width:"360px",}
     }
   ]
   return (
-    <div className='container-fluid' style={{ height: "100%" }}>
-      <div className={style.banner} style={{height:height,width:width,borderRadius:borderRadius,backgroundColor}}>
+    <div className='container-fluid'  style={{ height: "100%" ,backgroundColor:"#fff",padding:'20px 0' ,borderRadius:"30px 30px 0 0",border:activeElement===1&& "2px solid black"}}>
+      <div className={style.banner} style={{height:height,width:width,borderRadius:borderRadius,backgroundColor, margin: "0 auto"}}>
         <Slider {...settings} className="bannersliderall">
          {banner.length==0? <img src={estoretheme2banner}/>:
 
