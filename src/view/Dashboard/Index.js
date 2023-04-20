@@ -17,7 +17,7 @@ function Index() {
   return (
     <>
       <DashboardUi>
-        <div className="col-lg-4 col-xl-4 col-md-4 col-12">
+        <div className="col-lg-3 col-xl-3 col-md-3 col-12">
           {/* <Elements /> */}
           <div className='mainMobile'>
             <div className="iphone">

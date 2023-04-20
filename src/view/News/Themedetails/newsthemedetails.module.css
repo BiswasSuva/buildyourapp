@@ -58,7 +58,7 @@ h4.titlenews {
     display: flex;
     align-items: center;
     letter-spacing: 0.2px;
-    color: #000000;
+    color: #fff;
     margin-bottom: 0;
 }
 
@@ -69,7 +69,7 @@ h4.titlenews {
     font-size: 10px;
     line-height: 140%;
     letter-spacing: 0.2px;
-    color: #000000;
+    color: #fff;
 }
 
 .newsline {
@@ -81,7 +81,7 @@ h4.titlenews {
     display: flex;
     align-items: center;
     letter-spacing: 0.2px;
-    color: #000000;
+    color: #fff;
 }
 
 .para {
@@ -93,4 +93,7 @@ h4.titlenews {
     text-align: justify;
     letter-spacing: 0.2px;
     color: #000000;
+}
+.newsarticle{
+    margin-top: -32%;
 }

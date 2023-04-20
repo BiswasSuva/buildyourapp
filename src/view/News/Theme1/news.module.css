@@ -16,7 +16,7 @@ body {
 }
 
 .newsheader {
-    margin: 15px 0;
+    padding: 15px 0;
 }
 
 .newsheader img {
@@ -27,7 +27,7 @@ body {
 }
 
 h4.title {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -51,7 +51,7 @@ h4.title {
 }
 
 .searchbox {
-    margin: 15px 0;
+    padding:0 0 15px 0;
 }
 
 .hassearch .form-control {
@@ -92,8 +92,7 @@ h4.title {
     padding: 6px 12px;
     border: 1px solid #000000;
     border-radius: 45px;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 140%;
@@ -119,7 +118,7 @@ h4.title {
 }
 
 .newsdate h2 {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -132,7 +131,7 @@ h4.title {
 }
 
 .article p {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: 800;
     font-weight: 600;
     font-size: 10px;
@@ -149,7 +148,7 @@ h4.title {
 }
 
 .articletime p {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 10px;
@@ -160,7 +159,7 @@ h4.title {
     color: #000000;
     margin-bottom: 5px;
     justify-content: end;
-   
+
 }
 
 .articleimage img {
@@ -170,12 +169,117 @@ h4.title {
 }
 
 .articlepara p {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 140%;
     letter-spacing: 0.2px;
     color: #000000;
-  
+
+}
+
+.bannerbox {
+    margin: 15px 0;
+
+}
+
+.bannerimage {
+    position: relative;
+}
+
+.bannerimage img {
+    border-radius: 10px;
+    height: 170px;
+    width: 100%;
+}
+
+.bannertitle {
+    margin-top: -25%;
+    padding: 10px;
+    z-index: 9;
+    position: relative;
+}
+
+
+.bannertitle p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.bannertitle p img {
+    width: 12px;
+    height: 12px;
+}
+
+.bannertitle h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+button.tags {
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 6px 12px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.singlebtn button {
+    padding: 5px 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #000000;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+h2.breaktitle {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -0.165px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+p.breakpara {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: -0.165px;
+    color: #9E9E9E;
+    margin-bottom: 0;
+}
+.searchicon{
+    width: 36px !important;
+    height: 36px !important;
 }

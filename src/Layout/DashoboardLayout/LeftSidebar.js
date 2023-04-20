@@ -8,6 +8,11 @@ const sidebarContent = [
     url: "/logo",
     name: "Logo",
   },
+  {
+    icon: "fa-solid fa-cloud-arrow-up",
+    url: "/authpage",
+    name: "Login&Reg",
+  },
 
   
 ];
