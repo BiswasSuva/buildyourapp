@@ -393,7 +393,8 @@ a.sidebar__nav-link i {
   height: 40rem;
   position: relative;
   /* box-shadow: 0px 20px 15px #33333335; */
-  left: -5%;
+  /* left: -5%; */
+  margin-left: 5%;
 
 }
 

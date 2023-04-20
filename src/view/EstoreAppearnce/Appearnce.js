@@ -38,7 +38,10 @@ import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
 import { useElementList } from "../../Providers/ElemetProvider";
 import { toast } from "react-hot-toast";
 import News from "../News/Theme1/Index"
-import Newsdetails from "../News/Themedetails/Index"
+import Newsdetails from "../News/Themedetails/Index";
+// import Events from "../Events/Theme1/Index"
+import Eventdetails1 from "../Events/Eventthemedetails1/Index"
+
 function Appearnce() {
   const { id, moduleID } = useParams();
   // const [elementList, setElementList] = useState([]);
@@ -363,7 +366,7 @@ function Appearnce() {
         </div>
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
           {/* <Mobilescreen /> */}
-          <Mainmobile>
+          <Mainmobile style={{left: "-25%"}}>
             {loading && <MobileScreenLoader />}
             {!loading && (
               <>
@@ -376,6 +379,11 @@ function Appearnce() {
               </>
             )}
 
+            {/* <Events/> */}
+
+            {/* <Eventdetails1/> */}
+
+            
             {/* <Ecommerceproductdetails /> */}
             {/* <Ecommerceproductdetails2 /> */}
 
@@ -383,6 +391,7 @@ function Appearnce() {
 
             {/* News Theme 1 */}
             {/* <News /> */}
+            
             {/* <Newsdetails /> */}
 
             {/*----Start New Themes----*/}

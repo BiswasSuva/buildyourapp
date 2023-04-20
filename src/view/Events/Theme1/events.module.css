@@ -1,0 +1,164 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #fff;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    height: 0 !important;
+    width: 0 !important;
+}
+
+h4.title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: #455AF7;
+}
+
+.eventheader {
+    padding: 20px 0;
+}
+
+.featuredtitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+    color: #1A202C;
+}
+
+.banneritem {
+    width: 70%;
+}
+
+.grpimage {
+    width: 30%;
+    text-align: right;
+}
+
+.bannerImage {
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(113, 128, 150, 0.02);
+    border-radius: 20px;
+    padding-bottom: 16px;
+}
+
+.bannerImage img {
+    height: 150px;
+    border-radius: 30px 30px 0 0;
+    object-fit: fill;
+}
+
+.banneritem h6 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+    color: #1A202C;
+    margin-bottom: 5px;
+}
+
+.banneritem p {
+    margin-bottom: 0;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+    letter-spacing: 0.3px;
+    color: #718096;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.banneritem p img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.grpimage img {
+    width: 75px;
+    height: 32px;
+    border-radius: 0;
+}
+
+.populareventstitle {
+    margin: 25px 0;
+}
+
+h1.populartitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+    color: #1A202C;
+}
+
+a.viewmore {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: right;
+    letter-spacing: 0.3px;
+    color: #455AF7;
+}
+
+.eventsitem {
+    /* background: #FFFFFF; */
+    border-radius: 16px;
+}
+.imagebox{
+    margin-right: 15px;
+}
+.imagebox img {
+    width: 130px;
+    height: 80px;
+    border-radius: 16px;
+}
+
+.eventlist {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+h2.timearticle {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 135%;
+    letter-spacing: 0.3px;
+    color: #455AF7;
+}
+
+h1.maititle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+    color: #1A202C;
+}
