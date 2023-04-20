@@ -3,6 +3,7 @@ import style from "./eventdetails1.module.css";
 import Header from './Header';
 import Scheduledevent from './Scheduledevent';
 import Follower from './Follower';
+import Eventdetails from './Eventdetails';
 function Index() {
   return (
     <div className={style.scrollProblm} style={{ height: "100%", width: "100%", borderRadius: "30px" }}>
@@ -10,6 +11,7 @@ function Index() {
                 <Header/>
                 <Scheduledevent/>
                 <Follower/>
+                <Eventdetails/>
             </div>
         </div>
   )

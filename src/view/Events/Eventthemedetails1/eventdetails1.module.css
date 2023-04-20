@@ -81,7 +81,7 @@ p.name {
     font-size: 14px;
     line-height: 140%;
     color: #1A202C;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 p.designation {
@@ -92,8 +92,53 @@ p.designation {
     line-height: 135%;
     letter-spacing: 0.3px;
     color: #718096;
+    margin-bottom: 0;
 }
 
 .follower {
     margin: 25px 0;
+}
+
+.userprofile {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 10px;
+}
+
+.follow {
+    background: #F5F6FF;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+    color: #455AF7;
+    padding: 8px 20px;
+}
+
+p.paradetails {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+    color: #718096;
+}
+
+.buybtn {
+    width: 100%;
+    background: #455AF7;
+    border-radius: 16px;
+    height: 56px;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
 }

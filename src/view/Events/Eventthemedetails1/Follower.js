@@ -3,11 +3,11 @@ import style from "./eventdetails1.module.css";
 import User from "../../../images/User.png"
 function Follower() {
     return (
-        <div className={style.follower}>
+        <div className={style.follower} style={{padding: '20px 15px', borderBottom: "1px solid #EDF2F7" }}>
             <div className='container'>
-                <div className='row'>
-                    <div className='col-6'>
-                        <div className='row'>
+                <div className='row align-items-center'>
+                    <div className='col-6 '>
+                        <div className='row align-items-center'>
                             <div className={style.profile}>
                                 <img src={User} alt="User" className={style.userprofile}/>
                             </div>
@@ -17,7 +17,9 @@ function Follower() {
                             </div>
                         </div>
                     </div>
-                    <div className='col-6'></div>
+                    <div className='col-6 text-right'>
+                        <button className={style.follow}>Follow</button>
+                    </div>
                 </div>
             </div>
         </div>
