@@ -14,6 +14,8 @@ import HttpClient from "../../utils/HttpClient";
 import Swal from "sweetalert2";
 import AccordianBox from "../../Component/AccordianBox";
 import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
+import Registercustomer from "../../view/Registercustomer/Index"
+import Logincustomer  from "../../view/Logincustomer/Index"
 
 function Appearnce() {
   //   const { id, moduleID } = useParams();
@@ -63,12 +65,285 @@ function Appearnce() {
           <LeftSideUi>
             <div className="accordion-section">
               <AccordianBox title="Login page ">
-                <li>Name</li>
-                <li>Email</li>
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text"> Enter Your Email</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Enter Your Password</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
               </AccordianBox>
-              <AccordianBox title="Register page ">
-                <li>Name</li>
+              <AccordianBox title="Register page " >
+                {/* <li>First Name</li>
+                <li>Last Name</li>
                 <li>Email</li>
+                <li>Reffaral Code</li>
+                <li>Password</li>
+                <li>Confirm Password</li> */}
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text"> Logo</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text"> First Name</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text"> Last Name</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text"> Email</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text"> Referral Code</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text"> Password</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Confirm Password</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Contact Number</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Country</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">City</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">About</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Choose an image</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Choose your interest</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                    <span
+                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
+                    >
+                      <i className="fa fa-clone" aria-hidden="clone" />
+                    </span>
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+
+
               </AccordianBox>
             </div>
             <button className="btn btn-customaccordian">Save Changes</button>
@@ -89,6 +364,9 @@ function Appearnce() {
             {/* <Podcasttheme1/> */}
 
             {/* <Otttheme1 /> */}
+
+            {/* <Registercustomer /> */}
+            <Logincustomer />
           </Mainmobile>
         </div>
       </DashboardUi>

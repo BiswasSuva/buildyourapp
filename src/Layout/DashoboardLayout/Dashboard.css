@@ -1068,6 +1068,8 @@ a.sidebar__nav-link i {
 .custom-list {
   max-width: 80%;
   margin: 0 auto 16px;
+  overflow-y: scroll;
+  height: 30vh;
 }
 
 .custom-list li {
