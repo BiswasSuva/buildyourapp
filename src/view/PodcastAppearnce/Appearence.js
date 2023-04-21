@@ -190,7 +190,7 @@ function Appearnce() {
             <div className="accordion-section">
               <div className="each-accordionbox">
                 <h3 className="each-title">Elements</h3>
-
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -256,6 +256,7 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Podcast Types</h3>
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -285,6 +286,7 @@ function Appearnce() {
               </div>{" "}
               <div className="each-accordionbox">
                 <h3 className="each-title">Podcast Genre</h3>
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -311,6 +313,7 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Podcast</h3>
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -337,6 +340,7 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Podcast Album</h3>
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -363,6 +367,7 @@ function Appearnce() {
               </div>{" "}
               <div className="each-accordionbox">
                 <h3 className="each-title">Banner</h3>
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>

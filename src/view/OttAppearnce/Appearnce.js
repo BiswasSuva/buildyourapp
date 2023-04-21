@@ -175,7 +175,7 @@ function Appearnce() {
             <div className="accordion-section">
               <div className="each-accordionbox">
                 <h3 className="each-title">Elements</h3>
-
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>

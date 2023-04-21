@@ -4,6 +4,7 @@ function AccordianBox({ title = "Title", children}) {
   return (
     <div className="each-accordionbox">
       <h3 className="each-title">{title}</h3>
+      <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
       <div className="swipebox">
         <div className="swipeplus">+</div>
       </div>
