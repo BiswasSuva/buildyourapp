@@ -104,6 +104,7 @@ function Appearnce() {
                 </div> */}
               </AccordianBox>
               <AccordianBox title="Register Screen " >
+                <ul className="each-title">First Steps</ul>
                 <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
                     <i className="fa-solid fa-store">
@@ -194,6 +195,8 @@ function Appearnce() {
                   </div>
                 </div>
 
+
+                <ul className="each-title">Second Steps</ul>
                 <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
                     <i className="fa-solid fa-store">
@@ -308,6 +311,7 @@ function Appearnce() {
               </AccordianBox>
 
               <AccordianBox title="Choose Your Interest Screen">
+              <ul className="each-title">Final Steps</ul>
                 <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
                     <i className="fa-solid fa-store">
