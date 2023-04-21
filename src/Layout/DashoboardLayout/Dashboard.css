@@ -390,7 +390,8 @@ a.sidebar__nav-link i {
   border: 10px solid black;
   border-radius: 40px;
   width: 20rem;
-  height: 40rem;
+  /* height: 40rem; */
+  height: 35rem;
   position: relative;
   /* box-shadow: 0px 20px 15px #33333335; */
   /* left: -5%; */
@@ -952,7 +953,7 @@ a.sidebar__nav-link i {
   height: 100%;
   width: 25rem;
   z-index: 20;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -976,7 +977,41 @@ a.sidebar__nav-link i {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   position: relative;
 }
-
+.each-accordionbox .tooltiptext{
+  visibility: hidden;
+    width: 300px;
+    background-color: #17a2b8;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 102%;
+    padding: 1%;
+    font-size: 14px;
+}
+.each-accordionbox .tooltiptext:after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #17a2b8 transparent transparent;
+}
+.confirmbtn{
+  background: linear-gradient(to right, #3d3a68, #58aebe);
+  padding: 8px 16px;
+  margin: 20px 0;
+  color: #fff;
+  border-radius: 10px;
+}
+.each-accordionbox:hover .tooltiptext {
+  visibility: visible;
+}
 /* .each-accordionbox::before {
   content: '+';
   position: absolute;
@@ -1026,7 +1061,7 @@ a.sidebar__nav-link i {
   /* color: #9FE522; */
   /* color: #17a2b8; */
   color: #fff;
-  padding: 0px 10px 15px 35px;
+  padding: 0px 10px 15px 45px;
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -1035,7 +1070,18 @@ a.sidebar__nav-link i {
   align-items: center;
   justify-content: space-between;
 }
-
+.tutorialtext{
+    color: #fff;
+    padding: 0px 10px 0 45px;
+    text-transform: capitalize;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
 .accordion-section p {
   padding: 0px 40px 20px;
   font-size: 15px;

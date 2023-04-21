@@ -1,0 +1,139 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #F6F8FD;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.logo p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 200%;
+    letter-spacing: 0.005em;
+    color: #0085FF;
+    margin-bottom: 0;
+}
+
+.newsheader {
+    padding: 10px 0;
+}
+
+.searchicon,
+.notiicon {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.searchbox {
+    border: 1px solid #DFDFDF;
+    border-radius: 14px;
+    padding: 8px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 0;
+}
+
+.pro {
+    display: flex;
+    align-items: center;
+
+}
+
+.pro img {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.pro h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.pro p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #979797;
+    margin-bottom: 0;
+}
+
+.dotstriple {
+    width: 3px !important;
+    height: 13px !important;
+}
+
+.bgimage {
+    height: 300px !important;
+    width: 100% !important;
+    margin: 10px 0;
+    border-radius: 0 !important;
+}
+
+.paratext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #000000;
+}
+
+.allbtns {
+    width: 40%;
+}
+
+.cmntsection {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cmntsection p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 200%;
+    letter-spacing: 0.005em;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.allbtns button {
+    margin-right: 10%;
+}
+
+.bottompart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

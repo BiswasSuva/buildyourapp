@@ -15,7 +15,10 @@ import Swal from "sweetalert2";
 import AccordianBox from "../../Component/AccordianBox";
 import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
 import Registercustomer from "../../view/Registercustomer/Index"
-import Logincustomer  from "../../view/Logincustomer/Index"
+import Logincustomer from "../../view/Logincustomer/Index"
+import Generalinfo from "../Registercustomer/Generalinfo";
+import Chooseimage from "../Registercustomer/Choooseanimage";
+import Chooseinterest from "../Registercustomer/Chooseinterest";
 
 function Appearnce() {
   //   const { id, moduleID } = useParams();
@@ -64,8 +67,8 @@ function Appearnce() {
           {/* <Elements /> */}
           <LeftSideUi>
             <div className="accordion-section">
-              <AccordianBox title="Login page ">
-                <div className="app-modules-recomanded-short-box">
+              <AccordianBox title="Login Screen ">
+                {/* <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
                     <i className="fa-solid fa-store">
                       <span className="e-text"> Enter Your Email</span>
@@ -98,35 +101,9 @@ function Appearnce() {
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
                   </div>
-                </div>
+                </div> */}
               </AccordianBox>
-              <AccordianBox title="Register page " >
-                {/* <li>First Name</li>
-                <li>Last Name</li>
-                <li>Email</li>
-                <li>Reffaral Code</li>
-                <li>Password</li>
-                <li>Confirm Password</li> */}
-
-                <div className="app-modules-recomanded-short-box">
-                  <div className="app-modules-recomanded-short-img-content">
-                    <i className="fa-solid fa-store">
-                      <span className="e-text"> Logo</span>
-                    </i>
-                  </div>
-                  <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
-                    <span style={{ color: "rgb(62, 78, 92)" }}>
-                      <i className="fa fa-trash" aria-hidden="true" />
-                    </span>
-                  </div>
-                </div>
-
-
+              <AccordianBox title="Register Screen " >
                 <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
                     <i className="fa-solid fa-store">
@@ -325,6 +302,12 @@ function Appearnce() {
                   </div>
                 </div>
 
+
+
+
+              </AccordianBox>
+
+              <AccordianBox title="Choose Your Interest Screen">
                 <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
                     <i className="fa-solid fa-store">
@@ -342,32 +325,35 @@ function Appearnce() {
                     </span>
                   </div>
                 </div>
-
-
               </AccordianBox>
             </div>
             <button className="btn btn-customaccordian">Save Changes</button>
           </LeftSideUi>
         </div>
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
-          {/* <Mobilescreen /> */}
-          <Mainmobile>
-            {/* <Ecommerceproductdetails /> */}
+          <div className="row">
+            <div className="col-4 text-center">
+              <Mainmobile>
+                <Registercustomer />
+                {/* <Logincustomer /> */}
+                {/* <Chooseinterest/> */}
+                <button className="confirmbtn">Confirm & Next</button>
+              </Mainmobile>
+            </div>
+            <div className="col-4 text-center">
+              <Mainmobile>
+                <Generalinfo/>
+                <button className="confirmbtn">Confirm & Next</button>
+              </Mainmobile>
+            </div>
+            <div className="col-4 text-center">
+              <Mainmobile>
+                <Chooseimage/>
+                <button className="confirmbtn">Confirm</button>
+              </Mainmobile>
+            </div>
+          </div>
 
-            {/* <EcommerceTheme1 elementList={elementList} /> */}
-
-            {/*----Start New Themes----*/}
-            {/* <Learning1 />  */}
-
-            {/* <Learning2 /> */}
-
-            {/* <Podcasttheme1/> */}
-
-            {/* <Otttheme1 /> */}
-
-            {/* <Registercustomer /> */}
-            <Logincustomer />
-          </Mainmobile>
         </div>
       </DashboardUi>
     </>

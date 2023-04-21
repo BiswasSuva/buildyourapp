@@ -50,17 +50,18 @@ label {
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 10px;
     border-radius: 10px;
+    box-shadow: 0px 5px 8px rgb(100 100 100 / 15%);
 }
 .btnreglog, .skip{
     padding: 10px 20px;
     color: #FFF;
-    background-color: #4bc970;
+    background-color: #312450;
     font-size: 18px;
     text-align: center;
     font-style: normal;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 100%;
-    border: 1px solid #3ac162;
+    border: 1px solid #312450;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
@@ -89,17 +90,17 @@ label {
 	height:1px;
 }
 .formlabel{
-	display:block;
-	justify-content:center;
-	align-items:center;
-	background: rgba(19, 139, 251, 0.05);
-	border: 1px dashed #4bc970;
-	border-radius: 12px;
-	padding: 24px 35px;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 23px;
-	color: #4bc970;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: rgba(19, 139, 251, 0.05);
+    border: 1px dashed #312450;
+    border-radius: 12px;
+    padding: 24px 35px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #312450;
     text-align: center;
 }
 .fa-cloud-upload-alt{

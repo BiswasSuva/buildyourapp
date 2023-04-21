@@ -41,7 +41,7 @@ import News from "../News/Theme1/Index"
 import Newsdetails from "../News/Themedetails/Index";
 // import Events from "../Events/Theme1/Index"
 import Eventdetails1 from "../Events/Eventthemedetails1/Index"
-
+import Socialmedia from "../Socialmedia/Index"
 function Appearnce() {
   const { id, moduleID } = useParams();
   // const [elementList, setElementList] = useState([]);
@@ -188,7 +188,8 @@ function Appearnce() {
             <div className="accordion-section">
               <div className="each-accordionbox">
                 <h3 className="each-title">Elements</h3>
-
+                {/* <h3 className="tutorialtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> */}
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -255,6 +256,8 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">categories</h3>
+                {/* <h3 className="tutorialtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> */}
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -279,6 +282,8 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Sub Category</h3>
+                {/* <h3 className="tutorialtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> */}
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -303,6 +308,8 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Products</h3>
+                {/* <h3 className="tutorialtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> */}
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -327,6 +334,8 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Banners</h3>
+                {/* <h3 className="tutorialtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> */}
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -384,10 +393,13 @@ function Appearnce() {
             {/* <EcommerceTheme1 elementList={elementList} /> */}
 
             {/* News Theme 1 */}
-            <News />
+            {/* <News /> */}
+
             
             {/* <Newsdetails /> */}
 
+
+          <Socialmedia />
             {/*----Start New Themes----*/}
             {/* <Learning1 />  */}
             {/* <Learningthemedetails1 /> */}
