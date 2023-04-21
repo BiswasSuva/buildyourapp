@@ -15,13 +15,19 @@ function Chooseinterest() {
 
                                     <fieldset>
                                         <legend>
-                                            Choose your interest
+                                            Pick your interest
                                         </legend>
+                                        <p className={style.txtinfo}>Select your interest so that we can tailor a great chrissalem app experiance</p>
                                         <div className={style.chooseinterest}>
-                                            <button><i class="fa-solid fa-cart-shopping" style={{ fontSize: "14px", color: "#14181b" }}></i> E-Commerce</button>
-                                            <button><i class="fa-solid fa-play" style={{ fontSize: "14px", color: "#14181b" }}></i>  OTT</button>
-                                            <button><i class="fa-solid fa-headphones" style={{ fontSize: "14px", color: "#14181b" }}></i> Podcast</button>
-                                            <button><i class="fa-solid fa-chalkboard" style={{ fontSize: "14px", color: "#14181b" }}></i> Learning</button>
+                                            <button><i class="fa-solid fa-circle-nodes" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Networking</button>
+                                            <button><i class="fa-regular fa-calendar"  style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i>  Events</button>
+                                            <button><i class="fa-solid fa-brush" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Design</button>
+                                            <button><i class="fa-solid fa-scale-unbalanced-flip" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Legal</button>
+                                            <button><i class="fa-solid fa-arrows-to-circle" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Content</button>
+                                            <button><i class="fa-solid fa-bullhorn" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Marketing</button>
+                                            <button><i class="fa-solid fa-person-circle-xmark" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Leadership</button>
+                                            <button><i class="fa-solid fa-people-carry-box" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Culture</button>
+                                        
                                         </div>
                                         <button type="submit" className={style.btnreglog}>Start your journey</button>
                                         <button type="submit" className={style.skip}>Skip</button>

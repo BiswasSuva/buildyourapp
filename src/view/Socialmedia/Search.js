@@ -8,13 +8,13 @@ function Search() {
             <div className='container'>
                 <div className='row'>
                     <div className='col-3'>
-                        <img src={profileimagenew} alt="Profile" className={style.profileimage}/>
+                        <img src={profileimagenew} alt="Profile" className={style.profileimage} />
                     </div>
-                    <div className='col-6' style={{paddingLeft: "0", paddingRight: "0"}}>
-                        <input type="search"  className={style.searchbox} placeholder = "On your mind ?"/>
+                    <div className='col-6' style={{ paddingLeft: "0", paddingRight: "0" }}>
+                        <input type="search" className={style.searchbox} placeholder="On your mind ?" />
                     </div>
                     <div className='col-3'>
-                    <img src={savebtnhsgs} alt="Profile" className={style.save}/>
+                        <img src={savebtnhsgs} alt="Profile" className={style.save} />
                     </div>
                 </div>
             </div>
