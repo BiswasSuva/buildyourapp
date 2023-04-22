@@ -19,13 +19,13 @@ function Generalinfo() {
                                             General Info:
                                         </legend>
 
-                                        <input type="text" id="contactN" name="contactN" placeholder='Contact Number' />
+                                        <input type="text" id="contactN" name="contactN" placeholder='Contact Number' disabled/>
 
-                                        <input type="text" id="country" name="country" placeholder='Country' />
+                                        <input type="text" id="country" name="country" placeholder='Country' disabled/>
 
-                                        <input type="text" id="city" name="city" placeholder='City' />
+                                        <input type="text" id="city" name="city" placeholder='City' disabled/>
 
-                                        <input type="textarea" id="about" name="about" placeholder='About Me' />
+                                        <input type="textarea" id="about" name="about" placeholder='About Me' disabled/>
 
 
                                     </fieldset>

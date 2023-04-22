@@ -1,6 +1,14 @@
 import React from 'react'
 import style from "./register.module.css";
 import Logo from './Logo';
+import netwroking from "../../images/chooseinterest/netwroking.png"
+import events from "../../images/chooseinterest/events.png"
+import design from "../../images/chooseinterest/design.png"
+import legal from "../../images/chooseinterest/legal.png"
+import content from "../../images/chooseinterest/content.png"
+import marketing from "../../images/chooseinterest/marketing.png"
+import leadership from "../../images/chooseinterest/leadership.png"
+import culture from "../../images/chooseinterest/culture.png"
 function Chooseinterest() {
     return (
 
@@ -19,14 +27,14 @@ function Chooseinterest() {
                                         </legend>
                                         <p className={style.txtinfo}>Select your interest so that we can tailor a great chrissalem app experiance</p>
                                         <div className={style.chooseinterest}>
-                                            <button><i class="fa-solid fa-circle-nodes" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Networking</button>
-                                            <button><i class="fa-regular fa-calendar"  style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i>  Events</button>
-                                            <button><i class="fa-solid fa-brush" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Design</button>
-                                            <button><i class="fa-solid fa-scale-unbalanced-flip" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Legal</button>
-                                            <button><i class="fa-solid fa-arrows-to-circle" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Content</button>
-                                            <button><i class="fa-solid fa-bullhorn" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Marketing</button>
-                                            <button><i class="fa-solid fa-person-circle-xmark" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Leadership</button>
-                                            <button><i class="fa-solid fa-people-carry-box" style={{ fontSize: "14px", color: "#14181b", width: "100%" }}></i> Culture</button>
+                                            <button><img src={netwroking} alt="Networking"/> Networking</button>
+                                            <button><img src={events} alt="Networking"/>  Events</button>
+                                            <button><img src={design} alt="Networking"/> Design</button>
+                                            <button><img src={legal} alt="Networking"/> Legal</button>
+                                            <button><img src={content} alt="Networking"/> Content</button>
+                                            <button><img src={marketing} alt="Networking"/> Marketing</button>
+                                            <button><img src={leadership} alt="Networking"/> Leadership</button>
+                                            <button><img src={culture} alt="Networking"/> Culture</button>
                                         
                                         </div>
                                         <button type="submit" className={style.btnreglog}>Start your journey</button>

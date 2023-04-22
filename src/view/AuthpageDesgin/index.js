@@ -104,7 +104,7 @@ function Appearnce() {
                 </div> */}
               </AccordianBox>
               <AccordianBox title="Register Screen " >
-                <ul className="each-title">First Steps</ul>
+                <ul className="each-title">First Screen</ul>
                 <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
                     <i className="fa-solid fa-store">
@@ -112,11 +112,7 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
+                   
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -130,11 +126,7 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
+                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -148,11 +140,7 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
+                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -166,11 +154,7 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
+                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -184,11 +168,7 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
+                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -196,7 +176,7 @@ function Appearnce() {
                 </div>
 
 
-                <ul className="each-title">Second Steps</ul>
+                <ul className="each-title">Second Screen</ul>
                 <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
                     <i className="fa-solid fa-store">
@@ -204,11 +184,7 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
+                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -222,11 +198,7 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
+                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -240,11 +212,7 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
+                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -258,11 +226,7 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
+                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -276,17 +240,14 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
+                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
                   </div>
                 </div>
 
+                <ul className="each-title">Third Screen</ul>
                 <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
                     <i className="fa-solid fa-store">
@@ -294,11 +255,7 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
-                    </span>
+                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -310,20 +267,107 @@ function Appearnce() {
 
               </AccordianBox>
 
-              <AccordianBox title="Choose Your Interest Screen">
-              <ul className="each-title">Final Steps</ul>
+              <AccordianBox title="Interest Screen">
+                {/* <ul className="each-title">Final Screen</ul> */}
                 <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
                     <i className="fa-solid fa-store">
-                      <span className="e-text">Choose your interest</span>
+                      <span className="e-text">Networking</span>
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    <span
-                      style={{ marginRight: 5, cursor: "pointer", color: "rgb(62, 78, 92)" }}
-                    >
-                      <i className="fa fa-clone" aria-hidden="clone" />
+                   
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
                     </span>
+                  </div>
+                </div>
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Events</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                   
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Design</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                   
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Legal</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                   
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Content</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                   
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Marketing</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                   
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Leadership</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                   
+                    <span style={{ color: "rgb(62, 78, 92)" }}>
+                      <i className="fa fa-trash" aria-hidden="true" />
+                    </span>
+                  </div>
+                </div>
+                <div className="app-modules-recomanded-short-box">
+                  <div className="app-modules-recomanded-short-img-content">
+                    <i className="fa-solid fa-store">
+                      <span className="e-text">Culture</span>
+                    </i>
+                  </div>
+                  <div className="app-modules-recomanded-short-img-content">
+                   
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -337,24 +381,35 @@ function Appearnce() {
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
           <div className="row">
             <div className="col-4 text-center">
-              <Mainmobile>
-                <Registercustomer />
-                {/* <Logincustomer /> */}
-                {/* <Chooseinterest/> */}
-                <button className="confirmbtn">Confirm & Next</button>
-              </Mainmobile>
+              <p className="screentitle">First Screen</p>
+              <div className="mainMobile2">
+                <div className="iphone2">
+                  {/* <Registercustomer /> */}
+                  {/* <Logincustomer /> */}
+                  <Chooseinterest />
+                  <button className="confirmbtn">Confirm & Next</button>
+                </div>
+              </div>
+
             </div>
             <div className="col-4 text-center">
-              <Mainmobile>
-                <Generalinfo/>
-                <button className="confirmbtn">Confirm & Next</button>
-              </Mainmobile>
+              <p className="screentitle">Second Screen</p>
+              <div className="mainMobile2">
+                <div className="iphone2">
+                  <Generalinfo />
+                  <button className="confirmbtn">Confirm & Next</button>
+                </div>
+              </div>
             </div>
             <div className="col-4 text-center">
-              <Mainmobile>
-                <Chooseimage/>
-                <button className="confirmbtn">Confirm</button>
-              </Mainmobile>
+            <p className="screentitle">Third Screen</p>
+              <div className="mainMobile2">
+                <div className="iphone2">
+                  <Chooseimage />
+                  <button className="confirmbtn">Confirm</button>
+                </div>
+              </div>
+
             </div>
           </div>
 

@@ -34,13 +34,25 @@ function ThemeCard({ themeData = null, selectTheme }) {
               selectTheme(themeData.theme[curr], themeData._id);
             }}>
             {themeData?.theme.map((item) => {
-              return <img src={item.screenImage} alt="" />;
+              return <div>
+                <img src={item.screenImage} alt="" />;
+              <p>dhdgdg</p>
+            </div>
+              
+              
               // return <img src={bgapp} alt="" />;
+              
             })}
+
+
           </Slider>
+
+          
         </div>
         {/* </Mobilescreen> */}
       </div>
+
+
     </>
 
   );

@@ -12,8 +12,8 @@ function Loginform() {
                                 <legend>
                                     Welcome,<br/> Please Sign In
                                 </legend>
-                                <input type="email" id="mail" name="user_email" placeholder='Email*' />
-                                <input type="password" id="password" name="user_password" placeholder='Password*' />
+                                <input type="email" id="mail" name="user_email" placeholder='Email*' disabled/>
+                                <input type="password" id="password" name="user_password" placeholder='Password*' disabled/>
                                 
                             </fieldset>
                             <button type="submit" className={style.btnreglog}>Sign In</button>

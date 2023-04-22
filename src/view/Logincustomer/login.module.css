@@ -50,17 +50,18 @@ label {
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 10px;
     border-radius: 10px;
+    box-shadow: 0px 5px 8px rgb(100 100 100 / 15%);
 }
 .btnreglog, .skip{
     padding: 10px 20px;
     color: #FFF;
-    background-color: #4bc970;
+    background-color: #312450;
     font-size: 18px;
     text-align: center;
     font-style: normal;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 100%;
-    border: 1px solid #3ac162;
+    border: 1px solid #312450;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
@@ -75,7 +76,7 @@ label {
 .registerbtn{
     background: transparent;
     border: transparent;
-    color: #3ac162;
+    color: #312450;
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
 }
