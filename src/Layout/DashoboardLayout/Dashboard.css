@@ -2793,6 +2793,7 @@ h1.form-header {
 }
 .details h2, .details p, .numbercard h3 {
   color: #fff;
+  color: #000;
 }
 .smallcardlist{
   display: flex;
@@ -2819,6 +2820,15 @@ color: #000;
   padding: 2%;
   box-shadow: 0 2px 4px rgba(0,0,0,.08);
   border-radius: 10px;
-  height: 100%;
-  display: grid;
+  /* height: 100%;
+  display: grid; */
+  margin-bottom: 20px;
+}
+.custom-dashboardtable{
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+}
+.custom-dashboardtable td, .custom-dashboardtable th{
+  padding: 5px;
+  text-align: center;
 }
