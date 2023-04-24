@@ -6,7 +6,7 @@ function Index() {
     return (
         <DashboardUi>
             {/* <h1 className="titlepayment">Loyalty</h1> */}
-            <div className='col-6'>
+            {/* <div className='col-6'>
                 <div className="card-bx stacked card">
                     <img
                         src={card4}
@@ -52,8 +52,8 @@ function Index() {
             <div className='col-6'>
 
 
-            </div>
-            <div className='col-12'>
+            </div> */}
+            <div className='col-10'>
                 <div className="tabs mt-3">
 
                     <ul className="nav nav-tabs" id="myTab" role="tablist">
@@ -152,90 +152,107 @@ function Index() {
                                         <button class="cta-btn">SELECT</button>
                                     </div>
                                 </section> */}
-                                <div className="wrapper">
+
+                                <div id="pricing-table" className="clear">
                                     <div className="plan">
-                                        <header>
-                                            <i className="ion-ios-navigate-outline" />
-                                            <h4 className="plan-title">Starter</h4>
-                                            <div className="plan-cost">
-                                                <span className="plan-price">$19</span>
-                                                <span className="plan-type">/month</span>
-                                            </div>
-                                        </header>
-                                        <ul className="plan-features">
-                                            <li>5GB Linux Web Space</li>
-                                            <li>5 MySQL Databases</li>
-                                            <li>Unlimited Email</li>
-                                            <li>250Gb mo Transfer</li>
-                                            <li>24/7 Tech Support</li>
-                                            <li>Daily Backups</li>
+                                        <h3>
+                                            Platinum Card<span>5<sup>Points</sup></span>
+                                        </h3>
+                                        <a className="signup" href="">
+                                            Select
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
                                         </ul>
-                                        <div className="plan-select">
-                                            <a href="">Select Plan</a>
-                                        </div>
+                                    </div>
+                                    <div className="plan" id="most-popular">
+                                        <h3>
+                                            Silver Card<span>5<sup>Points</sup></span>
+                                        </h3>
+                                        <a className="signup" href="">
+                                            Select
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div className="plan">
-                                        <header>
-                                            <i className="ion-ios-world" />
-                                            <h4 className="plan-title">Basic</h4>
-                                            <div className="plan-cost">
-                                                <span className="plan-price">$29</span>
-                                                <span className="plan-type">/month</span>
-                                            </div>
-                                        </header>
-                                        <ul className="plan-features">
-                                            <li>10GB Linux Web Space</li>
-                                            <li>10 MySQL Databases</li>
-                                            <li>Unlimited Email</li>
-                                            <li>500Gb mo Transfer</li>
-                                            <li>24/7 Tech Support</li>
-                                            <li>Daily Backups</li>
+                                        <h3>
+                                            Golden Card<span>5<sup>Points</sup></span>
+                                        </h3>
+                                        <a className="signup" href="">
+                                            Select
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
                                         </ul>
-                                        <div className="plan-select">
-                                            <a href="">Select Plan</a>
-                                        </div>
-                                    </div>
-                                    <div className="plan featured">
-                                        <header>
-                                            <i className="ion-ios-people" />
-                                            <h4 className="plan-title">Golden Card</h4>
-                                            <div className="plan-cost">
-                                                <span className="plan-price">5</span>
-                                                <span className="plan-type">Points</span>
-                                            </div>
-                                        </header>
-                                        <ul className="plan-features">
-                                            <li>Loreum Lipsum</li>
-                                            <li>Loreum Lipsum</li>
-                                            <li>Loreum Lipsum</li>
-                                            <li>Loreum Lipsum</li>
-                                            <li>Loreum Lipsum</li>
-                                            <li>Loreum Lipsum</li>
-                                        </ul>
-                                        <div className="plan-select">
-                                            <a href="">Select Plan</a>
-                                        </div>
                                     </div>
                                     <div className="plan">
-                                        <header>
-                                            <i className="ion-ios-speedometer" />
-                                            <h4 className="plan-title">Ultra</h4>
-                                            <div className="plan-cost">
-                                                <span className="plan-price">$99</span>
-                                                <span className="plan-type">/month</span>
-                                            </div>
-                                        </header>
-                                        <ul className="plan-features">
-                                            <li>100GB Linux Web Space</li>
-                                            <li>Unlimited MySQL Databases</li>
-                                            <li>Unlimited Email</li>
-                                            <li>10000Gb mo Transfer</li>
-                                            <li>24/7 Tech Support</li>
-                                            <li>Daily Backups</li>
+                                    <h3>
+                                            Bronze Card<span>5<sup>Points</sup></span>
+                                        </h3>
+                                        <a className="signup" href="">
+                                            Select
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
+                                            <li>
+                                                <b>Loreum Lipsum</b> Disk Space
+                                            </li>
                                         </ul>
-                                        <div className="plan-select">
-                                            <a href="">Select Plan</a>
-                                        </div>
                                     </div>
                                 </div>
 

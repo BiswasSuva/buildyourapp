@@ -1154,7 +1154,9 @@ a.sidebar__nav-link i {
   rotate: 45deg;
   top: 25px;
 }
-
+.accordion-section .each-accordionbox:first-child .custom-list{
+  height: auto;
+}
 .custom-list {
   max-width: 80%;
   margin: 0 auto 16px;

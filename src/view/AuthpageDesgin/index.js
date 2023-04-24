@@ -26,10 +26,10 @@ function Appearnce() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    $(".each-accordionbox:first-child")
-      .addClass("active")
-      .children(".each-text")
-      .slideDown();
+    // $(".each-accordionbox:first-child")
+    //   .addClass("active")
+    //   .children(".each-text")
+    //   .slideDown();
 
     $(".each-accordionbox:not(:first)").children(".each-text").hide();
 
