@@ -33,7 +33,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-family: 'Nunito', sans-serif;
-    color: #384047;
+    /* color: #384047; */
     text-align: left;
 }
 .Registerform input{

@@ -13,7 +13,16 @@ const sidebarContent = [
     url: "/authpage",
     name: "Register",
   },
-
+  {
+    icon: "fa-solid fa-file-invoice-dollar",
+    url: "/choose-your-paymentgateway",
+    name: "Payment",
+  },
+  {
+    icon: "fa-solid fa-hand-holding-dollar",
+    url: "/loyalty",
+    name: "Loyalty",
+  },
   
 ];
 

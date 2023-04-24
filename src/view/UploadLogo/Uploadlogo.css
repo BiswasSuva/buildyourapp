@@ -74,7 +74,7 @@
   font-size: 40px;
   line-height: 1.2;
   font-weight: 900;
-  color: #fff;
+  /* color: #fff; */
   margin-bottom: 30px;
 }
 .LogoBox {
@@ -86,7 +86,7 @@
   font-size: 40px;
   line-height: 1.2;
   font-weight: 900;
-  color: #fff !important;
+  /* color: #fff !important; */
   margin-bottom: 30px;
 }
 .LogoBox img{

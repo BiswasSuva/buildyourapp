@@ -21,7 +21,8 @@ import { EventSiderbarContext } from "../Providers/EventRightSidebar";
 import { NewsSiderbarContext } from "../Providers/NewsRightSidebar";
 import { ElementProvider } from "../Providers/ElemetProvider";
 import AuthPagedesgin from "../view/AuthpageDesgin/index"
-
+import PaymentGateway from "../view/PaymentGatewayDesign/index"
+import Loyalty from "../view/Loyalty/Index"
 function PrivateRoutes() {
   const { userData } = useSelector((state) => state.User);
   return (
@@ -32,8 +33,8 @@ function PrivateRoutes() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="logo" element={<Logo />} />
           <Route path="authpage" element={<AuthPagedesgin />} />
-
-
+          <Route path="choose-your-paymentgateway" element={<PaymentGateway />} />
+          <Route path="loyalty" element={<Loyalty />} />
           <Route
             path="E-Store/appearnce/:id/:moduleID"
             element={
