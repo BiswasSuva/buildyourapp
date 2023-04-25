@@ -23,6 +23,11 @@ const sidebarContent = [
     url: "/loyalty",
     name: "Loyalty",
   },
+  {
+    icon: "fa-solid fa-calendar-week",
+    url: "/virtualmeet",
+    name: "Events",
+  },
   
 ];
 
