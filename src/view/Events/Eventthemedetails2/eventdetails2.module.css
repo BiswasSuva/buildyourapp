@@ -1,0 +1,180 @@
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #fff;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.eventdetailsheader {
+    padding: 20px 0;
+    height: 380px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.backbtn {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 12px !important;
+}
+
+.favouritebtn {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 12px !important;
+}
+
+.eventdetailstitle {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #FFFFFF;
+    padding-top: 75%;
+    margin-bottom: 0;
+}
+
+.para {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    color: #FFFFFF;
+    opacity: 0.7;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.para img {
+    width: 16px;
+    height: 16px;
+    margin-right: 2%;
+}
+
+.descriptiondetails {
+    background: #fff;
+    border-radius: 24px 24px 0 0;
+    margin-top: -10%;
+    padding: 15px 0;
+}
+
+.line {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    color: #797979;
+}
+
+.price {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #29699A;
+    margin-bottom: 0;
+}
+
+.price span {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: #BCBCBC;
+}
+
+.grpimage {
+    height: 28px !important;
+}
+
+.follow {
+    background: #FFFFFF;
+    border-radius: 16px;
+    max-width: 85%;
+    margin: 25px auto;
+    /* padding: 10px; */
+    padding: 10px 0;
+}
+
+.follower {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #212121;
+    margin-bottom: 0;
+}
+
+.followbtn {
+    padding: 4px 15px;
+    background: #C6E9F6;
+    border-radius: 32px;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #022E57;
+}
+
+.location {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 100%;
+    color: #797979;
+    margin-bottom: 0;
+}
+
+.events {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 100%;
+    color: #797979;
+    margin-bottom: 0;
+}
+
+.paragraph {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #797979;
+    max-width: 85%;
+    margin: 25px auto;
+}
+
+.buybtn {
+    background: #022E57;
+    border-radius: 32px;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+max-width: 85%;
+padding: 20px 40px;
+margin: 0 auto;
+}

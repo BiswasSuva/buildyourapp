@@ -42,6 +42,8 @@ import Newsdetails from "../News/Themedetails/Index";
 // import Events from "../Events/Theme1/Index"
 import Eventdetails1 from "../Events/Eventthemedetails1/Index"
 import Socialmedia from "../Socialmedia/Index"
+import Event2 from "../Events/Theme2/Index"
+import Eventthemedetails2 from "../Events/Eventthemedetails2/Index"
 function Appearnce() {
   const { id, moduleID } = useParams();
   // const [elementList, setElementList] = useState([]);
@@ -290,7 +292,7 @@ function Appearnce() {
                 <ul className="each-text custom-list">
                   <li
                     onClick={() =>
-                      setRenderComponent(<AddSubCategory close={() => {}} />)
+                      setRenderComponent(<AddSubCategory close={() => { }} />)
                     }
                   >
                     Add Sub-Category
@@ -317,7 +319,7 @@ function Appearnce() {
                   <li
                     onClick={() =>
                       setRenderComponent(
-                        <AddProduct setFetch={setFetch} close={() => {}} />
+                        <AddProduct setFetch={setFetch} close={() => { }} />
                       )
                     }
                   >
@@ -343,7 +345,7 @@ function Appearnce() {
                   <li
                     onClick={() =>
                       setRenderComponent(
-                        <EstoreAddBanner setFetch={setFetch} close={() => {}} />
+                        <EstoreAddBanner setFetch={setFetch} close={() => { }} />
                       )
                     }
                   >
@@ -369,7 +371,7 @@ function Appearnce() {
         </div>
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
           {/* <Mobilescreen /> */}
-          <Mainmobile style={{left: "-25%"}}>
+          <Mainmobile style={{ left: "-25%" }}>
             {/* {loading && <MobileScreenLoader />}
             {!loading && (
               <>
@@ -386,20 +388,22 @@ function Appearnce() {
 
             {/* <Eventdetails1/> */}
 
-            
+
+
             {/* <Ecommerceproductdetails /> */}
             {/* <Ecommerceproductdetails2 /> */}
 
             {/* <EcommerceTheme1 elementList={elementList} /> */}
 
             {/* News Theme 1 */}
-            {/* <News /> */}
+            <News />
 
-            
+
             {/* <Newsdetails /> */}
 
-
-          <Socialmedia />
+            {/* <Event2 /> */}
+            {/* <Eventthemedetails2/> */}
+            {/* <Socialmedia /> */}
             {/*----Start New Themes----*/}
             {/* <Learning1 />  */}
             {/* <Learningthemedetails1 /> */}
