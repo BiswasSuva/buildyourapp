@@ -23,7 +23,7 @@ import { ElementProvider } from "../Providers/ElemetProvider";
 import AuthPagedesgin from "../view/AuthpageDesgin/index"
 import PaymentGateway from "../view/PaymentGatewayDesign/index"
 import Loyalty from "../view/Loyalty/Index"
-import Virtualmeet from "../view/Events/Virtualmeet";
+import Virtualmeet from "../view/Events/Virtualmeet/Index";
 function PrivateRoutes() {
   const { userData } = useSelector((state) => state.User);
   return (
