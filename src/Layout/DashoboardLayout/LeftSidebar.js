@@ -13,6 +13,16 @@ const sidebarContent = [
     url: "/authpage",
     name: "Register",
   },
+ 
+  
+];
+
+const DesignContent= [
+  {
+    icon: "fa-solid fa-calendar-week",
+    url: "/virtualmeet",
+    name: "EventTable",
+  },
   {
     icon: "fa-solid fa-file-invoice-dollar",
     url: "/choose-your-paymentgateway",
@@ -23,13 +33,9 @@ const sidebarContent = [
     url: "/loyalty",
     name: "Loyalty",
   },
-  {
-    icon: "fa-solid fa-calendar-week",
-    url: "/virtualmeet",
-    name: "Events",
-  },
   
-];
+
+]
 
 function LeftSidebar() {
   const modules = useAllmodules().filter(
@@ -61,6 +67,15 @@ function LeftSidebar() {
               >
                 {/* <img src={item.moduleImage} /> {item.moduleName} */}
                 <i className="fa-solid fa-box"></i> {item.moduleName}
+              </Link>
+            </li>
+          );
+        })}
+          {DesignContent.map((item, index) => {
+          return (
+            <li className="sidebar__nav-item" key={index}>
+              <Link to={item.url} className="sidebar__nav-link">
+                <i className={item.icon}></i> {item.name}
               </Link>
             </li>
           );

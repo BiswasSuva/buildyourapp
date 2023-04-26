@@ -29,6 +29,10 @@ import AccordianBox from "../../Component/AccordianBox";
 // import ManageOttEpisode from "./ManageOttEpisode";
 // import AddOttBanner from "./AddOttBanner";
 // import ManageOttBanner from "./ManageOttBanner";
+import Event2 from "../Events/Theme2/Index"
+import Events from "../Events/Theme1/Index"
+
+
 import { useElementList } from "../../Providers/ElemetProvider";
 import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
 
@@ -39,7 +43,7 @@ function Appearnce() {
   const [fetch, setFetch] = useState(false);
   const { component, setRenderComponent } = useEventRightSidearContext();
   const [loading, setLoading] = useState(false);
-  const {elementList,setElementList} = useElementList()
+  const { elementList, setElementList } = useElementList()
 
   useEffect(() => {
     fetchTheme();
@@ -50,25 +54,25 @@ function Appearnce() {
     // return false
     console.log("themeDetail", result);
     if (result && result.status) {
-      let list = result.data.elementListe.map((item)=>{
-// checking new elementsField is avialable or not
-        if(item.elementsField){
+      let list = result.data.elementListe.map((item) => {
+        // checking new elementsField is avialable or not
+        if (item.elementsField) {
           // if avialable change value with new value
-          return{
+          return {
             ...item,
-            elementTypeName:{
-              
+            elementTypeName: {
+
               ...item.elementTypeName,
-              field:item.elementTypeName.field.map((feildItem)=>{
+              field: item.elementTypeName.field.map((feildItem) => {
                 return {
                   ...feildItem,
-                  value:item.elementsField?.fieldsList.find((it)=>it.key==feildItem.key)?.value
+                  value: item.elementsField?.fieldsList.find((it) => it.key == feildItem.key)?.value
 
                 }
               })
 
 
-            
+
             }
 
           }
@@ -76,10 +80,10 @@ function Appearnce() {
         return {
           ...item
         }
-       
+
       })
 
-      console.log("updatedlist",list);
+      console.log("updatedlist", list);
 
       // here we checking if user updeted value in feild list if user update value list elementsField becomes new key value pair
 
@@ -248,7 +252,7 @@ function Appearnce() {
                 </div>
               </div>
 
-              
+
               <AccordianBox title="Events">
                 <li
                   onClick={() =>
@@ -266,7 +270,7 @@ function Appearnce() {
                 </li> */}
               </AccordianBox>
 
-           
+
             </div>
             <button
               className="btn btn-customaccordian"
@@ -279,16 +283,14 @@ function Appearnce() {
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
           {/* <Mobilescreen /> */}
           <Mainmobile>
-          {loading && <MobileScreenLoader />}
+            {loading && <MobileScreenLoader />}
             {!loading && (
               <>
-                {id == "6426c2b52e8c8f8facfdc8ee" && (
-                  ""
-                  // <Podcasttheme1 fetch={fetch} elementList={elementList} />
+                {id == "6449242dcf6267a1dbfe78c0" && (
+                  <Events fetch={fetch} elementList={elementList} />
                 )}
-                {id == "6426c5e02e8c8f8facfdc927" && (
-                  ""
-                  // <Podcasttheme2 fetch={fetch} elementList={elementList} />
+                {id == "6449248acf6267a1dbfe78ef" && (
+                  <Event2 fetch={fetch} elementList={elementList} />
                 )}
               </>
             )}

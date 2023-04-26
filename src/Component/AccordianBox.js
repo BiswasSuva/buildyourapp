@@ -1,14 +1,14 @@
 import React from "react";
 
-function AccordianBox({ title = "Title", children}) {
+function AccordianBox({ title = "Title", children,onClick}) {
   return (
     <div className="each-accordionbox">
       <h3 className="each-title">{title}</h3>
       <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-      <div className="swipebox">
+      <div className="swipebox" onClick={onClick}>
         <div className="swipeplus">+</div>
       </div>
-      <ul className="each-text custom-list">
+      <ul className="each-text custom-list" >
         {children}
         {/* {list.map((item) => {
           return (

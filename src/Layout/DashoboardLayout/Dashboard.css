@@ -214,7 +214,7 @@ textarea {
 
 .sidebar {
   position: fixed;
-  height: 100vh;
+  height: 90vh;
   width: 80px;
   left: 0;
   background-color: #14181b;

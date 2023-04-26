@@ -14,8 +14,8 @@ import HttpClient from "../../utils/HttpClient";
 import Swal from "sweetalert2";
 import AccordianBox from "../../Component/AccordianBox";
 import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
-import Registercustomer from "../../view/Registercustomer/Index"
-import Logincustomer from "../../view/Logincustomer/Index"
+import Registercustomer from "../../view/Registercustomer/Index";
+import Logincustomer from "../../view/Logincustomer/Index";
 import Generalinfo from "../Registercustomer/Generalinfo";
 import Chooseimage from "../Registercustomer/Choooseanimage";
 import Chooseinterest from "../Registercustomer/Chooseinterest";
@@ -24,6 +24,8 @@ function Appearnce() {
   //   const { id, moduleID } = useParams();
   const [elementList, setElementList] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  const [show, setShow] = useState("login");
 
   useEffect(() => {
     // $(".each-accordionbox:first-child")
@@ -67,7 +69,12 @@ function Appearnce() {
           {/* <Elements /> */}
           <LeftSideUi>
             <div className="accordion-section">
-              <AccordianBox title="Login Screen ">
+              <AccordianBox
+                title="Login Screen "
+                onClick={() => {
+                  setShow("login");
+                }}
+              >
                 {/* <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
                     <i className="fa-solid fa-store">
@@ -103,7 +110,10 @@ function Appearnce() {
                   </div>
                 </div> */}
               </AccordianBox>
-              <AccordianBox title="Register Screen " >
+              <AccordianBox
+                title="Register Screen "
+                onClick={() => setShow("register")}
+              >
                 <ul className="each-title">First Screen</ul>
                 <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
@@ -112,7 +122,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                   
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -126,7 +135,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -140,7 +148,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -154,7 +161,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -168,13 +174,11 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
                   </div>
                 </div>
-
 
                 <ul className="each-title">Second Screen</ul>
                 <div className="app-modules-recomanded-short-box">
@@ -184,7 +188,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -198,7 +201,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -212,7 +214,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -226,7 +227,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -240,7 +240,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -255,19 +254,17 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                    
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
                   </div>
                 </div>
-
-
-
-
               </AccordianBox>
 
-              <AccordianBox title="Interest Screen">
+              <AccordianBox
+                title="Interest Screen"
+                onClick={() => setShow("interest")}
+              >
                 {/* <ul className="each-title">Final Screen</ul> */}
                 <div className="app-modules-recomanded-short-box">
                   <div className="app-modules-recomanded-short-img-content">
@@ -276,7 +273,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                   
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -289,7 +285,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                   
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -302,7 +297,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                   
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -315,7 +309,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                   
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -328,7 +321,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                   
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -341,7 +333,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                   
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -354,7 +345,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                   
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -367,7 +357,6 @@ function Appearnce() {
                     </i>
                   </div>
                   <div className="app-modules-recomanded-short-img-content">
-                   
                     <span style={{ color: "rgb(62, 78, 92)" }}>
                       <i className="fa fa-trash" aria-hidden="true" />
                     </span>
@@ -380,39 +369,67 @@ function Appearnce() {
         </div>
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
           <div className="row">
-            <div className="col-4 text-center">
-              <p className="screentitle">First Screen</p>
-              <div className="mainMobile2">
-                <div className="iphone2">
-                  {/* <Registercustomer /> */}
-                  {/* <Logincustomer /> */}
-                  <Chooseinterest />
-                  <button className="confirmbtn">Confirm & Next</button>
+            {show === "login" && (
+              <div className="col-4 text-center">
+                <p className="screentitle">Login Screen</p>
+                <div className="mainMobile2">
+                  <div className="iphone2">
+                    {/* <Registercustomer /> */}
+                    <Logincustomer />
+                    {/* <Chooseinterest /> */}
+                    <button className="confirmbtn">Confirm & Next</button>
+                  </div>
                 </div>
               </div>
+            )}
+             {show === "interest" && (
+              <div className="col-4 text-center">
+                <p className="screentitle">Login Screen</p>
+                <div className="mainMobile2">
+                  <div className="iphone2">
+                    {/* <Registercustomer /> */}
+                    {/* <Logincustomer /> */}
+                    <Chooseinterest />
+                    <button className="confirmbtn">Confirm & Next</button>
+                  </div>
+                </div>
+              </div>
+            )}
 
-            </div>
-            <div className="col-4 text-center">
-              <p className="screentitle">Second Screen</p>
-              <div className="mainMobile2">
-                <div className="iphone2">
-                  <Generalinfo />
-                  <button className="confirmbtn">Confirm & Next</button>
+            {show === "register" && (
+              <>
+                <div className="col-4 text-center">
+                  <p className="screentitle">First Screen</p>
+                  <div className="mainMobile2">
+                    <div className="iphone2">
+                      <Registercustomer />
+                      {/* <Logincustomer /> */}
+                      {/* <Chooseinterest /> */}
+                      <button className="confirmbtn">Confirm & Next</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-4 text-center">
-            <p className="screentitle">Third Screen</p>
-              <div className="mainMobile2">
-                <div className="iphone2">
-                  <Chooseimage />
-                  <button className="confirmbtn">Confirm</button>
+                <div className="col-4 text-center">
+                  <p className="screentitle">Second Screen</p>
+                  <div className="mainMobile2">
+                    <div className="iphone2">
+                      <Generalinfo />
+                      <button className="confirmbtn">Confirm & Next</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-            </div>
+                <div className="col-4 text-center">
+                  <p className="screentitle">Third Screen</p>
+                  <div className="mainMobile2">
+                    <div className="iphone2">
+                      <Chooseimage />
+                      <button className="confirmbtn">Confirm</button>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
-
         </div>
       </DashboardUi>
     </>
