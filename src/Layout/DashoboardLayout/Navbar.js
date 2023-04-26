@@ -29,7 +29,7 @@ function Navbar() {
             </div>
             <ul className="main-menu">
 
-                <li>
+                <li style={{marginRight: "20px"}}>
                     <Link to="/profession" className="main-menu-link main-menu-link-color">
                         <i className="fas fa-magic m-t-4 m-r-8 m-l-8" />
                         Profession
@@ -41,10 +41,10 @@ function Navbar() {
                         Modules
                     </Link>
                 </li>
-                <li className='m-l-a'>
+                <li className='m-l-a' style={{marginRight: "20px"}}>
                     <button type="button" className="btn main-menu-link btn-big btn-success" style={{color: "#fff"}}>Build App</button>
                 </li>
-                <li>
+                <li >
                     <button type="button" className="main-menu-link" onClick={logoutHandle}>
                         Logout
                     </button>

@@ -6,12 +6,14 @@ import AddProduct from "./AddProduct";
 import { motion } from "framer-motion";
 import Datatable from "../../Component/Datatable/Datatable";
 import { useEstoreRightSidearContext } from "../../Providers/EcomRightSidebar";
+import { useElementList } from "../../Providers/ElemetProvider";
 function ManageProduct({ setFetch, close }) {
   const [data, setData] = useState([]);
   const [editEnable, setEditEnable] = useState(false);
   const [editData, setEditData] = useState(null);
-  const category = useEcomCategory({ refetch: false });
+  const category = useEcomCategory();
   const { component, setRenderComponent } = useEstoreRightSidearContext();
+  const {rerender,setRender} = useElementList()
 
   useEffect(() => {
     fetchProduct();
@@ -79,9 +81,10 @@ function ManageProduct({ setFetch, close }) {
   const deleteHandle = async (id) => {
     let result = await deleteEcomProduct(id);
     if (result && result.status) {
-      setFetch((prev) => !prev);
-
       fetchProduct();
+
+      setRender(!rerender);
+
     }
   };
 

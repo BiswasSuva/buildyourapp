@@ -23,6 +23,7 @@ import SubmitButton from "../../Component/RenderComponent/SubmitButton";
 import SelectDropDown from "../../Component/RenderComponent/SelectDropDown";
 import { useEstoreRightSidearContext } from "../../Providers/EcomRightSidebar";
 import ManageProduct from "./ManageProduct";
+import ManageBanner from "./ManageBanner";
 
 function EstoreAddBanner({
   setFetch,
@@ -31,8 +32,8 @@ function EstoreAddBanner({
   editElement = null,
 }) {
   const [name, setName] = useState("");
-  const [image, setImage] = useState([]);
-  const category = useEcomCategory({ refetch: false });
+  const [image, setImage] = useState("");
+  const category = useEcomCategory();
   const subcategory = useEcomSubCategory({ refetch: false });
   const product = useEcomProduct({ refetch: false });
   const { setRenderComponent } = useEstoreRightSidearContext();
@@ -81,7 +82,7 @@ function EstoreAddBanner({
       if (result && result.status) {
         setFetch((prev) => !prev);
 
-        setRenderComponent(<ManageProduct setFetch={setFetch} />);
+        setRenderComponent(<ManageBanner setFetch={setFetch} />);
       }
     } else {
       alert("All feilds are required");
@@ -120,7 +121,7 @@ function EstoreAddBanner({
       style={{ paddingBottom: "50px" }}
     >
       <div role="main" className="form-all">
-        <Heading heading="Add Banner" />
+        <Heading heading={editEnable?"Update Banner":"Add Banner"} />
         <ul
           className="form-section page-section"
           style={{ height: "600px", overflowY: "auto" }}
@@ -130,7 +131,9 @@ function EstoreAddBanner({
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <DropFile onChange={(e) => imageHandle(e.target.files[0])} />
+          <DropFile onChange={(e) => imageHandle(e.target.files)} />
+
+          {image !="" &&  <img src={image}  style={{ height: "100px", width: "100px" }} />}
 
           <SubmitButton
             title={editEnable ? "Update" : "Submit"}

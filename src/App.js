@@ -12,13 +12,18 @@ import PublicRoutes from "./Routing/PublicRoutes";
 import PrivateRoutes from "./Routing/PrivateRoutes";
 // import '@sweetalert2/themes/dark/dark.scss';
 import "./App.scss"
+import { Toaster } from 'react-hot-toast';
+
 function App() {
   const dispatch = useDispatch();
-  const { loginStatus, loading } = useSelector((state) => state.User);
+  const { loginStatus, loading,userData } = useSelector((state) => state.User);
 
   useEffect(() => {
     dispatch(fetchuser());
+
   }, []);
+
+console.log("user",userData);
 
   if (loading) {
     return (
@@ -38,11 +43,14 @@ function App() {
     );
   }
   return (
+    <>
+    <Toaster/>
     <RouterProvider
       router={createBrowserRouter(
         createRoutesFromElements(<Route path="*" element={<CheckingAuth />} />)
       )}
     />
+    </>
   );
 }
 

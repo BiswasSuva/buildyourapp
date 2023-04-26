@@ -21,19 +21,19 @@ function index({ fetch,elementList = [] }) {
         {elementList.map((item, index) => {
           return (
               < div key={item._id}>
-              {item.elementTypeName.title === "Default Theme Header" && (
+              {item.elementTypeName.title === "E-Store Default Theme Header" && (
                 <Section1 feild={item.elementTypeName.field} />
               )}
-              {item.elementTypeName.title === "Default Theme Search" && (
+              {item.elementTypeName.title === "E-Store Default Theme Search " && (
                 <Section2 feild={item.elementTypeName.field} ></Section2>
               )}
-              {item.elementTypeName.title === "Default Theme Banner" && (
-                <Section3  fetch={fetch}></Section3>
+              {item.elementTypeName.title === "E-Store Default Theme Banner" && (
+                <Section3  feild={item.elementTypeName.field} fetch={fetch}></Section3>
               )}
-              {item.elementTypeName.title === " Default Theme Categories " && (
+              {item.elementTypeName.title === "E-Store Category List" && (
                 <Section4 fetch={fetch} feild={item.elementTypeName.field}></Section4>
               )}
-              {item.elementTypeName.title === "Default Theme Product List" && (
+              {item.elementTypeName.title === "E-Store Product List " && (
                 <Section5 fetch={fetch} feild={item.elementTypeName.field} ></Section5>
               )}
             </div>

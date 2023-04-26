@@ -36,6 +36,7 @@ import Swal from "sweetalert2";
 import { useEstoreRightSidearContext } from "../../Providers/EcomRightSidebar";
 import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
 import { useElementList } from "../../Providers/ElemetProvider";
+import { toast } from "react-hot-toast";
 
 function Appearnce() {
   const { id, moduleID } = useParams();
@@ -56,13 +57,47 @@ function Appearnce() {
     // return false
     console.log("themeDetail", result);
     if (result && result.status) {
+      let list = result.data.elementListe.map((item)=>{
+// checking new elementsField is avialable or not
+        if(item.elementsField){
+          // if avialable change value with new value
+          return{
+            ...item,
+            elementTypeName:{
+              
+              ...item.elementTypeName,
+              field:item.elementTypeName.field.map((feildItem)=>{
+                return {
+                  ...feildItem,
+                  value:item.elementsField?.fieldsList.find((it)=>it.key==feildItem.key)?.value
+
+                }
+              })
+
+
+            
+            }
+
+          }
+        }
+        return {
+          ...item
+        }
+       
+      })
+
+      console.log("updatedlist",list);
+
+      // here we checking if user updeted value in feild list if user update value list elementsField becomes new key value pair
+
+
       setElementList(
-        result.data.elementListe
+        list
           ?.filter((item) => !item.isDeleted)
           .sort((a, b) => a.position - b.position)
       );
       setDeletedElement(
-        result.data.elementListe.filter((item) => item.isDeleted)
+        list.filter((item) => item.isDeleted)
       );
     }
     setLoading(false);
@@ -139,10 +174,11 @@ function Appearnce() {
     );
     // console.log("doen",result);
     if (result && result.status) {
-      Swal.fire({
-        title: "Elements Updted Successfully ! ",
-        icon: "success",
-      });
+      toast.success("Changes done")
+      // Swal.fire({
+      //   title: "Elements Updted Successfully ! ",
+      //   icon: "success",
+      // });
     }
   };
 
@@ -330,7 +366,7 @@ function Appearnce() {
             {loading && <MobileScreenLoader />}
             {!loading && (
               <>
-                {id == "63f714eb2329e60244665cb9" && (
+                {id == "64256913d7c605809d1d1dff" && (
                   <EcommerceTheme1 fetch={fetch} elementList={elementList} />
                 )}
                 {id == "63f738162329e60244665f79" && (

@@ -6,7 +6,7 @@ import AuthUi from "../../Component/AuthCard/AuthUi";
 import { useNavigate } from "react-router-dom";
 import { getRegister } from "../../api/authapi";
 import { useDispatch } from "react-redux";
-
+import { toast } from "react-hot-toast";
 import { fetchuser } from "../../redux/reducers/User";
 
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -70,6 +70,8 @@ function Register() {
   }, [email, password, emailError, passwordError]);
 
   const Submit = async (e) => {
+    document.body.style.opacity="0.3"
+
     e.preventDefault();
     if (validation) {
       let data = {
@@ -81,21 +83,32 @@ function Register() {
 
       // return false;
       let result = await getRegister(data);
-      console.log(result);
+      // console.log(result);
       if (result && result.status) {
+
         reactLocalStorage.set("token", result.data.token);
         reactLocalStorage.set("tutorial",true)
 
         setTimeout(() => {
+          document.body.style.opacity="1"
           dispatch(fetchuser())
           navigate("/welcome")
 
         }, 2000)
 
       } else {
-        alert(result.message);
-      }
+        document.body.style.opacity="1"
+
+        toast.error(result.message, {
+          style: {
+            borderRadius: '10px',
+            background: '#333',
+            color: '#fff',
+          },
+        });      }
     } else {
+      document.body.style.opacity="1"
+
       emailChecking();
       passwordChecking();
     }

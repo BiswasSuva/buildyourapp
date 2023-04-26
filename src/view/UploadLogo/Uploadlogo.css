@@ -73,13 +73,11 @@
 
 }
 .LogoBox img{
-    /* max-width: 80px; */
-    max-width: 100%;
-    height: auto;
-    height: 80px;
-    /* border-radius: 50%; */
-    border-radius: 0;
-    position: relative;
-    left: 0;
-    right: 0;
+  max-width: 100%;
+  height: auto;
+  height: auto;
+  border-radius: 0;
+  position: relative;
+  left: 0;
+  right: 0;
 }

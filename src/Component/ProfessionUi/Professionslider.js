@@ -15,6 +15,7 @@ import { useNavigate } from "react-router-dom";
 import { getAllProf } from "../../api/appApi";
 import { updateUserDetail } from "../../api/authapi";
 import Swal from "sweetalert2";
+import { toast } from "react-hot-toast";
 function Professionslider() {
   const professions = useAllProfession();
   const navigate = useNavigate();
@@ -27,16 +28,33 @@ function Professionslider() {
     // console.log(id);
     let result = await updateUserDetail(data);
     if (result && result.status) {
-      Swal.fire({
-        title: "Thank You!",
-        // text: 'Do you want to continue',
-        icon: "success",
-        confirmButtonText: "Move to next step",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          navigate("/modules");
-        }
-      });
+
+      toast('Nice few steps are pending !',
+      {
+        icon: '👏',
+        style: {
+          borderRadius: '10px',
+          background: '#333',
+          color: '#fff',
+        },
+      }
+    );   
+    navigate("/modules");
+
+    // setTimeout(()=>{
+
+    // })
+    
+    // Swal.fire({
+    //     title: "Thank You!",
+    //     // text: 'Do you want to continue',
+    //     icon: "success",
+    //     confirmButtonText: "Move to next step",
+    //   }).then((result) => {
+    //     if (result.isConfirmed) {
+    //       navigate("/modules");
+    //     }
+    //   });
     }
   };
 
@@ -57,9 +75,9 @@ function Professionslider() {
       modules={[EffectCoverflow, Pagination]}
       className="mySwiper"
     >
-      {professions.map((item) => {
+      {professions.map((item,i) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide key={item._id}>
             <img
               src={item.prof_pic}
               style={{ width: "100%" }}

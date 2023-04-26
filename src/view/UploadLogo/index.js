@@ -9,7 +9,8 @@ import LogoAction from "./LogoAction";
 import VerticalSpin from "../../Component/Loaders/VerticalSpin";
 import { useNavigate } from "react-router";
 import useScreen from "../../customHooks/useScreen";
-import Colorscheme from "../../view/UploadLogo/index"
+import ColorScheme from "../ColorScheme/index"
+
 function Index() {
   const navigate = useNavigate()
   const screen = useScreen()
@@ -36,7 +37,7 @@ function Index() {
     }
     let result = await createScreen(data)
     if(result&&result.status){
-      navigate("/color-scheme")
+      // navigate("/color-scheme")
     }
   }
 
@@ -46,8 +47,8 @@ setLogo(screen.logo_img?screen.logo_img:"")
   )
 
   return (
-    <DashboardUi>
-      <div className="col-lg-5 col-xl-5 col-md-5 col-12">
+    <DashboardUi style={{marginRight: "0"}} >
+      <div className="col-lg-4 col-xl-4 col-md-4 col-12">
         <Mainmobile>
           {loading ? (
           <div>  <VerticalSpin /></div>
@@ -68,9 +69,10 @@ setLogo(screen.logo_img?screen.logo_img:"")
         </Mainmobile>
       </div>
 
-      <div className="col-lg-7 col-xl-7 col-md-7 col-7">
-            {/* <Colorscheme/> */}
+      <div className="col-lg-7 col-xl-7 col-md-7 col-12 offset-1" style={{display: "grid", alignContent: "center"}}>
+    {logo&&  <ColorScheme logo={logo}/>}
       </div>
+      
     </DashboardUi>
   );
 }

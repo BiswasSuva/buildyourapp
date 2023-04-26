@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import Datatable from "../../Component/Datatable/Datatable";
 import { useEstoreRightSidearContext } from "../../Providers/EcomRightSidebar";
 import CategoryAddModal from "./CategoryAddModal";
+import { useElementList } from "../../Providers/ElemetProvider";
 
 function ManageCategory({ setFetch, onEdit }) {
+  const { rerender, setRender } = useElementList();
+
   const [data, setData] = useState([]);
   const { component, setRenderComponent } = useEstoreRightSidearContext();
 
@@ -75,7 +78,8 @@ function ManageCategory({ setFetch, onEdit }) {
     let result = await deleteEcomCat(id);
     if (result && result.status) {
       fetchCategory();
-      setFetch((prev) => !prev);
+      // setFetch((prev) => !prev);
+      setRender((prev)=>!prev)
     }
   };
 

@@ -16,7 +16,7 @@ function AddSubCategory({ close, editEnable = false, editElement = null }) {
   const [image, setImage] = useState("");
   const [description, setdescription] = useState("");
   const [categoryID, setcategoryID] = useState("");
-  const category = useEcomCategory({ refetch: false });
+  const category = useEcomCategory();
   const { setRenderComponent } = useEstoreRightSidearContext();
 
   const imageHandle = async (file) => {
@@ -35,13 +35,13 @@ function AddSubCategory({ close, editEnable = false, editElement = null }) {
     e.preventDefault();
     if (
       name.trim() != "" &&
-      description.trim() != "" &&
+      // description.trim() != "" &&
       image.trim != "" &&
       categoryID != ""
     ) {
       let dataSend = {
         name,
-        description,
+        // description,
         image,
         categoryID,
       };
@@ -78,7 +78,7 @@ function AddSubCategory({ close, editEnable = false, editElement = null }) {
       style={{ paddingBottom: "50px" }}
     >
       <div role="main" className="form-all">
-        <Heading heading="Add Sub-Categories" />
+        <Heading heading={editEnable?"Update Sub-Categories": "Add Sub-Categories" }/>
         <ul
           className="form-section page-section"
           style={{ height: "600px", overflowY: "auto" }}
@@ -103,11 +103,11 @@ function AddSubCategory({ close, editEnable = false, editElement = null }) {
             <img src={image} style={{ height: "100px", width: "100px" }} />
           )}
 
-          <TextArea
+          {/* <TextArea
             title="Sub-Category Description"
             value={description}
             onChange={(e) => setdescription(e.target.value)}
-          />
+          /> */}
 
           <SubmitButton
             title={editEnable ? "Update" : "Submit"}

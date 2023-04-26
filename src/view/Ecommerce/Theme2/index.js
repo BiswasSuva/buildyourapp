@@ -29,7 +29,7 @@ function index({ fetch, elementList = [] }) {
         {elementList.map((item, index) => {
           return (
             <div key={item._id}>
-              {item.elementTypeName.title === "Dark Header" && (
+              {item.elementTypeName.title === "E-Store Black Header" && (
                 <Section1 feild={item.elementTypeName.field} />
               )}
             </div>
@@ -39,13 +39,13 @@ function index({ fetch, elementList = [] }) {
           {elementList.map((item, index) => {
             return (
               <div key={item._id}>
-                {item.elementTypeName.title === "Dark Banner" && (
+                {item.elementTypeName.title === "Default Theme Banner" && (
                   <Section2 feild={item.elementTypeName.field}></Section2>
                 )}
-                {item.elementTypeName.title === "Category Slider" && (
+                {item.elementTypeName.title === "Default Theme Categories" && (
                   <Section3></Section3>
                 )}
-                {item.elementTypeName.title === "Product List" && (
+                {item.elementTypeName.title === "Default Theme Product List" && (
                   <Section4
                     fetch={fetch}
                     feild={item.elementTypeName.field}
