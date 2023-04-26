@@ -25,7 +25,7 @@ function ThemeCard({ themeData = null, selectTheme }) {
     <>
    
       <div className="col-md-4  mb-3">
-        <p>{themeData?.moduleName}</p>
+        <p>{themeData?.moduleName} Screen Layout</p>
         {/* <Mobilescreen> */}
         <div className="fullScreen">
           <Slider initialSlide={presentSlide} {...settings}
@@ -35,8 +35,8 @@ function ThemeCard({ themeData = null, selectTheme }) {
             }}>
             {themeData?.theme.map((item) => {
               return <div>
-                <img src={item.screenImage} alt="" />;
-              <p>dhdgdg</p>
+                <img src={item.screenImage} alt="" />
+               <p>{themeData?.theme?.length>1 && "Click on arrow to select theme"}</p>
             </div>
               
               

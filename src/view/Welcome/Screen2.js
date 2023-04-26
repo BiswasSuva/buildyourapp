@@ -106,7 +106,7 @@ function Screen2({name}) {
             <div className="inputFieldBox">
               <div className="headingAmimation">
                 <div className="animateThis">
-                  Hey <span className="">MR. {name}</span>!
+                  Hey <span className=""> {name}</span>!
                 </div>
                 <div className="animateThis customeAnimate">
                   What are you trying to build?

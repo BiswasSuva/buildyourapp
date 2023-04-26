@@ -505,7 +505,7 @@ function Modules() {
             })}
           </DragDropContext>
 
-          <ModuleBtn name="Confirm" onClick={Submit} />
+          <ModuleBtn name="Confirm Selected Theme" onClick={Submit} />
         </div>
       </div>
       <div className="col-md-9 col-xl-9 col-lg-9 col-12">
@@ -514,7 +514,7 @@ function Modules() {
         </div>
         <div className="row">
           {themes.map((item, index) => {
-            if (item.moduleName != "Social"){
+            // if (item.moduleName != "Social"){
               return (
                 <ThemeCard
                   key={index}
@@ -532,7 +532,7 @@ function Modules() {
                   themeData={item}
                 />
               );
-            }
+            // }
              
           })}
         </div>

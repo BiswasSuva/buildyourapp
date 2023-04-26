@@ -39,7 +39,7 @@ import { useElementList } from "../../Providers/ElemetProvider";
 import { toast } from "react-hot-toast";
 import News from "../News/Theme1/Index"
 import Newsdetails from "../News/Themedetails/Index";
-// import Events from "../Events/Theme1/Index"
+import Events from "../Events/Theme1/Index"
 import Eventdetails1 from "../Events/Eventthemedetails1/Index"
 import Socialmedia from "../Socialmedia/Index"
 import Event2 from "../Events/Theme2/Index"
@@ -372,7 +372,7 @@ function Appearnce() {
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
           {/* <Mobilescreen /> */}
           <Mainmobile style={{ left: "-25%" }}>
-            {/* {loading && <MobileScreenLoader />}
+            {loading && <MobileScreenLoader />}
             {!loading && (
               <>
                 {id == "64256913d7c605809d1d1dff" && (
@@ -382,7 +382,7 @@ function Appearnce() {
                   <EcommerceTheme2 fetch={fetch} elementList={elementList} />
                 )}
               </>
-            )} */}
+            )}
 
             {/* <Events/> */}
 
@@ -396,7 +396,7 @@ function Appearnce() {
             {/* <EcommerceTheme1 elementList={elementList} /> */}
 
             {/* News Theme 1 */}
-            <News />
+            {/* <News /> */}
 
 
             {/* <Newsdetails /> */}

@@ -22,6 +22,8 @@ import AddNewsCategory from "./AddNewsCategory";
 import ManageNewsCategory from "./ManageNewsCategory";
 import AddNews from "./AddNews";
 import ManageNews from "./ManageNews";
+import News from "../News/Theme1/Index"
+
 
 function Appearnce() {
   const { id, moduleID } = useParams();
@@ -244,6 +246,7 @@ function Appearnce() {
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
           {/* <Mobilescreen /> */}
           <Mainmobile>
+            <News/>
             {/* <Ecommerceproductdetails /> */}
 
             {/* <EcommerceTheme1 elementList={elementList} /> */}
@@ -257,7 +260,7 @@ function Appearnce() {
 
             {/* <Podcasttheme2 /> */}
             {/* <Otttheme1 /> */}
-            <Otttheme2 />
+            {/* <Otttheme2 /> */}
           </Mainmobile>
         </div>
       </DashboardUi>
