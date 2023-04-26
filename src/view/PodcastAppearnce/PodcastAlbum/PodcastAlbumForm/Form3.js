@@ -7,23 +7,50 @@ import DropFile from "../../../../Component/RenderComponent/DropFile";
 import HttpClient from "../../../../utils/HttpClient";
 import ImagePreview from "../../../OttAppearnce/OttVideoComponent/ImagePreview";
 // import SelectDropDown from "../RenderComponent/SelectDropDown";
+import HttpClientXml from "../../../../utils/HttpClientXml";
+import { toast } from "react-hot-toast";
 
 function Form3({ audio, thumbnail, updateFields }) {
   const [progress, setProgress] = useState(0);
   const [pngValid, setPngValid] = useState("Upload Thumbnail");
+  // const AudioUploadHandle = async (file) => {
+  //   console.log(file, "file");
+  //   let data = new FormData();
+  //   data.append("audio", data);
+  //   // return false
+  //   let res = await HttpClient.fileUplode("upload-audio", "POST", data);
+
+  //   console.log("res", res);
+
+  //   if (res & res.status) {
+  //     updateFields({ audio: res.image.url });
+  //   }
+  // };
+
+
   const AudioUploadHandle = async (file) => {
+    let percentage;
+
+    // const toastId= toast.loading(`${percentage}% uploading`)
+
     console.log(file, "file");
     let data = new FormData();
-    data.append("audio", data);
-    // return false
-    let res = await HttpClient.fileUplode("upload-audio", "POST", data);
+    data.append("audio", file);
 
-    console.log("res", res);
+    toast.promise(HttpClientXml.audioUpload("upload-audio", data), {
+      loading: "loading",
+      success: (res) => {
+        // console.log("promise");
+        if (res && res.status) {
+          // getDuration(file);
+          updateFields({ audio: res.image.url });
+        }
 
-    if (res & res.status) {
-      updateFields({ audio: res.image.url });
-    }
-  };
+        return "Successfully uploaded";
+      },
+      error: (err) => `k`,
+    });
+     };
 
   async function thumbnailUpload(file) {
     if (file.type != "image/png") {
@@ -58,6 +85,12 @@ function Form3({ audio, thumbnail, updateFields }) {
             : "Upload Audio"
         }`}
       />
+ 
+{audio !=""&& <audio controls key={audio}>
+  <source src={audio} />
+
+</audio>}
+
       {thumbnail != "" ? (
         <ImagePreview change={resThumb} src={thumbnail} />
       ) : (

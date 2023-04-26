@@ -5,7 +5,7 @@ import movie2 from "../../../images/movie2.png"
 import movie3 from "../../../images/movie3.png"
 import movie4 from "../../../images/movie4.png"
 import Slider from "react-slick";
-function MostPopular() {
+function MostPopular({feild=[]}) {
     var settings = {
         dots: false,
         infinite: false,
@@ -17,15 +17,21 @@ function MostPopular() {
         slidesToShow: 3,
         slidesToScroll: 3
     };
+    let Heading = feild.find((item) => item.key === "Heading")?.value;
+
+    const fontSize=  feild.find((item) => item.key === "Title Font Size")?.value;
+    const color=  feild.find((item) => item.key === "Title Font Color")?.value;
+
+
     return (
         <div className={style.MostPopular}>
             <div className='container'>
                 <div className='row mb-1'>
                     <div className='col-8'>
-                        <h1 className={style.toptitle}>Most Popular Movies</h1>
+                        <h1 className={style.toptitle} style={{fontSize,color}}>{Heading}</h1>
                     </div>
                     <div className='col-4 text-right'>
-                        <p className={style.seeall}>See All</p>
+                        <p className={style.seeall} style={{color}}>See All</p>
                     </div>
                 </div>
 

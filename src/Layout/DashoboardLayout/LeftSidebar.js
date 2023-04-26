@@ -8,7 +8,26 @@ const sidebarContent = [
     url: "/logo",
     name: "Logo",
   },
-
+  {
+    icon: "fa-solid fa-users",
+    url: "/authpage",
+    name: "Register",
+  },
+  {
+    icon: "fa-solid fa-file-invoice-dollar",
+    url: "/choose-your-paymentgateway",
+    name: "Payment",
+  },
+  {
+    icon: "fa-solid fa-hand-holding-dollar",
+    url: "/loyalty",
+    name: "Loyalty",
+  },
+  {
+    icon: "fa-solid fa-calendar-week",
+    url: "/virtualmeet",
+    name: "Events",
+  },
   
 ];
 

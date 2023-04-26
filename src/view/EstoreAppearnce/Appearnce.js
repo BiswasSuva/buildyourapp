@@ -37,15 +37,22 @@ import { useEstoreRightSidearContext } from "../../Providers/EcomRightSidebar";
 import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
 import { useElementList } from "../../Providers/ElemetProvider";
 import { toast } from "react-hot-toast";
-
+import News from "../News/Theme1/Index"
+import Newsdetails from "../News/Themedetails/Index";
+// import Events from "../Events/Theme1/Index"
+import Eventdetails1 from "../Events/Eventthemedetails1/Index"
+import Socialmedia from "../Socialmedia/Index"
+import Event2 from "../Events/Theme2/Index"
+import Eventthemedetails2 from "../Events/Eventthemedetails2/Index"
 function Appearnce() {
   const { id, moduleID } = useParams();
   // const [elementList, setElementList] = useState([]);
   const [deletedElement, setDeletedElement] = useState([]);
   const [fetch, setFetch] = useState(false);
-  const { component, setRenderComponent } = useEstoreRightSidearContext();
+  const { component, setRenderComponent, activeElement, setActiveElement } =
+    useEstoreRightSidearContext();
   const [loading, setLoading] = useState(false);
-  const {elementList,setElementList} = useElementList()
+  const { elementList, setElementList } = useElementList();
   // console.log("my elemenmt");
 
   useEffect(() => {
@@ -57,48 +64,40 @@ function Appearnce() {
     // return false
     console.log("themeDetail", result);
     if (result && result.status) {
-      let list = result.data.elementListe.map((item)=>{
-// checking new elementsField is avialable or not
-        if(item.elementsField){
+      let list = result.data.elementListe.map((item) => {
+        // checking new elementsField is avialable or not
+        if (item.elementsField) {
           // if avialable change value with new value
-          return{
+          return {
             ...item,
-            elementTypeName:{
-              
+            elementTypeName: {
               ...item.elementTypeName,
-              field:item.elementTypeName.field.map((feildItem)=>{
+              field: item.elementTypeName.field.map((feildItem) => {
                 return {
                   ...feildItem,
-                  value:item.elementsField?.fieldsList.find((it)=>it.key==feildItem.key)?.value
-
-                }
-              })
-
-
-            
-            }
-
-          }
+                  value: item.elementsField?.fieldsList.find(
+                    (it) => it.key == feildItem.key
+                  )?.value,
+                };
+              }),
+            },
+          };
         }
         return {
-          ...item
-        }
-       
-      })
+          ...item,
+        };
+      });
 
-      console.log("updatedlist",list);
+      console.log("updatedlist", list);
 
       // here we checking if user updeted value in feild list if user update value list elementsField becomes new key value pair
-
 
       setElementList(
         list
           ?.filter((item) => !item.isDeleted)
           .sort((a, b) => a.position - b.position)
       );
-      setDeletedElement(
-        list.filter((item) => item.isDeleted)
-      );
+      setDeletedElement(list.filter((item) => item.isDeleted));
     }
     setLoading(false);
   };
@@ -174,7 +173,7 @@ function Appearnce() {
     );
     // console.log("doen",result);
     if (result && result.status) {
-      toast.success("Changes done")
+      toast.success("Changes done");
       // Swal.fire({
       //   title: "Elements Updted Successfully ! ",
       //   icon: "success",
@@ -191,7 +190,8 @@ function Appearnce() {
             <div className="accordion-section">
               <div className="each-accordionbox">
                 <h3 className="each-title">Elements</h3>
-
+                {/* <h3 className="tutorialtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> */}
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -220,6 +220,7 @@ function Appearnce() {
                                     deleteThisElement(item._id, item)
                                   }
                                   onClick={() => {
+                                    setActiveElement(index);
                                     // setFeildList(item);
                                     // setfeildElementindex(index);
                                     setRenderComponent(
@@ -257,6 +258,8 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">categories</h3>
+                {/* <h3 className="tutorialtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> */}
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -281,13 +284,15 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Sub Category</h3>
+                {/* <h3 className="tutorialtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> */}
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
                 <ul className="each-text custom-list">
                   <li
                     onClick={() =>
-                      setRenderComponent(<AddSubCategory close={() => {}} />)
+                      setRenderComponent(<AddSubCategory close={() => { }} />)
                     }
                   >
                     Add Sub-Category
@@ -305,6 +310,8 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Products</h3>
+                {/* <h3 className="tutorialtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> */}
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -312,7 +319,7 @@ function Appearnce() {
                   <li
                     onClick={() =>
                       setRenderComponent(
-                        <AddProduct setFetch={setFetch} close={() => {}} />
+                        <AddProduct setFetch={setFetch} close={() => { }} />
                       )
                     }
                   >
@@ -329,6 +336,8 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Banners</h3>
+                {/* <h3 className="tutorialtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3> */}
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -336,7 +345,7 @@ function Appearnce() {
                   <li
                     onClick={() =>
                       setRenderComponent(
-                        <EstoreAddBanner setFetch={setFetch} close={() => {}} />
+                        <EstoreAddBanner setFetch={setFetch} close={() => { }} />
                       )
                     }
                   >
@@ -362,24 +371,39 @@ function Appearnce() {
         </div>
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
           {/* <Mobilescreen /> */}
-          <Mainmobile>
-            {loading && <MobileScreenLoader />}
+          <Mainmobile style={{ left: "-25%" }}>
+            {/* {loading && <MobileScreenLoader />}
             {!loading && (
               <>
                 {id == "64256913d7c605809d1d1dff" && (
                   <EcommerceTheme1 fetch={fetch} elementList={elementList} />
                 )}
-                {id == "63f738162329e60244665f79" && (
+                {id == "6426526a2e8c8f8facfdbea6" && (
                   <EcommerceTheme2 fetch={fetch} elementList={elementList} />
                 )}
               </>
-            )}
+            )} */}
+
+            {/* <Events/> */}
+
+            {/* <Eventdetails1/> */}
+
+
 
             {/* <Ecommerceproductdetails /> */}
             {/* <Ecommerceproductdetails2 /> */}
 
             {/* <EcommerceTheme1 elementList={elementList} /> */}
 
+            {/* News Theme 1 */}
+            <News />
+
+
+            {/* <Newsdetails /> */}
+
+            {/* <Event2 /> */}
+            {/* <Eventthemedetails2/> */}
+            {/* <Socialmedia /> */}
             {/*----Start New Themes----*/}
             {/* <Learning1 />  */}
             {/* <Learningthemedetails1 /> */}

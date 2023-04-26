@@ -26,26 +26,34 @@ function index({ fetch, elementList = [] }) {
           <Section6></Section6>
         </div> */}
 
-        {elementList.map((item, index) => {
+        {/* {elementList.map((item, index) => {
           return (
             <div key={item._id}>
-              {item.elementTypeName.title === "E-Store Black Header" && (
+              {item.elementTypeName.title === "E-Store Black Theme Header" && (
                 <Section1 feild={item.elementTypeName.field} />
               )}
             </div>
           );
-        })}
+        })} */}
         <div className={style.bgcss}>
           {elementList.map((item, index) => {
             return (
-              <div key={item._id}>
-                {item.elementTypeName.title === "Default Theme Banner" && (
-                  <Section2 feild={item.elementTypeName.field}></Section2>
+              < >
+                {item.elementTypeName.title ===
+                  "E-Store Black Theme Header" && (
+                  <Section1 feild={item.elementTypeName.field} />
                 )}
-                {item.elementTypeName.title === "Default Theme Categories" && (
-                  <Section3></Section3>
+                {item.elementTypeName.title ===
+                  "E-Store Black Theme Banner" && (
+                  <Section2
+                    feild={item.elementTypeName.field}
+                    fetch={fetch}
+                  ></Section2>
                 )}
-                {item.elementTypeName.title === "Default Theme Product List" && (
+                {item.elementTypeName.title ===
+                  "E-Store Black Theme categories" && <Section3></Section3>}
+                {item.elementTypeName.title ===
+                  "E-Store Black Theme Products" && (
                   <Section4
                     fetch={fetch}
                     feild={item.elementTypeName.field}
@@ -54,7 +62,7 @@ function index({ fetch, elementList = [] }) {
                 {/* {item.elementTypeName.title === "Product List" && (
                 <Section5 fetch={fetch} feild={item.elementTypeName.field} ></Section5>
               )} */}
-              </div>
+              </>
             );
           })}
         </div>

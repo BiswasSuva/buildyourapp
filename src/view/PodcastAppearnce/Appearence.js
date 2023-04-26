@@ -32,31 +32,75 @@ import ManagePodcast from "./ManagePodcast";
 import AddBaner from "./PodcastBanner/AddBanner";
 import ManageBanner from "./PodcastBanner/ManageBanner";
 import AddPodcastAlbum from "./PodcastAlbum/AddPodcastAlbum";
+import { useElementList } from "../../Providers/ElemetProvider";
+import MobileScreenLoader from "../../Component/Loaders/MobileScreenLoader";
+import Podcasttheme1 from "../Podcast/Theme1/index"
+import Podcasttheme2 from "../Podcast/Theme2/index"
+import ManagePodcastAlbum from "./ManagePodcastAlbum";
+
 
 function Appearnce() {
   const { id, moduleID } = useParams();
-  const [elementList, setElementList] = useState([]);
+  // const [elementList, setElementList] = useState([]);
   const [deletedElement, setDeletedElement] = useState([]);
   const [fetch, setFetch] = useState(false);
   const { component, setRenderComponent } = usePodcastRightSidebarContext();
+  const [loading, setLoading] = useState(false);
+  const {elementList,setElementList} = useElementList()
 
   useEffect(() => {
     fetchTheme();
   }, [id]);
   const fetchTheme = async () => {
+    setLoading(true);
     let result = await getThemeDetail(id);
     // return false
     console.log("themeDetail", result);
     if (result && result.status) {
+      let list = result.data.elementListe.map((item)=>{
+// checking new elementsField is avialable or not
+        if(item.elementsField){
+          // if avialable change value with new value
+          return{
+            ...item,
+            elementTypeName:{
+              
+              ...item.elementTypeName,
+              field:item.elementTypeName.field.map((feildItem)=>{
+                return {
+                  ...feildItem,
+                  value:item.elementsField?.fieldsList.find((it)=>it.key==feildItem.key)?.value
+
+                }
+              })
+
+
+            
+            }
+
+          }
+        }
+        return {
+          ...item
+        }
+       
+      })
+
+      console.log("updatedlist",list);
+
+      // here we checking if user updeted value in feild list if user update value list elementsField becomes new key value pair
+
+
       setElementList(
-        result.data.elementListe
+        list
           ?.filter((item) => !item.isDeleted)
           .sort((a, b) => a.position - b.position)
       );
       setDeletedElement(
-        result.data.elementListe.filter((item) => item.isDeleted)
+        list.filter((item) => item.isDeleted)
       );
     }
+    setLoading(false);
   };
   useEffect(() => {
     $(".each-accordionbox:first-child")
@@ -146,7 +190,7 @@ function Appearnce() {
             <div className="accordion-section">
               <div className="each-accordionbox">
                 <h3 className="each-title">Elements</h3>
-
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -212,6 +256,7 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Podcast Types</h3>
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -241,6 +286,7 @@ function Appearnce() {
               </div>{" "}
               <div className="each-accordionbox">
                 <h3 className="each-title">Podcast Genre</h3>
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -267,6 +313,7 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Podcast</h3>
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -293,6 +340,7 @@ function Appearnce() {
               </div>
               <div className="each-accordionbox">
                 <h3 className="each-title">Podcast Album</h3>
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -309,7 +357,7 @@ function Appearnce() {
                   <li
                     onClick={() =>
                       setRenderComponent(
-                        <ManageBanner setFetch={setFetch} close={() => {}} />
+                        <ManagePodcastAlbum setFetch={setFetch} close={() => {}} />
                       )
                     }
                   >
@@ -319,6 +367,7 @@ function Appearnce() {
               </div>{" "}
               <div className="each-accordionbox">
                 <h3 className="each-title">Banner</h3>
+                <span class="tooltiptext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 <div className="swipebox">
                   <div className="swipeplus">+</div>
                 </div>
@@ -355,6 +404,17 @@ function Appearnce() {
         <div className="col-lg-8 col-xl-8 col-md-8 col-12">
           {/* <Mobilescreen /> */}
           <Mainmobile>
+          {loading && <MobileScreenLoader />}
+            {!loading && (
+              <>
+                {id == "6426c2b52e8c8f8facfdc8ee" && (
+                  <Podcasttheme1 fetch={fetch} elementList={elementList} />
+                )}
+                {id == "6426c5e02e8c8f8facfdc927" && (
+                  <Podcasttheme2 fetch={fetch} elementList={elementList} />
+                )}
+              </>
+            )}
             {/* <Ecommerceproductdetails /> */}
 
             {/* <EcommerceTheme1 elementList={elementList} /> */}
@@ -364,11 +424,10 @@ function Appearnce() {
 
             {/* <Learning2 /> */}
 
-            {/* <Podcasttheme1/> */}
 
             {/* <Podcasttheme2 /> */}
             {/* <Otttheme1 /> */}
-            <Otttheme2 />
+            {/* <Otttheme2 /> */}
           </Mainmobile>
         </div>
       </DashboardUi>

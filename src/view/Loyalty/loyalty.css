@@ -1,0 +1,108 @@
+.tabularlist {
+	display: flex !important;
+	align-items: center;
+	padding: 2%;
+	background: #323232;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.listimagecst {
+	max-width: 200px;
+	border-radius: 10px !important;
+
+}
+
+.tabularlist h4 {
+	font-size: 12px;
+	margin-bottom: 6px;
+}
+
+.tabularlist p {
+	font-size: 9px;
+	margin-bottom: 6px;
+}
+
+.tabularlist button {
+	background: #2a6899;
+	color: #fff;
+	border-radius: 6px;
+	font-size: 12px;
+	padding: 2px 16px;
+}
+
+.reedeemimage {
+	border-radius: 10px !important;
+}
+
+.topsection {
+	height: 160px;
+	background-position: center center;
+	background-size: contain;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to right, #2c689a , #6894b7);
+	border-radius: 20px;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.heeadesection {
+	background: #fff;
+	padding: 15px 2%;
+	box-shadow: 0px 10px 8px rgb(100 100 100 / 15%);
+}
+
+h2.titleloyayty {
+	color: #000;
+	font-size: 14px;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.heeadesection ul li {
+	text-align: center;
+}
+
+.heeadesection ul li a {
+	color: #7c7c7c;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+}
+
+.heeadesection ul li a:focus {
+	color: #2f6691;
+}
+
+/* .heeadesection ul li a:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 2px;
+	background: #2f6691;
+	margin: 0 auto;
+	visibility: hidden;
+} */
+
+.topsection h3{
+	font-size: 16px;
+}
+.topsection h1{
+	font-size: 30px;
+	font-weight: 700;
+}
+.topsection p{
+	font-size: 12px;
+	margin-bottom: 0;
+}

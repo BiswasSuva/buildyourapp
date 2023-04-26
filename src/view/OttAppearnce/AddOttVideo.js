@@ -23,6 +23,8 @@ import Form3 from "./OttVideoComponent/Form3";
 import Form4 from "./OttVideoComponent/Form4";
 import Form5 from "./OttVideoComponent/Form5";
 import useGetApi from "../../customHooks/useGetApi";
+import { toast } from "react-hot-toast";
+import ManageVideo from "./ManageVideo";
 // import ManageProduct from "./ManageProduct";
 
 const INITIAL_DATA = {
@@ -98,7 +100,7 @@ function AddProduct({
     let chk = val.filter(
       (it) => it === "" || (Array.isArray(it) && it.length == 0) || !it
     );
-    console.log("chk", chk);
+    // console.log("chk", chk);
     if (chk.length === 0) {
       let result;
       console.log("first");
@@ -111,12 +113,12 @@ function AddProduct({
       }
 
       if (result && result.status) {
-        alert("Video Added Successfully");
+        toast.success("Video Added Successfully");
         setData(INITIAL_DATA)
-        // setRenderComponent(<ManageProduct setFetch={setFetch}/>)
+        setRenderComponent(<ManageVideo setFetch={setFetch}/>)
       }
     } else {
-      alert("All feilds are required");
+      toast.error("All feilds are required");
     }
   };
   useEffect(() => {

@@ -8,9 +8,13 @@ import balmain from "../../../assets/images/ThemeImages/balmain.png"
 import puma from "../../../assets/images/ThemeImages/puma.png"
 import kensen from "../../../assets/images/ThemeImages/kensen.png"
 import channel from "../../../assets/images/ThemeImages/channel.png"
+import { useEstoreRightSidearContext } from "../../../Providers/EcomRightSidebar";
+
 function Section5() {
+    const { activeElement, setActiveElement } = useEstoreRightSidearContext();
+
   return (
-    <div className={style.brand}>
+    <div className={style.brand} style={{border:activeElement===4&& "2px solid black"}}>
         <div className='container-fluid'>
             <div className={style.brandtitle}>
                 <h1>Brand</h1>

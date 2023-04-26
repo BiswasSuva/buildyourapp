@@ -48,7 +48,7 @@ setLogo(screen.logo_img?screen.logo_img:"")
 
   return (
     <DashboardUi style={{marginRight: "0"}} >
-      <div className="col-lg-4 col-xl-4 col-md-4 col-12">
+      <div className="col-lg-3 col-xl-3 col-md-3 col-12" style={{marginLeft: "2%"}}>
         <Mainmobile>
           {loading ? (
           <div>  <VerticalSpin /></div>
@@ -69,7 +69,7 @@ setLogo(screen.logo_img?screen.logo_img:"")
         </Mainmobile>
       </div>
 
-      <div className="col-lg-7 col-xl-7 col-md-7 col-12 offset-1" style={{display: "grid", alignContent: "center"}}>
+      <div className="col-lg-8 col-xl-8 col-md-8 col-12" style={{display: "grid", alignContent: "center"}}>
     {logo&&  <ColorScheme logo={logo}/>}
       </div>
       

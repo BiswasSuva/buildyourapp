@@ -1,0 +1,285 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #F6F8FD;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.newsheader {
+    padding: 15px 0;
+}
+
+.newsheader img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+h4.title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -0.165px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.savebtn {
+    width: 15px !important;
+    height: 20px !important;
+    border-radius: inherit !important;
+}
+
+.threedots {
+    width: 4px !important;
+    height: 16px !important;
+    border-radius: inherit !important;
+    margin-left: 10px !important;
+}
+
+.searchbox {
+    padding:0 0 15px 0;
+}
+
+.hassearch .form-control {
+    padding-left: 2rem !important;
+}
+
+.form-control {
+    padding-left: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    border-radius: 10px;
+    height: 49px;
+
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+    border: transparent !important;
+}
+
+.hassearch .formcontrolfeedback {
+    position: absolute;
+    top: 28%;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    width: 16px;
+    height: 16px;
+    left: 10%;
+}
+
+.filter button {
+    padding: 6px 12px;
+    border: 1px solid #000000;
+    border-radius: 45px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.newslist {
+    margin: 25px 0;
+}
+
+.newsdate {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.newsdate img {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 10px;
+}
+
+.newsdate h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.article p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: 800;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #000000;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.articletime p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #000000;
+    margin-bottom: 5px;
+    justify-content: end;
+
+}
+
+.articleimage img {
+    width: 107px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.articlepara p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #000000;
+
+}
+
+.bannerbox {
+    margin: 15px 0;
+
+}
+
+.bannerimage {
+    position: relative;
+}
+
+.bannerimage img {
+    border-radius: 10px;
+    height: 170px;
+    width: 100%;
+}
+
+.bannertitle {
+    margin-top: -25%;
+    padding: 10px;
+    z-index: 9;
+    position: relative;
+}
+
+
+.bannertitle p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.bannertitle p img {
+    width: 12px;
+    height: 12px;
+}
+
+.bannertitle h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+button.tags {
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 6px 12px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.singlebtn button {
+    padding: 5px 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #000000;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+h2.breaktitle {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -0.165px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+p.breakpara {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: -0.165px;
+    color: #9E9E9E;
+    margin-bottom: 0;
+}
+.searchicon{
+    width: 36px !important;
+    height: 36px !important;
+}

@@ -509,6 +509,9 @@ function Modules() {
         </div>
       </div>
       <div className="col-md-9 col-xl-9 col-lg-9 col-12">
+        <div className="row mb-4 mt-4">
+            <h1 className="titlewrapper">Please choose a theme for your App</h1>
+        </div>
         <div className="row">
           {themes.map((item, index) => {
             if (item.moduleName != "Social"){

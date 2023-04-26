@@ -36,7 +36,7 @@ function Form4({ priority, thumbline, updateFields }) {
             setPngValid("Upload Thumbnail");
             thumbnailUpload(e.target.files[0]);
           }}
-          accept="png/*"
+          accept="image/*"
           title={pngValid}
         />
       )}

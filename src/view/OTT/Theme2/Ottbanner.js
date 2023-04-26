@@ -5,7 +5,7 @@ import ottbanner1 from "../../../images/ottbanner1.png"
 import ottbanner2 from "../../../images/ottbanner2.png"
 import playbtn from "../../../images/icon/play_circle.png"
 import Slider from "react-slick";
-function Ottbanner() {
+function Ottbanner({feild}) {
     var settings = {
         dots: false,
         infinite: true,

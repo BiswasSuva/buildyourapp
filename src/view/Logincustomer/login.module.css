@@ -1,0 +1,82 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #fff;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    height: 0 !important;
+    width: 0 !important;
+}
+.logoarea{
+    padding: 20px 0;
+}
+.logo{
+    max-width: 80px;
+    border-radius: none;
+}
+legend {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.4;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Nunito', sans-serif;
+    /* color: #384047; */
+    text-align: left;
+}
+.Registerform input{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgb(100 100 100 / 15%);
+}
+.btnreglog, .skip{
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: #312450;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid #312450;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.askingac{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #384047;
+}
+.registerbtn{
+    background: transparent;
+    border: transparent;
+    color: #312450;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}

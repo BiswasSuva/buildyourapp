@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import { AddPodcast, editOttVideo, EditPodcast } from "../../api/appApi";
+import { addPodcastAlbum, EditPodcastAlbum,  } from "../../../api/appApi";
 
 import { motion } from "framer-motion";
 import { useMultistepForm } from "../../../customHooks/useMultiStepForm";
@@ -11,6 +11,7 @@ import useGetApi from "../../../customHooks/useGetApi";
 import Form1 from "./PodcastAlbumForm/Form1";
 import Form2 from "./PodcastAlbumForm/Form2";
 import Form3 from "./PodcastAlbumForm/Form3";
+import { toast } from "react-hot-toast";
 
 
 // import ManageProduct from "./ManageProduct";
@@ -75,15 +76,15 @@ function AddPodcastAlbum({
       let result;
 
       if (editEnable) {
-        // result = await EditPodcast(editElement?._id, dataSend);
+        result = await EditPodcastAlbum(editElement?._id, dataSend);
       } else {
         console.log("first");
-        // result = await AddPodcast(dataSend);
+        result = await addPodcastAlbum(dataSend);
         console.log("result", result);
       }
 
       if (result && result.status) {
-        alert("Video Added Successfully");
+        toast.success("Video Added Successfully");
         setData(INITIAL_DATA);
         // setRenderComponent(<ManageProduct setFetch={setFetch}/>)
       }

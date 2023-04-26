@@ -7,6 +7,8 @@ import Datatable from "../../Component/Datatable/Datatable";
 import { usePodcastRightSidebarContext } from "../../Providers/PodcastRightSidebar";
 import Heading from "../../Component/RenderComponent/Heading";
 import PodcastTypes from "./PodcastTypes";
+import { toast } from "react-hot-toast";
+import Swal from "sweetalert2";
 
 function ManagePodcastType({ setFetch, onEdit }) {
   const [data, setData] = useState([]);
@@ -85,15 +87,33 @@ function ManagePodcastType({ setFetch, onEdit }) {
   ];
 
     const deleteHandle = async (id) => {
-      let con=  window.confirm("Sure want to delete?")
-      if(!con){
-        return
-      }
-      let result = await deletePodcastType(id);
-      if (result && result.status) {
-        fetchPodcastType();
-        setFetch((prev) => !prev);
-      }
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then(async(result) => {
+        if (result.isConfirmed) {
+          let result = await deletePodcastType(id);
+          if (result && result.status) {
+            toast.success("Deleted Successfully")
+            fetchPodcastType();
+            setFetch((prev) => !prev);
+          }
+
+
+          // Swal.fire(
+          //   'Deleted!',
+          //   'Your file has been deleted.',
+          //   'success'
+          // )
+        }
+      })
+          
+   
     };
 
   return (

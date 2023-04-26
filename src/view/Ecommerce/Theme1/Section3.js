@@ -2,6 +2,8 @@ import React from "react";
 import style from "./ecommerce.module.css";
 import Slider from "react-slick";
 import useEcomBanner from "../../../customHooks/useEcomBanner";
+import { useEstoreRightSidearContext } from "../../../Providers/EcomRightSidebar";
+
 function Section3({fetch,feild = []}) {
     var settings = {
         dots: false,
@@ -13,6 +15,8 @@ function Section3({fetch,feild = []}) {
         slidesToScroll: 1,
         initialSlide: 0,
     };
+    const { activeElement, setActiveElement } = useEstoreRightSidearContext();
+
     const banner = useEcomBanner({ refetch: fetch });
     let BannerHeight = feild.find((item) => item.key === "Banner Height")?.value;
     console.log("banner", BannerHeight);
@@ -21,7 +25,7 @@ function Section3({fetch,feild = []}) {
 
 
     return (
-        <div className="container-fluid" style={{paddingTop: "10px", paddingBottom: "10px" }}>
+        <div className="container-fluid" style={{paddingTop: "10px", paddingBottom: "10px" ,border:activeElement===2&&"2px solid black"}}>
             <div className={style.banner}>
                 <Slider {...settings}>
                     {banner.length > 0 ? (

@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.scrollProblm {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #fff;
+}
+
+.scrollProblm::-webkit-scrollbar {
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.eventdetailsheader {
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 250px;
+    background-size: cover;
+}
+
+.backbtn {
+    width: 40px !important;
+    height: 40px !important;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 8px !important;
+}
+
+.scheduledevent {
+    background: #FFFFFF;
+    box-shadow: 0px 12px 24px rgba(113, 128, 150, 0.06);
+    border-radius: 20px;
+    margin-top: -30%;
+    margin: -30% 12px 0;
+}
+
+h1.eventtitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1A202C;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.clndertitle {
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+    color: #718096;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.clndertitle img {
+    height: 15px;
+    width: 15px;
+}
+
+.grpimage {
+    width: 60px !important;
+    height: 40px !important;
+}
+
+p.name {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1A202C;
+    margin-bottom: 5px;
+}
+
+p.designation {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 135%;
+    letter-spacing: 0.3px;
+    color: #718096;
+    margin-bottom: 0;
+}
+
+.follower {
+    margin: 25px 0;
+}
+
+.userprofile {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 10px;
+}
+
+.follow {
+    background: #F5F6FF;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+    color: #455AF7;
+    padding: 8px 20px;
+}
+
+p.paradetails {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+    color: #718096;
+}
+
+.buybtn {
+    width: 100%;
+    background: #455AF7;
+    border-radius: 16px;
+    height: 56px;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}

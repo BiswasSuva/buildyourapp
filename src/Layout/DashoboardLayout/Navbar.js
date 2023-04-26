@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { reactLocalStorage } from 'reactjs-localstorage'
 import logo from "../../images/Logo.png"
 import { useDispatch } from 'react-redux'
@@ -8,14 +8,26 @@ import { Link, useNavigate } from 'react-router-dom'
 function Navbar() {
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const logoutHandle = ()=>{
+    const logoutHandle = () => {
 
         reactLocalStorage.remove("token")
         dispatch(removeUserdata())
-        removeBodyColor({backgroundColor: "#fff"})
-        navigate("/")   
+        removeBodyColor({ backgroundColor: "#fff" })
+        navigate("/")
 
     }
+
+    const [theme, setTheme] = useState('dark');
+    const toggleTheme = () => {
+        if (theme === 'dark') {
+            setTheme('light');
+        } else {
+            setTheme('dark');
+        }
+    };
+    useEffect(() => {
+        document.body.className = theme;
+    }, [theme]);
     return (
         <div className="navbar">
             <div className="flex-v__center">
@@ -24,12 +36,12 @@ function Navbar() {
                     <div className="menu-burger_3" />
                 </div>{" "}
                 <a className="logo">
-                   <img src={logo} alt="Logo" className='img-fluid' style={{height: "50px"}}/>
+                    <img src={logo} alt="Logo" className='img-fluid' style={{ height: "50px" }} />
                 </a>
             </div>
             <ul className="main-menu">
 
-                <li style={{marginRight: "20px"}}>
+                <li style={{ marginRight: "20px" }}>
                     <Link to="/profession" className="main-menu-link main-menu-link-color">
                         <i className="fas fa-magic m-t-4 m-r-8 m-l-8" />
                         Profession
@@ -41,15 +53,25 @@ function Navbar() {
                         Modules
                     </Link>
                 </li>
-                <li className='m-l-a' style={{marginRight: "20px"}}>
-                    <button type="button" className="btn main-menu-link btn-big btn-success" style={{color: "#fff"}}>Build App</button>
+                <li className='d-flex align-items-center m-l-a' style={{position: "relative", color: "#fff", marginRight: "110px"}}>
+                Dark Mode/Light Mode
+                    <label className="switch">
+                        
+                        <input type="checkbox" defaultChecked="" onClick={toggleTheme}/>
+                        <span className="slider round" />
+                    </label>
+
+                    {/* <button type="button"  className="btn main-menu-link btn-big btn-success" style={{ color: "#fff" }}>Theme Colour</button> */}
+                </li>
+                <li style={{ marginRight: "20px" }}>
+                    <button type="button" className="btn main-menu-link btn-big btn-success" style={{ color: "#fff" }}>Build App</button>
                 </li>
                 <li >
                     <button type="button" className="main-menu-link" onClick={logoutHandle}>
                         Logout
                     </button>
                 </li>
-                
+
             </ul>
             <div className="btns-action display-none-desktop">
 

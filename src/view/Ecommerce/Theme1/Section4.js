@@ -14,6 +14,8 @@ import bag from "../../../assets/images/ThemeImages/AllItems/hand-bag.png";
 import useEcomCategory from "../../../customHooks/useEcomCategory";
 import { useElementList } from "../../../Providers/ElemetProvider";
 import { getEcomCat } from "../../../api/appApi";
+import { useEstoreRightSidearContext } from "../../../Providers/EcomRightSidebar";
+
 
 const arr = [
   {
@@ -68,6 +70,8 @@ const arr = [
 
 function Section4({ feild = [] }) {
   // const data = useEcomCategory();
+  const { activeElement, setActiveElement } = useEstoreRightSidearContext();
+
   const [categories, setCategories] = useState(arr);
   const { rerender, setRender } = useElementList();
 
@@ -85,6 +89,9 @@ function Section4({ feild = [] }) {
     if(result && result.status && result.data?.length>0){
       setCategories(result.data)
     }
+    else{
+      setCategories(arr)
+    }
   };
 
   // const [totalElement,setTotalAmount] = useState( coloumn*rows)
@@ -93,7 +100,7 @@ function Section4({ feild = [] }) {
   return (
     <div
       className={style.categoryareab}
-      style={{ marginTop: 10, marginBottom: 10 }}
+      style={{ marginTop: 10, marginBottom: 10 ,border:activeElement===3&&"2px solid black"}}
     >
       <div
         className="container-fluid"

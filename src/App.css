@@ -1,5 +1,21 @@
 /* Auth css */
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+.bannersliderall{
+    height: 100% !important;
+}
+
+.bannersliderall .slick-list{
+    height: 100% !important;
+}
+.bannersliderall .slick-track{
+    height: 100% !important;
+}
+.bannersliderall .slick-slide{
+    height: 100% !important;
+}
+.bannersliderall .slick-slide div{
+    height: 100% !important;
+}
 .tutorialslider .slick-prev{
     /* background: url(images/arr-left.png) no-repeat center;
     position: absolute;

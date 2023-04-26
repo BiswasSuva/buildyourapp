@@ -28,6 +28,7 @@ function Form2({ songNumber,songName, updateFields }) {
       <TextBox
         title="Song Number"
         className="title-dynamic"
+        type="number"
         value={songNumber}
         onChange={(val) => updateFields({ songNumber: val.target.value })}
       />{" "}

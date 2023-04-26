@@ -13,6 +13,7 @@ import SubmitButton from "../../Component/RenderComponent/SubmitButton";
 import { usePodcastRightSidebarContext } from "../../Providers/PodcastRightSidebar";
 import SelectDropDown from "../../Component/RenderComponent/SelectDropDown";
 import PodcastGenre from "./PodcastGenre";
+import { toast } from "react-hot-toast";
 
 function AddPodcastGenre({ setFetch, editEnable = false, editElement = null }) {
   const [name, setName] = useState("");
@@ -34,14 +35,14 @@ function AddPodcastGenre({ setFetch, editEnable = false, editElement = null }) {
         result = await EditPodcastGenre(editElement?._id, dataSend);
       }
       if (result && result.status) {
-        alert("Podcast Genre Added Successfully");
+        toast.success(result?.message);
         setFetch((prev) => !prev);
         setRenderComponent(<PodcastGenre setFetch={setFetch} />);
       } else {
-        alert("server error");
+        toast.error("server error");
       }
     } else {
-      alert("All feilds are required");
+      toast.error("All feilds are required");
     }
   };
   useEffect(() => {
@@ -61,7 +62,7 @@ function AddPodcastGenre({ setFetch, editEnable = false, editElement = null }) {
       style={{ paddingBottom: "50px" }}
     >
       <div role="main" className="form-all">
-        <Heading heading="Add Podcast-Genre" />
+        <Heading heading={editEnable?"Update Podcast-Genre": "Add Podcast-Genre"} />
         <ul
           className="form-section page-section"
           style={{ height: "600px", overflowY: "auto" }}
