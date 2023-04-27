@@ -20,11 +20,13 @@ import { PodcastSidebarContext } from "../Providers/PodcastRightSidebar";
 import { EventSiderbarContext } from "../Providers/EventRightSidebar";
 import { NewsSiderbarContext } from "../Providers/NewsRightSidebar";
 import { ElementProvider } from "../Providers/ElemetProvider";
-import AuthPagedesgin from "../view/AuthpageDesgin/index"
-import PaymentGateway from "../view/PaymentGatewayDesign/index"
-import Loyalty from "../view/Loyalty/Index"
+import { LearningSiderbarContext } from "../Providers/LearningRightSidebar";
+import AuthPagedesgin from "../view/AuthpageDesgin/index";
+import PaymentGateway from "../view/PaymentGatewayDesign/index";
+import Loyalty from "../view/Loyalty/Index";
 import Virtualmeet from "../view/Events/Virtualmeet/Index";
-import Introscreen from "../view/SplashOnboardingscreen/Index"
+import Introscreen from "../view/SplashOnboardingscreen/Index";
+import LearningAppearnce from "../view/LearningAppearnce/Appearnce"
 function PrivateRoutes() {
   const { userData } = useSelector((state) => state.User);
   return (
@@ -35,7 +37,10 @@ function PrivateRoutes() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="logo" element={<Logo />} />
           <Route path="authpage" element={<AuthPagedesgin />} />
-          <Route path="choose-your-paymentgateway" element={<PaymentGateway />} />
+          <Route
+            path="choose-your-paymentgateway"
+            element={<PaymentGateway />}
+          />
           <Route path="loyalty" element={<Loyalty />} />
           <Route path="virtualmeet" element={<Virtualmeet/>} />
           <Route path="appscreen" element={<Introscreen/>} />
@@ -45,6 +50,14 @@ function PrivateRoutes() {
               <EcomSiderbarContext>
                 <Appearnce />
               </EcomSiderbarContext>
+            }
+          />
+          <Route
+            path="Learning/appearnce/:id/:moduleID"
+            element={
+              <LearningSiderbarContext>
+                <LearningAppearnce />
+              </LearningSiderbarContext>
             }
           />
 
