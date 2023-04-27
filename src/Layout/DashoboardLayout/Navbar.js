@@ -48,8 +48,17 @@ function Navbar() {
 
                     </Link>
                 </li>
+
+                <li style={{ marginRight: "20px" }}>
+                    <Link to="/dashboard"className="btn main-menu-link btn-big btn-success" style={{ color: "#fff" }}>
+                        <i className="fas fa-magic m-t-4 m-r-8 m-l-8" />
+                        Dashboard
+
+                    </Link>
+                </li>
                 <li>
-                    <Link to="/modules" className="main-menu-link">
+                    <Link to="/modules" className="main-menu-link main-menu-link-color">
+                    <i className="fas fa-magic m-t-4 m-r-8 m-l-8" />
                         Modules
                     </Link>
                 </li>

@@ -19,7 +19,7 @@ body{ background: #eeffad;; font-family: 'Roboto', sans-serif;}
 .form-field input:focus, .form-field input:active, .form-field select:focus, .form-field select:active, .form-field textarea:active, .form-field textarea:focus {outline: 1px solid #8aa71c;}
 .tab-links-area {width: 240px; display: inline-block; vertical-align: top; padding-right: 20px;}
 .tab-form-area { width: calc(100% - 245px); display: inline-block; background: #fff; vertical-align: top; padding: 16px; border-radius: 5px;}
-.tab-links-area p {margin: 0; font-size: 14px; color: #999;}
+.tab-links-area p {margin: 0; font-size: 12px; color: #999;}
 .tab-links-area h1 { margin: 0; font-size: 24px; color: #000;}
 .tab-part h4 {font-size: 24px;margin: 0;}
 .multitab-form-area hr {border: 0; height: 1px; width: 100%; background: rgba(0,0,0,0.3);}

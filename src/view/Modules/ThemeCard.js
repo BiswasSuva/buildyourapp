@@ -36,7 +36,7 @@ function ThemeCard({ themeData = null, selectTheme }) {
             {themeData?.theme.map((item) => {
               return <div>
                 <img src={item.screenImage} alt="" />
-               <p>{themeData?.theme?.length>1 && "Click on arrow to select theme"}</p>
+                {themeData?.theme?.length>1 &&   <p style={{background: "#312450", padding: "5px", margin: "5px 0"}}> "Click on arrow to select theme"</p>}
             </div>
               
               

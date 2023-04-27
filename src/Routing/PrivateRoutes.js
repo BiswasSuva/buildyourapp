@@ -38,7 +38,7 @@ function PrivateRoutes() {
           <Route path="choose-your-paymentgateway" element={<PaymentGateway />} />
           <Route path="loyalty" element={<Loyalty />} />
           <Route path="virtualmeet" element={<Virtualmeet/>} />
-          <Route path="introscreen" element={<Introscreen/>} />
+          <Route path="appscreen" element={<Introscreen/>} />
           <Route
             path="E-Store/appearnce/:id/:moduleID"
             element={

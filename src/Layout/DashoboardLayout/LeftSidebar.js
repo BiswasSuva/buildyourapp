@@ -10,8 +10,8 @@ const sidebarContent = [
   },
   {
     icon: "fa-solid fa-cloud-arrow-up",
-    url: "/introscreen",
-    name: "Intro Screen",
+    url: "/appscreen",
+    name: "App Screen",
   },
   {
     icon: "fa-solid fa-users",
