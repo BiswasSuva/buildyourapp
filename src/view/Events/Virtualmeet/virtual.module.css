@@ -1,0 +1,511 @@
+.titlenetworking {
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  padding: 10px 0;
+}
+
+.tabletitle {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.maincamerabox {
+  position: relative;
+  /* border: 2px solid #ffffff; */
+  border-radius: 24px;
+  width: 100%;
+  margin: 15px auto;
+}
+
+.choosetable {
+  max-width: 70%;
+  margin: 0 auto;
+  background: rgb(49, 36, 80);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.choosetable p {
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.virtualtitle {
+  margin-bottom: 0;
+}
+
+.midlsec {
+  width: 60px;
+  height: 60px;
+  border-radius: 13px;
+  background: #D6D6D6;
+  position: relative;
+  margin: 40px auto;
+}
+
+div.firstcambox {
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  position: absolute;
+  right: 9px;
+  top: -14px;
+
+}
+
+div.secondcambox {
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  position: absolute;
+  left: 10px;
+  top: -14px;
+}
+
+div.thirdcambox {
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -16px;
+  top: 35px;
+}
+
+div.fourthcambox {
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -16px;
+  bottom: 34px;
+}
+
+div.fifthcambox {
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(180deg);
+  position: absolute;
+  right: 10px;
+  bottom: -14px;
+}
+
+div.sixthcambox {
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 10px;
+  bottom: -14px;
+}
+
+div.seventhcambox {
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -16px;
+  bottom: 34px;
+}
+
+div.eightthcambox {
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -16px;
+  top: 35px;
+}
+
+.midlsec1 {
+  background: #DBDBDB;
+  border-radius: 16px;
+  width: 100%;
+  height: 100px;
+  margin: 20px auto;
+  position: relative;
+  padding: 10%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.midlsec1 div {
+  width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #989898;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    margin-right: 15px;
+}
+
+
+.midlsec2 {
+  background: #C4C4C4;
+  border-radius: 8.65402px;
+  width: 34.48px;
+  height: 93.15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.firstdiv {
+  position: absolute;
+  background: #989898;
+  border-radius: 6.48525px;
+  transform: rotate(-90deg);
+  width: 20.4px;
+  height: 89.07px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -70%;
+}
+
+.seconddiv {
+  position: absolute;
+  background: #989898;
+  border-radius: 6.48525px;
+  transform: rotate(-90deg);
+  width: 20.4px;
+  height: 89.07px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -70%;
+}
+
+.thirddiv {
+  background: #989898;
+  border-radius: 6.48525px;
+  transform: rotate(180deg);
+  width: 20.4px;
+  height: 93.15px;
+  left: -80%;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.fourthdiv {
+  background: #989898;
+  border-radius: 6.48525px;
+  transform: rotate(180deg);
+  width: 20.4px;
+  height: 93.15px;
+  right: -80%;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.midlsec3 {
+  background: #B5B5B5;
+  border-radius: 12.0863px;
+  transform: rotate(-180deg);
+  width: 63.66px;
+  height: 178.49px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.bigbox {
+  background: #989898;
+  opacity: 0.5;
+  border-radius: 6.04313px;
+  transform: rotate(-180deg);
+  width: 24.61px;
+  height: 116.78px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+}
+
+.midlsec3 .firstcambox,
+.midlsec3 .secondcambox,
+.midlsec3 .thirdcambox,
+.midlsec3 .fourthcambox,
+.midlsec3 .fifthcambox,
+.midlsec3 .sixthcambox,
+.midlsec3 .seventhcambox,
+.midlsec3 .eightthcambox,
+.midlsec3 .ninethcambox,
+.midlsec3 .tenththcambox,
+.midlsec3 .eleventhcambox,
+.midlsec3 .twelthcambox,
+.midlsec3 .thirteenthcambox,
+.midlsec3 .fourteenththcambox,
+.midlsec3 .fifteenthcambox,
+.midlsec3 .sixteenthcambox,
+.midlsec3 .seventeenthcambox,
+.midlsec3 .eighteenthcambox{
+  width: 19px;
+  height: 14px;
+  display: block;
+}
+
+.midlsec3 .sixthcambox {
+  left: 10px;
+  bottom: -13px;
+}
+
+.midlsec3 .fifthcambox {
+  right: 10px;
+  bottom: -13px;
+}
+
+.midlsec3 .fourthcambox {
+  right: -16px;
+  bottom: 24px;
+}
+
+.midlsec3 .seventhcambox {
+  left: -16px;
+    bottom: 25px;
+}
+
+.midlsec3 .eightthcambox {
+  left: -16px;
+    top: 115px;
+}
+
+.midlsec3 .thirdcambox {
+  right: -16px;
+  top: 19px;
+}
+
+.midlsec3 .secondcambox {
+  left: 10px;
+  top: -13px;
+}
+
+.midlsec3 .firstcambox {
+  
+  right: 10px;
+  top: -13px;
+
+}
+
+.midlsec3 .ninethcambox {
+  left: -16px;
+  top: 42px;
+  position: absolute;
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(-90deg);
+}
+
+.midlsec3 .tenththcambox {
+  left: -16px;
+  top: 66px;
+  position: absolute;
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(-90deg);
+}
+
+.midlsec3 .eleventhcambox {
+  left: -16px;
+  bottom: 74px;
+  position: absolute;
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(-90deg);
+}
+
+.midlsec3 .twelthcambox {
+  left: -16px;
+  top: 18px;
+  position: absolute;
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(-90deg);
+}
+
+.midlsec3 .thirteenthcambox{
+  
+  right: -16px;
+  bottom: 49px;
+
+  position: absolute;
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(90deg);
+}
+.midlsec3 .fourteenththcambox{
+  right: -16px;
+  bottom: 74px;
+
+  position: absolute;
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(90deg);
+}
+.midlsec3 .fifteenthcambox{
+  right: -16px;
+  top: 66px;
+  position: absolute;
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(90deg);
+}
+.midlsec3 .sixteenthcambox{
+  right: -16px;
+  top: 18px;
+  position: absolute;
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(90deg);
+}
+.midlsec3 .seventeenthcambox{
+  right: -16px;
+    top: 43px;
+
+  position: absolute;
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(90deg);
+}
+.midlsec3 .eighteenthcambox{
+  left: -16px;
+  top: 18px;
+  position: absolute;
+  background: #AEAEAE;
+  border-radius: 4px 4px 0px 0px;
+  width: 19px;
+  height: 14px;
+  transform: rotate(90deg);
+}
+
+.firstoption {
+  background: #B8035A;
+  border-radius: 8.19128px;
+  width: 35.58px;
+  height: 86.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.firstoption .circlebox{
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+}
+.secondoption {
+  background: #8903B8;
+  border-radius: 8.19128px;
+  width: 35.58px;
+  height: 86.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secondoption .circlebox{
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+}
+.thirdoption {
+  background: #00ACFF;
+  border-radius: 8.19128px;
+  width: 35.58px;
+  height: 86.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thirdoption .circlebox{
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+}
+.fourthoption {
+  background: #009206;
+  border-radius: 8.19128px;
+  width: 35.58px;
+  height: 86.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fourthoption .circlebox{
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+}
+.line {
+  width: 2.24px;
+  height: 64.73px;
+  background: #5C586C;
+  opacity: 0.5;
+  border-radius: 17.0652px;
+  display: block;
+}
+
+.line2 {
+  background: #5C586C;
+  opacity: 0.5;
+  border-radius: 17.0652px;
+  transform: rotate(90deg);
+  width: 2.24px;
+  height: 27.46px;
+  display: block;
+  position: absolute;
+  left: 23%;
+}
+
+.line3 {
+  background: #5C586C;
+  opacity: 0.5;
+  border-radius: 17.0652px;
+  transform: rotate(90deg);
+  width: 2.24px;
+  height: 27.46px;
+  display: block;
+  position: absolute;
+  right: 23%;
+}

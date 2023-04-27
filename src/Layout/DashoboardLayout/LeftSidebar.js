@@ -9,6 +9,11 @@ const sidebarContent = [
     name: "Logo",
   },
   {
+    icon: "fa-solid fa-cloud-arrow-up",
+    url: "/introscreen",
+    name: "Intro Screen",
+  },
+  {
     icon: "fa-solid fa-users",
     url: "/authpage",
     name: "Register",
