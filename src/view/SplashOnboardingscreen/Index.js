@@ -330,7 +330,7 @@ function Appearnce() {
                 </div>
               </AccordianBox> */}
                         </div>
-                        <button className="btn btn-customaccordian">Save Changes</button>
+                        {/* <button className="btn btn-customaccordian">Save Changes</button> */}
                     </LeftSideUi>
                 </div>
                 <div className="col-lg-8 col-xl-8 col-md-8 col-12">
