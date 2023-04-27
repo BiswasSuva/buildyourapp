@@ -23,7 +23,8 @@ import { ElementProvider } from "../Providers/ElemetProvider";
 import AuthPagedesgin from "../view/AuthpageDesgin/index"
 import PaymentGateway from "../view/PaymentGatewayDesign/index"
 import Loyalty from "../view/Loyalty/Index"
-import Virtualmeet from "../view/Events/Virtualmeet";
+import Virtualmeet from "../view/Events/Virtualmeet/Index";
+import Introscreen from "../view/SplashOnboardingscreen/Index"
 function PrivateRoutes() {
   const { userData } = useSelector((state) => state.User);
   return (
@@ -37,7 +38,7 @@ function PrivateRoutes() {
           <Route path="choose-your-paymentgateway" element={<PaymentGateway />} />
           <Route path="loyalty" element={<Loyalty />} />
           <Route path="virtualmeet" element={<Virtualmeet/>} />
-          
+          <Route path="introscreen" element={<Introscreen/>} />
           <Route
             path="E-Store/appearnce/:id/:moduleID"
             element={

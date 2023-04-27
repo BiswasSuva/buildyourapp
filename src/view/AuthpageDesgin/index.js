@@ -68,7 +68,7 @@ function Appearnce() {
         <div className="col-lg-4 col-xl-4 col-md-4 col-12">
           {/* <Elements /> */}
           <LeftSideUi>
-            <div className="accordion-section">
+            <div className="accordion-section custom-splashscreen">
               <AccordianBox
                 title="Login Screen "
                 onClick={() => {
@@ -382,9 +382,9 @@ function Appearnce() {
                 </div>
               </div>
             )}
-             {show === "interest" && (
+            {show === "interest" && (
               <div className="col-4 text-center">
-                <p className="screentitle">Login Screen</p>
+                <p className="screentitle">Interest Screen</p>
                 <div className="mainMobile2">
                   <div className="iphone2">
                     {/* <Registercustomer /> */}

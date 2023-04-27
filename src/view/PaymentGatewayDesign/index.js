@@ -1,148 +1,214 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DashboardUi from "../../Component/DasboardUi/DashboardUi";
 import "../../view/PaymentGatewayDesign/payment.css"
 import stripe from "../../images/stripe.png"
+import $ from 'jquery';
 import paypal from "../../images/paypal.png"
 function Index() {
+    useEffect(() => {
+        $('a[data-toggle="formtab"]').on("click", function () {
+            var targetId = $(this).attr('href');
 
+            $('.tabs-panels').removeClass('active')
+            $('a[data-toggle="formtab"]').removeClass('active');
+
+            $(targetId).addClass('active');
+            $('a[href="' + targetId + '"]').addClass('active')
+
+
+
+        });
+    }, []);
     return (
         <DashboardUi>
-            <div className="tabs mt-3">
-                <h1 className="titlepayment">Choose a Payment Method</h1>
-                <ul className="nav nav-tabs" id="myTab" role="tablist">
-
-                    <li className="nav-item" role="presentation">
-
-                        <a
-                            className="nav-link active"
-                            id="visa-tab"
-                            data-toggle="tab"
-                            href="#visa"
-                            role="tab"
-                            aria-controls="visa"
-                            aria-selected="true"
-                        >
-
-                            <img src={stripe} width={80} />
-                        </a>
-                    </li>
-                    <li className="nav-item" role="presentation">
-
-                        <a
-                            className="nav-link"
-                            id="paypal-tab"
-                            data-toggle="tab"
-                            href="#paypal"
-                            role="tab"
-                            aria-controls="paypal"
-                            aria-selected="false"
-                        >
-
-                            <img src={paypal} width={80} />
-                        </a>
-                    </li>
-                </ul>
-                <div className="tab-content" id="myTabContent">
-
-                    <div
-                        className="tab-pane fade active show"
-                        id="visa"
-                        role="tabpanel"
-                        aria-labelledby="visa-tab"
-                    >
-
-                        <div className="mt-4 mx-4">
-
-                            <div className="text-center">
-
-                                <h5>Credit card</h5>
+            <div className="form-area">
+                <div className="form-header">
+                    <div className="top-header">
+                        <div className="devider-row">
+                            <div className="half-2">
+                                <div className="logo-area">
+                                    <h1>
+                                        <a href="javascript:;">Payments</a>
+                                    </h1>
+                                </div>
                             </div>
-                            <div className="form mt-3">
-
-                                <div className="inputbox">
-
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        className="form-control"
-                                        required="required"
-                                    />
-                                    <span>Cardholder Name</span>
-                                </div>
-                                <div className="inputbox">
-
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        min={1}
-                                        max={999}
-                                        className="form-control"
-                                        required="required"
-                                    />
-                                    <span>Card Number</span> <i className="fa fa-eye" />
-                                </div>
-                                <div className="d-flex flex-row">
-
-                                    <div className="inputbox">
-
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            min={1}
-                                            max={999}
-                                            className="form-control"
-                                            required="required"
-                                        />
-                                        <span>Expiration Date</span>
-                                    </div>
-                                    <div className="inputbox">
-
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            min={1}
-                                            max={999}
-                                            className="form-control"
-                                            required="required"
-                                        />
-                                        <span>CVV</span>
-                                    </div>
-                                </div>
-                                <div className="px-5 pay">
-
-                                    <button className="btn btn-success btn-block">Add card</button>
+                            <div className="half-2">
+                                <div className="need-help">
+                                    <a href="javascript:;">
+                                        Need Help <i>?</i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div
-                        className="tab-pane fade"
-                        id="paypal"
-                        role="tabpanel"
-                        aria-labelledby="paypal-tab"
-                    >
-
-                        <div className="px-5 mt-5">
-
-                            <div className="inputbox">
-
-                                <input
-                                    type="text"
-                                    name="name"
-                                    className="form-control"
-                                    required="required"
-                                />
-                                <span>Paypal Email Address</span>
+                    <div className="bottom-header">
+                        <div className="devider-row">
+                            <div className="half-2">
+                                <div className="bars">
+                                    <label>50%</label>
+                                    <span className="active" />
+                                    <span className="active" />
+                                    <span className="active" />
+                                    <span />
+                                    <span />
+                                    <div className="full-bar" />
+                                    <div className="blank-bar" />
+                                </div>
                             </div>
-                            <div className="pay px-5">
+                            <div className="half-2">
+                                <div className="status">
+                                    <h5>Settings</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="form-body">
+                    <div className="multitab-form-area">
+                        <div className="tab-links-area">
+                            <h1>Settings</h1>
+                            <p>Lorem ipsum doler site ameti</p>
+                            <hr />
+                            <ul>
+                                <li>
+                                    <a data-toggle="formtab" href="#userProfile" className="active">
+                                        Paypal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="formtab" href="#residentailAddress">
+                                        Stripe
+                                    </a>
+                                </li>
 
-                                <button className="btn btn-block">Add paypal</button>
+                            </ul>
+                        </div>
+                        <div className="tab-form-area">
+                            <div className="tabs-panels active" id="userProfile">
+                                <div className="tab-part">
+                                    <h4>User Profile</h4>
+                                    <hr />
+                                    <div className="devider-row">
+                                        <div className="half-2">
+                                            <div className="form-field">
+                                                <label>Live Merchant Id</label>
+                                                <input type="text" placeholder="Live Merchant Id" />
+                                            </div>
+
+                                            <div className="form-field">
+                                                <label>Live Client Id</label>
+
+                                                <input type="text" placeholder="Live Client Id" />
+                                            </div>
+                                        </div>
+                                        <div className="half-2">
+                                            <div className="form-field">
+                                                <label>Live Secret Key</label>
+                                                <input type="password" placeholder="Live Secret Key" />
+                                            </div>
+                                            <div className="form-field">
+                                                <label>Live Email address</label>
+                                                <input type="text" placeholder="Live Email address" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="next-btn">
+                                    <a data-toggle="formtab" href="#residentailAddress">
+                                        Next
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="tabs-panels" id="residentailAddress">
+                                <div className="tab-part">
+                                    <h4>Residential Address</h4>
+                                    <hr />
+                                    <div className="devider-row">
+                                        <div className="half-2">
+                                            <div className="form-field">
+                                                <label>Secret live key</label>
+                                                <input type="text" placeholder="Secret live key" />
+                                            </div>
+
+
+                                        </div>
+                                        <div className="half-2">
+                                            <div className="form-field">
+                                                <label>Merchant key</label>
+                                                <input type="text" placeholder="Merchant key" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                <div className="next-btn">
+                                    <a data-toggle="formtab" href="#jobDescription">
+                                        Next
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+
+
+            {/* <div className="col-12">
+                <img src={paypal} alt="Paypal" className="paypalimage" />
+                <h2 className="ppcp-onboarding-header">The all-in-one checkout solution</h2>
+
+                <div className="col-12">
+                    <form className="form-inline">
+                        <div className="col-12">
+                            <label htmlFor="email">Live Email address</label>
+                            <input
+                                type="email"
+                                className="form-control"
+                                placeholder="Enter Email"
+                                id="email"
+                            />
+                        </div>
+
+                        <div className="col-12">
+                            <label htmlFor="livemerchantid">Live Merchant Id</label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                placeholder="Enter Mewrchant ID"
+                                id="livemerchantid"
+                            />
+                        </div>
+
+                        <div className="col-12">
+                            <label htmlFor="liveclientid">Live Client Id</label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                placeholder="Live Client Id"
+                                id="liveclientid"
+                            />
+                        </div>
+
+                        <div className="col-12">
+                            <label htmlFor="livesecretkey">Live Secret Key</label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                placeholder="Live Secret Key"
+                                id="livesecretkey"
+                            />
+                        </div>
+
+                        <button type="submit" className="btn btn-primary">
+                            Save Changes
+                        </button>
+                    </form>
+
+                </div>
+            </div> */}
         </DashboardUi>
     );
 }
